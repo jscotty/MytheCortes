@@ -203,7 +203,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 151259442}
-          m_MethodName: onDown
+          m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -221,7 +221,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 151259442}
-          m_MethodName: onUP
+          m_MethodName: OnUP
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -313,6 +313,8 @@ GameObject:
   - 222: {fileID: 169586464}
   - 114: {fileID: 169586463}
   - 114: {fileID: 169586462}
+  - 114: {fileID: 169586466}
+  - 114: {fileID: 169586465}
   m_Layer: 5
   m_Name: AttackBtn
   m_TagString: Untagged
@@ -406,6 +408,67 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 169586460}
+--- !u!114 &169586465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169586460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afcd663c23f19e43b8686ed8a9303c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+--- !u!114 &169586466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169586460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 169586465}
+          m_MethodName: OnUP
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: INTERACT
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 169586465}
+          m_MethodName: OnDown
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: INTERACT
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &488963270
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +666,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 803474217}
-          m_MethodName: onDown
+          m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -621,7 +684,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 803474217}
-          m_MethodName: onUP
+          m_MethodName: OnUP
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -911,7 +974,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1078895649}
-          m_MethodName: onDown
+          m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -929,7 +992,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1078895649}
-          m_MethodName: onUP
+          m_MethodName: OnUP
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -992,6 +1055,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1210867721}
   - 212: {fileID: 1210867720}
+  - 95: {fileID: 1210867722}
+  - 114: {fileID: 1210867723}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -1033,6 +1098,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1719133359}
   m_RootOrder: 0
+--- !u!95 &1210867722
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210867719}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1ccb0bbb40edd74ab12f17f3946f54f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1210867723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210867719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fde62d3bb20ac44b9e3f31e878dc510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1291596214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1162,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &1563857525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1293,8 @@ MonoBehaviour:
   speed: 12
   x: 0
   y: 0
+  attack: 0
+  move: 0
 --- !u!50 &1719133361
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1587,7 +1680,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1983839309}
-          m_MethodName: onDown
+          m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1605,7 +1698,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1983839309}
-          m_MethodName: onUP
+          m_MethodName: OnUP
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1942,7 +2035,7 @@ Transform:
   - {fileID: 2120080445}
   - {fileID: 2035408081}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &2120080444
 GameObject:
   m_ObjectHideFlags: 0

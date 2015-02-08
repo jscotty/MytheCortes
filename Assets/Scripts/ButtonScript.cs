@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveButtonScript : MonoBehaviour {
+public class ButtonScript : MonoBehaviour {
 
 	public float x,y;
 
@@ -15,24 +15,27 @@ public class MoveButtonScript : MonoBehaviour {
 	}
 
 
-	public void onDown(string direction){
-		if (direction == "RIGHT") {
+	public void OnDown(string button){
+		if (button == "RIGHT") {
 			playerController.x = 1f;
 			playerController.y = 0f;
-		} else if (direction == "LEFT") {
+		} else if (button == "LEFT") {
 			playerController.x = -1f;
 			playerController.y = 0;
-		} else if (direction == "UP") {
+		} else if (button == "UP") {
 			playerController.x = 0;
 			playerController.y = 1f;
-		} else if (direction == "DOWN") {
+		} else if (button == "DOWN") {
 			playerController.x = 0;
 			playerController.y = -1f;
+		} else if (button == "INTERACT") {
+			playerController.attack = true;
 		}
 	}
 
-	public void onUP(){
+	public void OnUP(){
 		playerController.x = 0f;
 		playerController.y = 0f;
+		playerController.attack = false;
 	}
 }
