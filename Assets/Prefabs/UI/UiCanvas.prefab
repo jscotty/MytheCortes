@@ -46,7 +46,6 @@ GameObject:
   - 222: {fileID: 22209878}
   - 114: {fileID: 11409846}
   - 114: {fileID: 11409848}
-  - 114: {fileID: 11409850}
   - 114: {fileID: 11409844}
   m_Layer: 5
   m_Name: BtnUp
@@ -98,7 +97,6 @@ GameObject:
   - 222: {fileID: 22209882}
   - 114: {fileID: 11409860}
   - 114: {fileID: 11409856}
-  - 114: {fileID: 11409858}
   - 114: {fileID: 11409854}
   m_Layer: 5
   m_Name: BtnRight
@@ -186,7 +184,6 @@ GameObject:
   - 222: {fileID: 22209890}
   - 114: {fileID: 11409874}
   - 114: {fileID: 11409876}
-  - 114: {fileID: 11409878}
   - 114: {fileID: 11409872}
   m_Layer: 5
   m_Name: BtnDown
@@ -224,10 +221,9 @@ GameObject:
   - 114: {fileID: 11409886}
   - 114: {fileID: 11409888}
   - 114: {fileID: 11409882}
-  - 114: {fileID: 11409884}
   m_Layer: 5
   m_Name: AttackBtn
-  m_TagString: Untagged
+  m_TagString: Joystick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +239,6 @@ GameObject:
   - 222: {fileID: 22209896}
   - 114: {fileID: 11409892}
   - 114: {fileID: 11409894}
-  - 114: {fileID: 11409896}
   - 114: {fileID: 11409890}
   m_Layer: 5
   m_Name: BtnLeft
@@ -252,6 +247,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &176242
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 476242}
+  - 114: {fileID: 11476242}
+  m_Layer: 0
+  m_Name: JoystickController
+  m_TagString: JoystickController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476242
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -303.980011, y: -170.889999, z: -9.30000019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22409888}
+  m_RootOrder: 4
 --- !u!114 &11409838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -395,7 +418,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409850}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
@@ -413,7 +436,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409850}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnUP
           m_Mode: 1
           m_Arguments:
@@ -427,19 +450,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &11409850
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afcd663c23f19e43b8686ed8a9303c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 0
 --- !u!114 &11409852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -518,7 +528,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409858}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
@@ -536,7 +546,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409858}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnUP
           m_Mode: 1
           m_Arguments:
@@ -550,19 +560,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &11409858
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afcd663c23f19e43b8686ed8a9303c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 0
 --- !u!114 &11409860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -749,7 +746,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409878}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
@@ -767,7 +764,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409878}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnUP
           m_Mode: 1
           m_Arguments:
@@ -781,19 +778,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &11409878
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afcd663c23f19e43b8686ed8a9303c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 0
 --- !u!114 &11409880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -827,29 +811,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delegates:
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11409884}
-          m_MethodName: OnUP
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: INTERACT
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409884}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
@@ -863,19 +829,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &11409884
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afcd663c23f19e43b8686ed8a9303c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 0
 --- !u!114 &11409886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1016,7 +969,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409896}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnDown
           m_Mode: 5
           m_Arguments:
@@ -1034,7 +987,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11409896}
+        - m_Target: {fileID: 11476242}
           m_MethodName: OnUP
           m_Mode: 1
           m_Arguments:
@@ -1048,19 +1001,17 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &11409896
+--- !u!114 &11476242
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109896}
+  m_GameObject: {fileID: 176242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afcd663c23f19e43b8686ed8a9303c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4dd08747ddad4714aa6576a4cf2e9d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 0
-  y: 0
 --- !u!222 &22209876
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1266,7 +1217,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 147, y: -29}
+  m_AnchoredPosition: {x: 184, y: -29}
   m_SizeDelta: {x: 142, y: 130}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22409884
@@ -1319,6 +1270,7 @@ RectTransform:
   - {fileID: 22409896}
   - {fileID: 22409874}
   - {fileID: 22409890}
+  - {fileID: 476242}
   m_Father: {fileID: 22409872}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}

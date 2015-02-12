@@ -4,38 +4,60 @@ using System.Collections;
 public class AnimatorScript : MonoBehaviour {
 
 	Animator swordAnim;
-	public bool attack;
-	bool move;
-	GameObject player;
+	private bool _attack, _move;
 
+	Joystick _joystick;
+	PlayerController _playerController;
+	DummyBehaviour _dummy;
+	
 	void Start(){
 		swordAnim = GetComponent<Animator> ();
-		player = GameObject.FindGameObjectWithTag ("Player");
+
+		GameObject joystickController = GameObject.FindGameObjectWithTag ("JoystickController");
+		_joystick = joystickController.GetComponent<Joystick> ();
+
+		GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		_playerController = player.GetComponent<PlayerController> ();
+
+		GameObject enemy = GameObject.FindGameObjectWithTag ("Enemy");
+		_dummy = enemy.GetComponent<DummyBehaviour> ();
+
+
 
 	}
 
 	void Update(){
-		attack = player.GetComponent<PlayerController> ().attack;
-		gameObject.GetComponent<AttackScript> ().attacking = attack;
-
-		if (attack == true) {
+		if (_attack == true) {
 			swordAnim.SetBool("Attack", true);
-			move = false;
-			player.GetComponent<PlayerController> ().move = move;
+			_move = false;
+			_playerController.SetAttack (_attack);
+			_playerController.SetMove (_move);
+			_dummy.SetDamaging(_attack);
 			//collider2D.isTrigger = true;
+		} else{
+			_attack = _joystick.GetInteract();
 		}
 	}
 
 	public void StopAttack(){
 		swordAnim.SetBool("Attack", false);	
-		attack = false;
-		move = true;
-		gameObject.GetComponent<AttackScript> ().attacking = attack;
-		GameObject enemys = GameObject.FindGameObjectWithTag ("Enemy");
-		enemys.GetComponent<DummyBehaviour> ().damaging = false;
-		//collider2D.isTrigger = false;
+		_attack = false;
+		_move = true;
 
-		player.GetComponent<PlayerController> ().attack = attack;
-		player.GetComponent<PlayerController> ().move = move;
+		_joystick.SetInteract (_attack);
+		_playerController.SetAttack (_attack);
+		_playerController.SetMove (_move);
+		_dummy.SetDamaging(_attack);
+
+	
 	}
+
+	#region getters and setter
+	public bool GetMove(){
+		return _move;
+	}
+	public bool GetAttack(){
+		return _attack;
+	}
+	#endregion
 }

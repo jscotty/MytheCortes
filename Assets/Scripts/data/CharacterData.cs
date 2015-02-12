@@ -4,12 +4,24 @@ using System;
 using System.Collections.Generic;
 
 public class CharacterData : MonoBehaviour {
+	private Vector2 _position;
 	private int _exp;
 	private int _health;
 	private int _gold;
 	private int _level;
-	private int[] _items;
-	private int[] _wearedItems;
+	private int _quest;
+	private int _questProgress;
+	private int _weapon;
+	
+	#region Getter and setters for Position + updating Position
+		public Vector2 GetPosition(){
+			return _position;
+		}
+		
+		public void SetPosition(Vector2 position){
+			_position = position;
+		}
+	#endregion
 
 	#region Getter and setters for exp + updating exp
 		public int GetExp(){
@@ -24,7 +36,6 @@ public class CharacterData : MonoBehaviour {
 			_exp += amount;
 		}
 	#endregion
-
 	
 	#region Getter and setters for Health + updating Health
 		public int GetHealth(){
@@ -68,17 +79,45 @@ public class CharacterData : MonoBehaviour {
 	}
 	#endregion
 	
-	#region Getter and setters for Items + updating Items
-	public int[] GetItems(){
-		return _items;
+	#region Getter and setters for Quest + updating Quest
+	public int GetQuest(){
+		return _quest;
 	}
 	
-	public void SetItems(int[] amount){
-
+	public void SetQuest(int amount){
+		_quest = amount;
 	}
 	
-	public void UpdateItems(int amount){
+	public void UpdateQuest(int amount){
+		_quest += amount;
+	}
+	#endregion
+	
+	#region Getter and setters for QuestProgress + updating QuestProgress
+	public int GetQuestProgress(){
+		return _questProgress;
+	}
+	
+	public void SetQuestProgress(int amount){
+		_questProgress = amount;
+	}
+	
+	public void UpdateQuestProgress(int amount){
+		_questProgress += amount;
+	}
+	#endregion
 
+	#region Getter and setters for weapon + updating weapon
+	public int GetWeapon(){
+		return _weapon;
+	}
+	
+	public void SetWeapon(int amount){
+		_weapon = amount;
+	}
+	
+	public void UpdateWeapon(int amount){
+		_weapon += amount;
 	}
 	#endregion
 }

@@ -36,5 +36,12 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 }
 [System.Serializable] // zorgt ervoor dat je die kan wegschrijven naar unity
 public class SaveData{
+	
+	public Vector2 position;
+	public int exp;
+	public int health;
 	public int gold;
+	public int level;
+	public int quest;
+	public int questProgress;
 }

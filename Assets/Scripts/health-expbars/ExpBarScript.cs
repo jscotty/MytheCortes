@@ -32,7 +32,7 @@ public class ExpBarScript : MonoBehaviour {
 		exp = 0;
 		cachedY = expTransform.position.y;
 		minXValue = expTransform.position.x;
-		maxXValue = -expTransform.position.x + 35f;
+		maxXValue = expTransform.position.x + 86f;
 		
 		currentExp = maxExp;
 		onCD = false;

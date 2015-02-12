@@ -3,51 +3,49 @@ using System.Collections;
 
 public class Joystick : MonoBehaviour {
 
-	public RectTransform moveStick;
-	private Vector3 joystick;
+	private float _xAxis,_yAxis;
 
-	public float jXaxis;
-	public float jYaxis;
+	private bool _interact;
 
-	private bool move;
-
-	void Start(){
-		transform.position = new Vector2 (100f,100f);
-
-		joystick = transform.position;
-	}
-
-	void Update(){
-		if (move) {
-			if(joystick.x < 50 || joystick.x > 150 || joystick.y < 50 || joystick.y > 150){
-				joystick = Input.mousePosition;
-			}else{
-				joystick = Input.mousePosition;
-			}
-			transform.position = joystick;
-
-			jXaxis = (joystick.x / 100f) - 1f;
-			jYaxis = (joystick.y / 100f) - 1f;
-
-			jXaxis = Mathf.Clamp(jXaxis, -1, 1);
-			jYaxis = Mathf.Clamp(jYaxis, -1, 1);
-
-			//print("jXaxis (" + jXaxis + ") jYacis (" + jYaxis + ")");
-
-			//print(joystick);
-		} else {
-			transform.position = new Vector2 (100f,100f);
-			jXaxis = 0f;
-			jYaxis = 0f;
+	public void OnDown(string button){
+		if (button == "RIGHT") {
+			_xAxis = 1f;
+			_yAxis = 0f;
+		} else if (button == "LEFT") {
+			_xAxis = -1f;
+			_yAxis = 0;
+		} else if (button == "UP") {
+			_xAxis = 0;
+			_yAxis = 1f;
+		} else if (button == "DOWN") {
+			_xAxis = 0;
+			_yAxis = -1f;
+		} else if (button == "INTERACT") {
+			_interact = true;
 		}
 	}
-
-	public void OnDown(){
-		move = true;
+	
+	public void OnUP(){
+		_xAxis = 0f;
+		_yAxis = 0f;
+		_interact = false;
 	}
 
-	public void OnUp(){
-		joystick = transform.position;
-		move = false;
+	#region getters and setters
+	public float GetXAxis(){
+		return _xAxis;
 	}
+	
+	public float GetYAxis(){
+		return _yAxis;
+	}
+	
+	public bool GetInteract(){
+		return _interact;
+	}
+	
+	public void SetInteract(bool value){
+		_interact = value;
+	}
+	#endregion
 }

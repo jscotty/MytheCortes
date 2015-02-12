@@ -3,13 +3,27 @@ using System.Collections;
 
 public class DummyBehaviour : MonoBehaviour {
 
-	public bool damaging;
+	private bool damaging;
+	SpriteRenderer spriteRenderer;
+
+	void Start(){
+		//spriteRenderer = spriteRenderer.GetComponent<SpriteRenderer> ();
+	}
 
 	void Update(){
-		if (damaging) {
-			GetComponent<SpriteRenderer>().color = Color.yellow;
+		/*if (damaging) {
+			spriteRenderer.color = Color.yellow;
 		} else {
-			GetComponent<SpriteRenderer>().color = Color.red;
-		}
+			spriteRenderer.color = Color.red;
+		}*/
 	}
+
+	#region getters and setters
+	public bool GetDamaging(){
+		return damaging;
+	}
+	public void SetDamaging(bool value){
+		damaging = value;
+	}
+	#endregion
 }

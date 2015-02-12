@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class ButtonScript : MonoBehaviour {
-
+	// not in use! Check Joystick.cs if this file isnt removed!
+	/*
 	public float x,y;
 
 	GameObject player;
@@ -38,4 +39,6 @@ public class ButtonScript : MonoBehaviour {
 		playerController.y = 0f;
 		playerController.attack = false;
 	}
+	*/
+
 }

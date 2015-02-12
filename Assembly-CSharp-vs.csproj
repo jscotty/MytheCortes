@@ -49,12 +49,12 @@
      <Compile Include="Assets\Scripts\Buttons\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
-     <Compile Include="Assets\Scripts\Data\CharacterData.cs" />
-     <Compile Include="Assets\Scripts\Data\SaveLoadDataSerialized.cs" />
      <Compile Include="Assets\Scripts\Enemy\DummyBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Enemy\HitDetection.cs" />
      <Compile Include="Assets\Scripts\Player\AnimatorScript.cs" />
-     <Compile Include="Assets\Scripts\Player\AttackScript.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\data\CharacterData.cs" />
+     <Compile Include="Assets\Scripts\data\SaveLoadDataSerialized.cs" />
      <Compile Include="Assets\Scripts\health-expbars\ExpBarScript.cs" />
      <Compile Include="Assets\Scripts\health-expbars\HitPointsScript.cs" />
  <Reference Include="UnityEngine.UI">

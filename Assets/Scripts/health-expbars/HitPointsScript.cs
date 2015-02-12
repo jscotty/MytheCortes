@@ -32,7 +32,7 @@ public class HitPointsScript : MonoBehaviour {
 		health = 500;
 		cachedY = healthTransform.position.y;
 		maxXValue = healthTransform.position.x;
-		minXValue = -healthTransform.position.x + 35f;
+		minXValue = -healthTransform.position.x + healthTransform.rect.width - 30f;
 
 		currentHealth = maxHealth;
 		onCD = false;
