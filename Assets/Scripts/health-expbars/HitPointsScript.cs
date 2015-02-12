@@ -13,7 +13,6 @@ public class HitPointsScript : MonoBehaviour {
 
 	public int health;
 
-	
 	private int CurrentHealth
 	{
 		get{ return currentHealth; }

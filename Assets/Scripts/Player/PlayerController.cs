@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
 	public float x,y;
 	private bool _attack, _move;
 
+	public Transform sword;
+
 	/// <summary>
 	/// The character sprites.
 	/// 0 = is down
@@ -29,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 		_move = true;
 		_body = rigidbody2D;
 		_trans = transform;
-		GameObject joystickController = GameObject.FindGameObjectWithTag ("JoystickController");
+		GameObject joystickController = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
 		_joystick = joystickController.GetComponent<Joystick> ();
 
 		_spriteRenderer = gameObject.GetComponent<SpriteRenderer> ();
@@ -63,18 +65,18 @@ public class PlayerController : MonoBehaviour {
 	private void Rotate(){
 		//rotating player:
 		if (x > 0f && y == 0f) { // right
-			//transform.eulerAngles = new Vector3(0f, 0f,270f);
+			sword.transform.eulerAngles = new Vector3(0f, 0f,90f);
 			_spriteRenderer.sprite = characterSprites[2];
 			_scale.x = -1;
 		} else if (x < 0f && y == 0f) { // left
-			//transform.eulerAngles = new Vector3(0f, 0f, 90f);
+			sword.transform.eulerAngles = new Vector3(0f, 0f, 90f);
 			_spriteRenderer.sprite = characterSprites[2];
 			_scale.x = 1;
 		} else if (x == 0f && y > 0f) { // up
-			//transform.eulerAngles = new Vector3(0f, 0f, 0f);
+			sword.transform.eulerAngles = new Vector3(0f, 0f, 0f);
 			_spriteRenderer.sprite = characterSprites[1];
 		} else if (x == 0f && y < 0f) { // down
-			//transform.eulerAngles = new Vector3(0f, 0f, 180f);
+			sword.transform.eulerAngles = new Vector3(0f, 0f, 180f);
 			_spriteRenderer.sprite = characterSprites[0];
 		}
 		transform.localScale = _scale;

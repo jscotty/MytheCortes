@@ -7,15 +7,15 @@ public class DummyBehaviour : MonoBehaviour {
 	SpriteRenderer spriteRenderer;
 
 	void Start(){
-		//spriteRenderer = spriteRenderer.GetComponent<SpriteRenderer> ();
+		spriteRenderer = gameObject.GetComponent<SpriteRenderer> ();
 	}
 
 	void Update(){
-		/*if (damaging) {
+		if (damaging) {
 			spriteRenderer.color = Color.yellow;
 		} else {
 			spriteRenderer.color = Color.red;
-		}*/
+		}
 	}
 
 	#region getters and setters

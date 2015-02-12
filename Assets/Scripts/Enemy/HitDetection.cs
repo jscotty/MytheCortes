@@ -5,41 +5,54 @@ using System.Collections.Generic;
 
 public class HitDetection : MonoBehaviour {
 
-	public GameObject Player;
-	public bool attacking;
+	GameObject _attackItem;
+	bool _attack;
 
 	DummyBehaviour _dummy;
-	GameObject _enemy;
-	int _count;
 
-	bool hit;
+	PlayerController _playerController;
+	GameObject _player;
+
+	private bool _hit;
 
 	void Start(){
-		_count = -1;
-		_enemy = GameObject.FindGameObjectWithTag ("Enemy");
+		_player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
+		_attackItem = GameObject.FindGameObjectWithTag (Tags.ATTACK);
+		_dummy = gameObject.GetComponent<DummyBehaviour> ();
+
+		_playerController = _player.GetComponent<PlayerController> ();
 	}
 
 	void Update(){
-		if (hit && attacking) {
-			if(_dummy != null){
-				_dummy.SetDamaging(true);
-			}
+		_attack = _playerController.GetAttack ();
+		if (_hit && _attack) {
+			_dummy.SetDamaging(true);
 		} else {
-			if(_dummy != null){
-				_dummy.SetDamaging(false);
-			}
+			_dummy.SetDamaging(false);
+
 		}
 
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.tag == "Enemy"){
-			_enemy = other.gameObject;
-			_dummy = _enemy.GetComponent<DummyBehaviour>();
-
-			hit = true;
+		if(other.tag == Tags.ATTACK){
+			//print("hit");
+			_attackItem = other.gameObject;
+			_hit = true;
+		} else if(other.tag == Tags.NONATTACK){
+			_hit = false;
 		}else{
-			hit = false;
+			_hit = false;
 		}
 	}
+
+	#region getters and setters
+	public bool GetHit(){
+		return _hit;
+	}
+
+	public void SetHit(bool value){
+		_hit = value;
+	}
+	#endregion
 }

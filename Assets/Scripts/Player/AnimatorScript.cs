@@ -9,17 +9,17 @@ public class AnimatorScript : MonoBehaviour {
 	Joystick _joystick;
 	PlayerController _playerController;
 	DummyBehaviour _dummy;
-	
+
 	void Start(){
 		swordAnim = GetComponent<Animator> ();
 
-		GameObject joystickController = GameObject.FindGameObjectWithTag ("JoystickController");
+		GameObject joystickController = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
 		_joystick = joystickController.GetComponent<Joystick> ();
 
-		GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
 		_playerController = player.GetComponent<PlayerController> ();
 
-		GameObject enemy = GameObject.FindGameObjectWithTag ("Enemy");
+		GameObject enemy = GameObject.FindGameObjectWithTag (Tags.ENEMY);
 		_dummy = enemy.GetComponent<DummyBehaviour> ();
 
 
