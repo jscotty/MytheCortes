@@ -19,11 +19,6 @@ public class AnimatorScript : MonoBehaviour {
 		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
 		_playerController = player.GetComponent<PlayerController> ();
 
-		GameObject enemy = GameObject.FindGameObjectWithTag (Tags.ENEMY);
-		_dummy = enemy.GetComponent<DummyBehaviour> ();
-
-
-
 	}
 
 	void Update(){
@@ -32,7 +27,6 @@ public class AnimatorScript : MonoBehaviour {
 			_move = false;
 			_playerController.SetAttack (_attack);
 			_playerController.SetMove (_move);
-			_dummy.SetDamaging(_attack);
 			//collider2D.isTrigger = true;
 		} else{
 			_attack = _joystick.GetInteract();
@@ -47,17 +41,7 @@ public class AnimatorScript : MonoBehaviour {
 		_joystick.SetInteract (_attack);
 		_playerController.SetAttack (_attack);
 		_playerController.SetMove (_move);
-		_dummy.SetDamaging(_attack);
 
 	
 	}
-
-	#region getters and setter
-	public bool GetMove(){
-		return _move;
-	}
-	public bool GetAttack(){
-		return _attack;
-	}
-	#endregion
 }

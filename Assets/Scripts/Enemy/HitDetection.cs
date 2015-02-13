@@ -34,25 +34,17 @@ public class HitDetection : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
+	void OnTriggerStay2D(Collider2D other){
 		if(other.tag == Tags.ATTACK){
 			//print("hit");
 			_attackItem = other.gameObject;
 			_hit = true;
-		} else if(other.tag == Tags.NONATTACK){
-			_hit = false;
-		}else{
-			_hit = false;
 		}
+		//print ("hit: " + _hit);
 	}
-
-	#region getters and setters
-	public bool GetHit(){
-		return _hit;
+	
+	void OnTriggerExit2D(Collider2D other){
+		_hit = false;
+		//print ("hit: " + _hit);
 	}
-
-	public void SetHit(bool value){
-		_hit = value;
-	}
-	#endregion
 }

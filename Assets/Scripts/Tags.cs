@@ -10,4 +10,5 @@ public class Tags : MonoBehaviour {
 	public const string ATTACK = "Attack";
 	public const string NONATTACK = "NonAttack";
 	public const string UI = "UI";
+	public const string NPC = "NPC";
 }

@@ -8,23 +8,22 @@ public class PauseScript : MonoBehaviour {
 	/// 0 = PlayerUI
 	/// 1 = PauseUI
 	/// </summary>
-	GameObject[] _ui;
+	public GameObject[] _ui;
 
 	void Start(){
-		_ui = GameObject.FindGameObjectsWithTag (Tags.UI);
-		_ui[0].SetActive(false);
-		_ui[1].SetActive(true);
+		_ui[0].SetActive(true);
+		_ui[1].SetActive(false);
 	}
 
 	public void OnClick(){
 		if (paused) {
 			paused = false;
-			_ui[0].SetActive(false);
-			_ui[1].SetActive(true);
-		} else {
-			paused = true;
 			_ui[0].SetActive(true);
 			_ui[1].SetActive(false);
+		} else {
+			paused = true;
+			_ui[0].SetActive(false);
+			_ui[1].SetActive(true);
 		}
 	}
 }
