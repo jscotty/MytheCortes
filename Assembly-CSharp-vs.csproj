@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AutoType.cs" />
+     <Compile Include="Assets\InteractButtonText.cs" />
      <Compile Include="Assets\PauseScript.cs" />
      <Compile Include="Assets\Scripts\Buttons\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
@@ -57,12 +59,14 @@
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerTrigger.cs" />
+     <Compile Include="Assets\Scripts\Story\Names.cs" />
      <Compile Include="Assets\Scripts\Story\TutorialStory.cs" />
      <Compile Include="Assets\Scripts\Tags.cs" />
      <Compile Include="Assets\Scripts\data\CharacterData.cs" />
      <Compile Include="Assets\Scripts\data\SaveLoadDataSerialized.cs" />
      <Compile Include="Assets\Scripts\health-expbars\ExpBarScript.cs" />
      <Compile Include="Assets\Scripts\health-expbars\HitPointsScript.cs" />
+     <Compile Include="Assets\TalkScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

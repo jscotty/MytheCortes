@@ -11,4 +11,7 @@ public class Tags : MonoBehaviour {
 	public const string NONATTACK = "NonAttack";
 	public const string UI = "UI";
 	public const string NPC = "NPC";
+	public const string UI_CONTROLLER = "UIController";
+	public const string TALK = "Talk";
+	public const string INTERACT_BTN = "InteractBtn";
 }

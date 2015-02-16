@@ -1,0 +1,3998 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps: []
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 50
+    m_LastUsedResolution: 0
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 1
+    m_BounceIntensity: 1
+    m_SkyLightColor: {r: .860000014, g: .930000007, b: 1, a: 1}
+    m_SkyLightIntensity: 0
+    m_Quality: 0
+    m_Bounces: 1
+    m_FinalGatherRays: 1000
+    m_FinalGatherContrastThreshold: .0500000007
+    m_FinalGatherGradientThreshold: 0
+    m_FinalGatherInterpolationPoints: 15
+    m_AOAmount: 0
+    m_AOMaxDistance: .100000001
+    m_AOContrast: 1
+    m_LODSurfaceMappingDistance: 1
+    m_Padding: 0
+    m_TextureCompression: 0
+    m_LockAtlas: 0
+--- !u!196 &5
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    widthInaccuracy: 16.666666
+    heightInaccuracy: 10
+  m_NavMesh: {fileID: 0}
+--- !u!1 &30479088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112200, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 30479089}
+  - 212: {fileID: 30479090}
+  m_Layer: 0
+  m_Name: SpaniardBack_Foot_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &30479089
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412200, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 30479088}
+  m_LocalRotation: {x: -0, y: 0, z: .17432344, w: -.984688461}
+  m_LocalPosition: {x: .047040645, y: -.485727847, z: .560000062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2020564934}
+  m_Father: {fileID: 620261278}
+  m_RootOrder: 0
+--- !u!212 &30479090
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212200, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 30479088}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300028, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &132248217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112202, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 132248218}
+  - 212: {fileID: 132248219}
+  m_Layer: 0
+  m_Name: SpaniardFront_Hand_Front_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &132248218
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412202, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 132248217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.00480037928, y: -.124803543, z: -.119999997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 724480629}
+  m_RootOrder: 0
+--- !u!212 &132248219
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212202, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 132248217}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300052, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &146210464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112204, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 146210465}
+  - 212: {fileID: 146210466}
+  m_Layer: 0
+  m_Name: SpaniardFront_Toes_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &146210465
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412204, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 146210464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0145168006, y: -.116135299, z: -.730000019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1967171774}
+  m_RootOrder: 0
+--- !u!212 &146210466
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212204, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 146210464}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300038, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &148185060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112206, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 148185061}
+  - 212: {fileID: 148185062}
+  m_Layer: 0
+  m_Name: SpaniardFront_Belt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &148185061
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412206, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 148185060}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0516760349, y: .516760349, z: -.150000006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1018689287}
+  m_RootOrder: 1
+--- !u!212 &148185062
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212206, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 148185060}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &154486070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112208, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 154486071}
+  - 212: {fileID: 154486072}
+  m_Layer: 0
+  m_Name: SpaniardBack_Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &154486071
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412208, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 154486070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.98023224e-08, y: -.0784019008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1725950643}
+  - {fileID: 620261278}
+  m_Father: {fileID: 2021692946}
+  m_RootOrder: 1
+--- !u!212 &154486072
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212208, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 154486070}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300016, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &242524152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112210, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 242524153}
+  - 212: {fileID: 242524154}
+  m_Layer: 0
+  m_Name: SpaniardFront_Hand_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &242524153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412210, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 242524152}
+  m_LocalRotation: {x: 0, y: 0, z: -.0578060225, w: .998327851}
+  m_LocalPosition: {x: .133320421, y: -.281909496, z: -.319999993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 743885309}
+  m_RootOrder: 1
+--- !u!212 &242524154
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212210, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 242524152}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300022, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &307278083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112212, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 307278084}
+  - 212: {fileID: 307278085}
+  m_Layer: 0
+  m_Name: SpaniardFront_Toes_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &307278084
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412212, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 307278083}
+  m_LocalRotation: {x: 0, y: 0, z: -.00721231056, w: .999974012}
+  m_LocalPosition: {x: .00427725911, y: -.149281621, z: -.730000496}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2035853002}
+  m_RootOrder: 0
+--- !u!212 &307278085
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212212, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 307278083}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300038, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &310281625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112214, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 310281626}
+  - 212: {fileID: 310281627}
+  m_Layer: 0
+  m_Name: SpaniardSide_Shoulder_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &310281626
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412214, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 310281625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .209274739, y: .660867691, z: -.779999971}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 562900385}
+  m_Father: {fileID: 486085355}
+  m_RootOrder: 4
+--- !u!212 &310281627
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212214, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 310281625}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300008, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &348162415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112216, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 348162417}
+  - 212: {fileID: 348162416}
+  m_Layer: 0
+  m_Name: SpaniardFront_Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &348162416
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212216, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 348162415}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300008, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &348162417
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412216, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 348162415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0129190208, y: 1.00768268, z: -.400000006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 768323027}
+  - {fileID: 1024794558}
+  m_Father: {fileID: 1018689287}
+  m_RootOrder: 2
+--- !u!1 &409612679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112218, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 409612680}
+  - 212: {fileID: 409612681}
+  m_Layer: 0
+  m_Name: SpaniardSide_Leg_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409612680
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412218, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 409612679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .168333009, y: .097456798, z: .150000095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1317194638}
+  m_Father: {fileID: 518711174}
+  m_RootOrder: 1
+--- !u!212 &409612681
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212218, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 409612679}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300030, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &409664509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112220, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 409664510}
+  - 212: {fileID: 409664511}
+  m_Layer: 0
+  m_Name: SpaniardSide_Face
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409664510
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412220, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 409664509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.25999999, y: .180000007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2071643764}
+  m_RootOrder: 0
+--- !u!212 &409664511
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212220, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 409664509}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300004, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &420226424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112222, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 420226425}
+  - 212: {fileID: 420226426}
+  m_Layer: 0
+  m_Name: SpaniardFront_Hand_Front_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420226425
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412222, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 420226424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0334693193, y: -.0635908246, z: -.129999995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2143170548}
+  m_RootOrder: 0
+--- !u!212 &420226426
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212222, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 420226424}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300054, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &486085354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112224, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486085355}
+  - 212: {fileID: 486085356}
+  m_Layer: 0
+  m_Name: SpaniardSide_Torso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486085355
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412224, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 486085354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0685218647, y: .15202412, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1337370416}
+  - {fileID: 1828904441}
+  - {fileID: 2071643764}
+  - {fileID: 1212520810}
+  - {fileID: 310281626}
+  m_Father: {fileID: 1690254227}
+  m_RootOrder: 1
+--- !u!212 &486085356
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212224, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 486085354}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300014, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &488573381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112226, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 488573382}
+  - 212: {fileID: 488573383}
+  m_Layer: 0
+  m_Name: SpaniardFront_Shoulder_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &488573382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412226, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 488573381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .228574082, y: .740689993, z: -.849999905}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2026094998}
+  m_Father: {fileID: 1018689287}
+  m_RootOrder: 4
+--- !u!212 &488573383
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212226, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 488573381}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300010, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &496155744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112228, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 496155745}
+  - 212: {fileID: 496155746}
+  m_Layer: 0
+  m_Name: SpaniardFront_Backpack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496155745
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412228, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 496155744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0364870504, y: .760153174, z: 1.94999981}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1018689287}
+  m_RootOrder: 0
+--- !u!212 &496155746
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212228, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 496155744}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300032, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &499856721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112230, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499856722}
+  - 212: {fileID: 499856723}
+  m_Layer: 0
+  m_Name: SpaniardFront_Hand_Front_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &499856722
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412230, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 499856721}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.110446811, y: -.401625067, z: -.34000057}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1106763945}
+  m_RootOrder: 0
+--- !u!212 &499856723
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212230, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 499856721}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300052, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &501035183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112232, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 501035184}
+  - 212: {fileID: 501035185}
+  m_Layer: 0
+  m_Name: SpaniardSide_Helmet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501035184
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412232, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 501035183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.239999995, y: .289999992, z: -.300000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2071643764}
+  m_RootOrder: 1
+--- !u!212 &501035185
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212232, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 501035183}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &518711173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112234, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 518711174}
+  - 212: {fileID: 518711175}
+  m_Layer: 0
+  m_Name: SpaniardSide_Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &518711174
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412234, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 518711173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1705083633}
+  - {fileID: 409612680}
+  m_Father: {fileID: 1690254227}
+  m_RootOrder: 0
+--- !u!212 &518711175
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212234, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 518711173}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300028, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &562900384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112236, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 562900385}
+  - 212: {fileID: 562900386}
+  m_Layer: 0
+  m_Name: SpaniardSide_Arm_Upper_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562900385
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412236, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 562900384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .236810833, y: .0771013498, z: .709999979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 804262083}
+  m_Father: {fileID: 310281626}
+  m_RootOrder: 0
+--- !u!212 &562900386
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212236, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 562900384}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300016, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &614386392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112238, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 614386393}
+  - 212: {fileID: 614386394}
+  m_Layer: 0
+  m_Name: SpaniardFront_Leg_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &614386393
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412238, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 614386392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .120289922, y: .120289892, z: .300000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1920781398}
+  m_Father: {fileID: 1672236724}
+  m_RootOrder: 3
+--- !u!212 &614386394
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212238, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 614386392}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300030, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &620261277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112240, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 620261278}
+  - 212: {fileID: 620261279}
+  m_Layer: 0
+  m_Name: SpaniardBack_Leg_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &620261278
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412240, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 620261277}
+  m_LocalRotation: {x: 0, y: 0, z: -.17432344, w: -.984688461}
+  m_LocalPosition: {x: .0896012038, y: .201604992, z: .0900000036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 30479089}
+  m_Father: {fileID: 154486071}
+  m_RootOrder: 1
+--- !u!212 &620261279
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212240, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 620261277}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300022, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &627235596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112242, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 627235597}
+  - 212: {fileID: 627235598}
+  m_Layer: 0
+  m_Name: SpaniardBack_Shoulder_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &627235597
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412242, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 627235596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .24640587, y: -.240805864, z: .419999987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 696430028}
+  m_Father: {fileID: 660432560}
+  m_RootOrder: 2
+--- !u!212 &627235598
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212242, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 627235596}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300006, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &638928135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112244, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 638928136}
+  - 212: {fileID: 638928137}
+  m_Layer: 0
+  m_Name: SpaniardFront_Toes_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &638928136
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412244, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 638928135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .023600474, y: -.114631653, z: -.590000153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1387735536}
+  m_RootOrder: 0
+--- !u!212 &638928137
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212244, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 638928135}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300040, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &660432559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112246, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 660432560}
+  - 212: {fileID: 660432561}
+  m_Layer: 0
+  m_Name: SpaniardBack_Backpack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &660432560
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412246, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 660432559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0224007592, y: 1.28243005, z: -.180000007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1127689725}
+  - {fileID: 1249440249}
+  - {fileID: 627235597}
+  m_Father: {fileID: 2021692946}
+  m_RootOrder: 0
+--- !u!212 &660432561
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212246, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 660432559}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300010, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &696430027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112248, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 696430028}
+  - 212: {fileID: 696430029}
+  m_Layer: 0
+  m_Name: SpaniardBack_Arm_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &696430028
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412248, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 696430027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .20720467, y: -.0840021968, z: .610000014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1213530409}
+  m_Father: {fileID: 627235597}
+  m_RootOrder: 0
+--- !u!212 &696430029
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212248, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 696430027}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300012, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &724480628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112250, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 724480629}
+  - 212: {fileID: 724480630}
+  m_Layer: 0
+  m_Name: SpaniardFront_Arm_Front_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &724480629
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412250, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 724480628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .1008026, y: -.619219303, z: -.300000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 132248218}
+  m_Father: {fileID: 2026094998}
+  m_RootOrder: 1
+--- !u!212 &724480630
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212250, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 724480628}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300048, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &743885308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112252, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 743885309}
+  - 212: {fileID: 743885310}
+  m_Layer: 0
+  m_Name: SpaniardFront_Arm_Bottom_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &743885309
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412252, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 743885308}
+  m_LocalRotation: {x: 0, y: 0, z: .0578060225, w: .998327851}
+  m_LocalPosition: {x: -.161532283, y: -.481159508, z: -.50000006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1746655506}
+  - {fileID: 242524153}
+  - {fileID: 2105156387}
+  m_Father: {fileID: 1964360206}
+  m_RootOrder: 0
+--- !u!212 &743885310
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212252, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 743885308}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300016, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &768323026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112254, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 768323027}
+  - 212: {fileID: 768323028}
+  m_Layer: 0
+  m_Name: SpaniardFront_Face
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &768323027
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412254, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 768323026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .00430630054, y: -.10335207, z: -.360000014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 348162417}
+  m_RootOrder: 0
+--- !u!212 &768323028
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212254, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 768323026}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300014, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &801177379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112256, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 801177380}
+  - 212: {fileID: 801177381}
+  m_Layer: 0
+  m_Name: SpaniardSide_Arm_Upper_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &801177380
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412256, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 801177379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.115651786, y: -.0385507345, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1816586264}
+  m_Father: {fileID: 1212520810}
+  m_RootOrder: 0
+--- !u!212 &801177381
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212256, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 801177379}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300024, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &804262082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112258, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 804262083}
+  - 212: {fileID: 804262084}
+  m_Layer: 0
+  m_Name: SpaniardSide_Arm_Bottom_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804262083
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412258, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 804262082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .091357708, y: -.468115062, z: -.709999979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1295009171}
+  m_Father: {fileID: 562900385}
+  m_RootOrder: 0
+--- !u!212 &804262084
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212258, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 804262082}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300022, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &817197138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112260, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 817197139}
+  - 95: {fileID: 817197140}
+  m_Layer: 0
+  m_Name: Spaniard_Front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &817197139
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412260, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 817197138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1672236724}
+  - {fileID: 1018689287}
+  m_Father: {fileID: 1028702439}
+  m_RootOrder: 1
+--- !u!95 &817197140
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9512200, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 817197138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e673897c09949b74b94db636677843fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &867806853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112262, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 867806854}
+  - 212: {fileID: 867806855}
+  m_Layer: 0
+  m_Name: SpaniardFront_Shoulder_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &867806854
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412262, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 867806853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.223770574, y: .740689039, z: -.849999905}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1964360206}
+  m_Father: {fileID: 1018689287}
+  m_RootOrder: 3
+--- !u!212 &867806855
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212260, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 867806853}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300006, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1018689286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112264, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1018689287}
+  - 212: {fileID: 1018689288}
+  m_Layer: 0
+  m_Name: SpaniardFront_Torso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1018689287
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412264, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1018689286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.00967721641, y: .164546043, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 496155745}
+  - {fileID: 148185061}
+  - {fileID: 348162417}
+  - {fileID: 867806854}
+  - {fileID: 488573382}
+  m_Father: {fileID: 817197139}
+  m_RootOrder: 1
+--- !u!212 &1018689288
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212262, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1018689286}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300018, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1024794557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112266, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1024794558}
+  - 212: {fileID: 1024794559}
+  m_Layer: 0
+  m_Name: SpaniardFront_Helmet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1024794558
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412266, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1024794557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.00861272216, y: .0473695993, z: -.389999986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 348162417}
+  m_RootOrder: 1
+--- !u!212 &1024794559
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212264, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1024794557}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1028702438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1028702439}
+  m_Layer: 0
+  m_Name: Spaniard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1028702439
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1028702438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 8.45740891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2021692946}
+  - {fileID: 817197139}
+  - {fileID: 1690254227}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1 &1080163098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112270, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1080163099}
+  - 212: {fileID: 1080163100}
+  m_Layer: 0
+  m_Name: SpaniardFront_Toes_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1080163099
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412270, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1080163098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .023600474, y: -.114631653, z: -.590000153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1920781398}
+  m_RootOrder: 0
+--- !u!212 &1080163100
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212266, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1080163098}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300040, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1106763944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112272, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1106763945}
+  - 212: {fileID: 1106763946}
+  m_Layer: 0
+  m_Name: SpaniardFront_Arm_Bottom_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1106763945
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412272, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1106763944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .130596876, y: -.498343378, z: -.540000021}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 499856722}
+  - {fileID: 1532940581}
+  - {fileID: 1803524537}
+  m_Father: {fileID: 2026094998}
+  m_RootOrder: 0
+--- !u!212 &1106763946
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212268, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1106763944}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300020, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1127689724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112274, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1127689725}
+  - 212: {fileID: 1127689726}
+  m_Layer: 0
+  m_Name: SpaniardBack_Helmet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1127689725
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412274, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1127689724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0056001097, y: 0, z: .0799999982}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1188033279}
+  m_Father: {fileID: 660432560}
+  m_RootOrder: 0
+--- !u!212 &1127689726
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212270, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1127689724}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1188033278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112276, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1188033279}
+  - 212: {fileID: 1188033280}
+  m_Layer: 0
+  m_Name: SpaniardBack_Hair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188033279
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412276, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1188033278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: .180000007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1127689725}
+  m_RootOrder: 0
+--- !u!212 &1188033280
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212272, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1188033278}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300004, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1190016615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112278, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1190016616}
+  - 212: {fileID: 1190016617}
+  m_Layer: 0
+  m_Name: SpaniardBack_Foot_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1190016616
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412278, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1190016615}
+  m_LocalRotation: {x: 0, y: 0, z: -.17284368, w: -.98494935}
+  m_LocalPosition: {x: -.0335846767, y: -.48405087, z: .5400002}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 1354906729}
+  m_Father: {fileID: 1725950643}
+  m_RootOrder: 0
+--- !u!212 &1190016617
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212274, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1190016615}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300026, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1212520809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112280, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1212520810}
+  - 212: {fileID: 1212520811}
+  m_Layer: 0
+  m_Name: SpaniardSide_Shoulder_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1212520810
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412280, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1212520809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0715940073, y: .616809726, z: .270000011}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 801177380}
+  m_Father: {fileID: 486085355}
+  m_RootOrder: 3
+--- !u!212 &1212520811
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212276, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1212520809}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300012, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1213530408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112282, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1213530409}
+  - 212: {fileID: 1213530410}
+  m_Layer: 0
+  m_Name: SpaniardBack_Hand_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1213530409
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412282, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1213530408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0504012108, y: -.644015312, z: .410000086}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 696430028}
+  m_RootOrder: 0
+--- !u!212 &1213530410
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212278, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1213530408}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300018, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1249440248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112284, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1249440249}
+  - 212: {fileID: 1249440250}
+  m_Layer: 0
+  m_Name: SpaniardBack_Shoulder_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1249440249
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412284, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1249440248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.280006737, y: -.246405721, z: .409999996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1730704357}
+  m_Father: {fileID: 660432560}
+  m_RootOrder: 1
+--- !u!212 &1249440250
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212280, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1249440248}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1295009170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112286, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1295009171}
+  - 212: {fileID: 1295009172}
+  m_Layer: 0
+  m_Name: SpaniardSide_Hand_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1295009171
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412286, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1295009170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0656080246, y: -.321014434, z: -.319999993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 804262083}
+  m_RootOrder: 0
+--- !u!212 &1295009172
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212282, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1295009170}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300020, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1317194637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112288, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1317194638}
+  - 212: {fileID: 1317194639}
+  m_Layer: 0
+  m_Name: SpaniardSide_Foot_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1317194638
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412288, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1317194637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .140526697, y: -.458382845, z: .460000038}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 409612680}
+  m_RootOrder: 0
+--- !u!212 &1317194639
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212284, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1317194637}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300034, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1337370415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112290, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1337370416}
+  - 212: {fileID: 1337370417}
+  m_Layer: 0
+  m_Name: SpaniardSide_Backpack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1337370416
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412290, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1337370415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0467628315, y: .689764142, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486085355}
+  m_RootOrder: 0
+--- !u!212 &1337370417
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212286, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1337370415}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300036, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1354906728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112292, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1354906729}
+  - 212: {fileID: 1354906730}
+  m_Layer: 0
+  m_Name: SpaniardBack_Toes_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1354906729
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412292, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1354906728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0763737485, y: -.2327611, z: .360000134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1190016616}
+  m_RootOrder: 0
+--- !u!212 &1354906730
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212288, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1354906728}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300024, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1362959038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112294, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1362959039}
+  - 212: {fileID: 1362959040}
+  m_Layer: 0
+  m_Name: SpaniardFront_Leg_Bend_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1362959039
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412294, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1362959038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0793749392, y: -.22142534, z: -.0399999619}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2035853002}
+  m_Father: {fileID: 1672236724}
+  m_RootOrder: 0
+--- !u!212 &1362959040
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212290, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1362959038}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300042, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1387735535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112296, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1387735536}
+  - 212: {fileID: 1387735537}
+  m_Layer: 0
+  m_Name: SpaniardFront_Foot_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1387735536
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412296, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1387735535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0350764841, y: -.502478004, z: .719999313}
+  m_LocalScale: {x: 1, y: 1.16075695, z: 1}
+  m_Children:
+  - {fileID: 638928136}
+  m_Father: {fileID: 1422831770}
+  m_RootOrder: 0
+--- !u!212 &1387735537
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212292, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1387735535}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300036, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1411629022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112298, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1411629023}
+  - 212: {fileID: 1411629024}
+  m_Layer: 0
+  m_Name: SpaniardSide_Hand_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1411629023
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412298, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1411629022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.16367197, y: -.20459044, z: -.660000026}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1816586264}
+  m_RootOrder: 1
+--- !u!212 &1411629024
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212294, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1411629022}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300010, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1422831769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112300, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1422831770}
+  - 212: {fileID: 1422831771}
+  m_Layer: 0
+  m_Name: SpaniardFront_Leg_Bend_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1422831770
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412300, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1422831769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .20658952, y: -.0984929949, z: .180000305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1387735536}
+  m_Father: {fileID: 1672236724}
+  m_RootOrder: 1
+--- !u!212 &1422831771
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212296, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1422831769}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300044, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1424722870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112302, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1424722871}
+  - 212: {fileID: 1424722872}
+  m_Layer: 0
+  m_Name: SpaniardFront_Leg_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1424722871
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412302, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1424722870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.151221603, y: .116852641, z: .25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1967171774}
+  m_Father: {fileID: 1672236724}
+  m_RootOrder: 2
+--- !u!212 &1424722872
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212298, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1424722870}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300026, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1532940580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112304, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1532940581}
+  - 212: {fileID: 1532940582}
+  m_Layer: 0
+  m_Name: SpaniardFront_Hand_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1532940581
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412304, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1532940580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.14778477, y: -.268080801, z: -.289999992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1106763945}
+  m_RootOrder: 1
+--- !u!212 &1532940582
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212300, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1532940580}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300024, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1548964178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112306, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1548964179}
+  - 212: {fileID: 1548964180}
+  m_Layer: 0
+  m_Name: SpaniardSide_Hand_Closed_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1548964179
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412306, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1548964178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1816586264}
+  m_RootOrder: 0
+--- !u!212 &1548964180
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212302, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1548964178}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300038, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1583014247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112308, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1583014248}
+  - 212: {fileID: 1583014249}
+  m_Layer: 0
+  m_Name: SpaniardSide_Foot_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1583014248
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412308, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1583014247}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0100375786, y: -.478458017, z: .25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1705083633}
+  m_RootOrder: 0
+--- !u!212 &1583014249
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212304, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1583014247}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300032, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1672236723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112310, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1672236724}
+  - 212: {fileID: 1672236725}
+  m_Layer: 0
+  m_Name: SpaniardFront_Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1672236724
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412310, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1672236723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1362959039}
+  - {fileID: 1422831770}
+  - {fileID: 1424722871}
+  - {fileID: 614386393}
+  m_Father: {fileID: 817197139}
+  m_RootOrder: 0
+--- !u!212 &1672236725
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212306, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1672236723}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300028, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1672491978
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.45740891
+      objectReference: {fileID: 0}
+    - target: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 412268, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_RootGameObject: {fileID: 1028702438}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1690254226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112312, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1690254227}
+  - 95: {fileID: 1690254228}
+  - 212: {fileID: 1690254229}
+  m_Layer: 0
+  m_Name: Spaniard_Side
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1690254227
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412312, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1690254226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 518711174}
+  - {fileID: 486085355}
+  m_Father: {fileID: 1028702439}
+  m_RootOrder: 2
+--- !u!95 &1690254228
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9512202, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1690254226}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc45b47bb10f5a94eb80bb6dae38effa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1690254229
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212308, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1690254226}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1705083632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112314, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1705083633}
+  - 212: {fileID: 1705083634}
+  m_Layer: 0
+  m_Name: SpaniardSide_Leg_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1705083633
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412314, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1705083632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0620174333, y: .141753912, z: .639999866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1583014248}
+  m_Father: {fileID: 518711174}
+  m_RootOrder: 0
+--- !u!212 &1705083634
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212310, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1705083632}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300026, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1725950642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112316, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1725950643}
+  - 212: {fileID: 1725950644}
+  m_Layer: 0
+  m_Name: SpaniardBack_Leg_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1725950643
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412316, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1725950642}
+  m_LocalRotation: {x: 0, y: 0, z: .17284368, w: -.98494935}
+  m_LocalPosition: {x: -.128802985, y: .212805361, z: .49000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1190016616}
+  m_Father: {fileID: 154486071}
+  m_RootOrder: 0
+--- !u!212 &1725950644
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212312, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1725950642}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300020, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1730704356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112318, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1730704357}
+  - 212: {fileID: 1730704358}
+  m_Layer: 0
+  m_Name: SpaniardBack_Arm_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1730704357
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412318, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1730704356}
+  m_LocalRotation: {x: 0, y: 0, z: .00181498146, w: -.999998391}
+  m_LocalPosition: {x: -.201602936, y: -.0560011268, z: .610000014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1738285901}
+  m_Father: {fileID: 1249440249}
+  m_RootOrder: 0
+--- !u!212 &1730704358
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212314, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1730704356}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300008, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1738285900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112320, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1738285901}
+  - 212: {fileID: 1738285902}
+  m_Layer: 0
+  m_Name: SpaniardBack_Hand_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1738285901
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412320, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1738285900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.0186369e-05, y: -.666253328, z: .479999989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1730704357}
+  m_RootOrder: 0
+--- !u!212 &1738285902
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212316, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1738285900}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300014, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1746655505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112322, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1746655506}
+  - 212: {fileID: 1746655507}
+  m_Layer: 0
+  m_Name: SpaniardFront_Hand_Front_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1746655506
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412322, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1746655505}
+  m_LocalRotation: {x: 0, y: 0, z: -.0578060225, w: .998327851}
+  m_LocalPosition: {x: .0982107446, y: -.416514456, z: -.409999996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 743885309}
+  m_RootOrder: 0
+--- !u!212 &1746655507
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212318, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1746655505}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300054, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1803524536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112324, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1803524537}
+  - 212: {fileID: 1803524538}
+  m_Layer: 0
+  m_Name: SpaniardFront_Hand_Top_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1803524537
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412324, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1803524536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.117140949, y: -.394931108, z: -.409999996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1106763945}
+  m_RootOrder: 2
+--- !u!212 &1803524538
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212320, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1803524536}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300050, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1816586263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112326, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1816586264}
+  - 212: {fileID: 1816586265}
+  m_Layer: 0
+  m_Name: SpaniardSide_Arm_Bottom_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816586264
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412326, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1816586263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.074306488, y: -.384395957, z: -.029999733}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1548964179}
+  - {fileID: 1411629023}
+  m_Father: {fileID: 801177380}
+  m_RootOrder: 0
+--- !u!212 &1816586265
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212322, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1816586263}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300018, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1828904440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112328, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1828904441}
+  - 212: {fileID: 1828904442}
+  m_Layer: 0
+  m_Name: SpaniardSide_Belt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1828904441
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412328, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1828904440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .180000007, y: .439999998, z: -.0900000036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486085355}
+  m_RootOrder: 1
+--- !u!212 &1828904442
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212324, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1828904440}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1920781397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112330, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1920781398}
+  - 212: {fileID: 1920781399}
+  m_Layer: 0
+  m_Name: SpaniardFront_Foot_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1920781398
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412330, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1920781397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .121376321, y: -.606883526, z: .600000083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1080163099}
+  m_Father: {fileID: 614386393}
+  m_RootOrder: 0
+--- !u!212 &1920781399
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212326, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1920781397}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300036, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1964360205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112332, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1964360206}
+  - 212: {fileID: 1964360207}
+  m_Layer: 0
+  m_Name: SpaniardFront_Arm_Upper_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1964360206
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412332, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1964360205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.140911251, y: .079046905, z: .169999957}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 743885309}
+  - {fileID: 2143170548}
+  m_Father: {fileID: 867806854}
+  m_RootOrder: 0
+--- !u!212 &1964360207
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212328, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1964360205}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300004, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1967171773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112334, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1967171774}
+  - 212: {fileID: 1967171775}
+  m_Layer: 0
+  m_Name: SpaniardFront_Foot_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1967171774
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412334, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1967171773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.153878987, y: -.592289746, z: .289999962}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 146210465}
+  m_Father: {fileID: 1424722871}
+  m_RootOrder: 0
+--- !u!212 &1967171775
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212330, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 1967171773}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300034, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2020564933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112336, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2020564934}
+  - 212: {fileID: 2020564935}
+  m_Layer: 0
+  m_Name: SpaniardBack_Toes_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2020564934
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412336, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2020564933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0836476535, y: -.225485593, z: .449999988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 30479089}
+  m_RootOrder: 0
+--- !u!212 &2020564935
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212332, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2020564933}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300030, guid: ad2c6033c716a3747a2f463feca0054b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2021692945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112338, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2021692946}
+  - 95: {fileID: 2021692947}
+  m_Layer: 0
+  m_Name: Spaniard_Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2021692946
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412338, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2021692945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5.38500261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 660432560}
+  - {fileID: 154486071}
+  m_Father: {fileID: 1028702439}
+  m_RootOrder: 0
+--- !u!95 &2021692947
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9512204, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2021692945}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7bc270d7f36e4a46825c438022309c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &2026094997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112340, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2026094998}
+  - 212: {fileID: 2026094999}
+  m_Layer: 0
+  m_Name: SpaniardFront_Arm_Upper_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2026094998
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412340, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2026094997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .14666827, y: .0824786425, z: .210000038}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1106763945}
+  - {fileID: 724480629}
+  m_Father: {fileID: 488573382}
+  m_RootOrder: 0
+--- !u!212 &2026094999
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212334, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2026094997}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300012, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2035853001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112342, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2035853002}
+  - 212: {fileID: 2035853003}
+  m_Layer: 0
+  m_Name: SpaniardFront_Foot_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2035853002
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412342, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2035853001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0443019271, y: -.234667435, z: .579999924}
+  m_LocalScale: {x: .901533544, y: 1.00325406, z: 1}
+  m_Children:
+  - {fileID: 307278084}
+  m_Father: {fileID: 1362959039}
+  m_RootOrder: 0
+--- !u!212 &2035853003
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212336, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2035853001}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300034, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2071643763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112344, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2071643764}
+  - 212: {fileID: 2071643765}
+  m_Layer: 0
+  m_Name: SpaniardSide_Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2071643764
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412344, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2071643763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .187054574, y: .797448754, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 409664510}
+  - {fileID: 501035184}
+  m_Father: {fileID: 486085355}
+  m_RootOrder: 2
+--- !u!212 &2071643765
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212338, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2071643763}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300006, guid: 897fc825f0a038641b8838ad11de4d8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2105156386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112346, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2105156387}
+  - 212: {fileID: 2105156388}
+  m_Layer: 0
+  m_Name: SpaniardFront_Hand_Top_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2105156387
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412346, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2105156386}
+  m_LocalRotation: {x: 0, y: 0, z: -.0578060225, w: .998327851}
+  m_LocalPosition: {x: .123635434, y: -.401904464, z: -.50999999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 743885309}
+  m_RootOrder: 2
+--- !u!212 &2105156388
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212340, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2105156386}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300056, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2143170547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112348, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2143170548}
+  - 212: {fileID: 2143170549}
+  m_Layer: 0
+  m_Name: SpaniardFront_Arm_Front_Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2143170548
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412348, guid: d4d7afce3ce78f144be179bdb6442361, type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2143170547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.153955966, y: -.652640224, z: -.379999995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 420226425}
+  m_Father: {fileID: 1964360206}
+  m_RootOrder: 1
+--- !u!212 &2143170549
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21212342, guid: d4d7afce3ce78f144be179bdb6442361,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672491978}
+  m_GameObject: {fileID: 2143170547}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300046, guid: 1de0d01689d60bd4cbfd30e67da94ca4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}

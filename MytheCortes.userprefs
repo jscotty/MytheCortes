@@ -1,21 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\PlayerTrigger.cs">
     <Files>
-      <File FileName="Assets\Scripts\health-expbars\HitPointsScript.cs" Line="15" Column="1" />
-      <File FileName="Assets\Scripts\health-expbars\ExpBarScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\data\CharacterData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\data\SaveLoadDataSerialized.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Buttons\Joystick.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy\DummyBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy\HitDetection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Tags.cs" Line="13" Column="32" />
-      <File FileName="Assets\Scripts\Path.cs" Line="1" Column="1" />
-      <File FileName="Assets\PauseScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\AnimatorScript.cs" Line="46" Column="3" />
-      <File FileName="Assets\Scripts\Story\TutorialStory.cs" Line="14" Column="37" />
-      <File FileName="Assets\Scripts\Player\PlayerTrigger.cs" Line="8" Column="15" />
+      <File FileName="Assets\Scripts\Story\TutorialStory.cs" Line="13" Column="60" />
+      <File FileName="Assets\AutoType.cs" Line="77" Column="4" />
+      <File FileName="Assets\Scripts\Tags.cs" Line="12" Column="32" />
+      <File FileName="Assets\TalkScript.cs" Line="12" Column="3" />
+      <File FileName="Assets\Scripts\Player\PlayerController.cs" Line="53" Column="29" />
+      <File FileName="Assets\Scripts\Buttons\Joystick.cs" Line="40" Column="17" />
+      <File FileName="Assets\Scripts\data\CharacterData.cs" Line="88" Column="26" />
+      <File FileName="Assets\Scripts\health-expbars\HitPointsScript.cs" Line="47" Column="54" />
+      <File FileName="Assets\InteractButtonText.cs" Line="18" Column="20" />
+      <File FileName="Assets\Scripts\Player\PlayerTrigger.cs" Line="22" Column="3" />
+      <File FileName="Assets\Scripts\Player\AnimatorScript.cs" Line="55" Column="11" />
+      <File FileName="Assets\Scripts\Story\Names.cs" Line="7" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

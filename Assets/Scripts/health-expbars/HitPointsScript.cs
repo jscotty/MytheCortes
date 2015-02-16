@@ -10,6 +10,7 @@ public class HitPointsScript : MonoBehaviour {
 	private float minXValue;
 	private float maxXValue;
 	private int currentHealth;
+	public Text healtText;
 
 	public int health;
 
@@ -42,6 +43,8 @@ public class HitPointsScript : MonoBehaviour {
 		HandleHealth ();
 
 		currentHealth = health;
+
+		healtText.text = currentHealth + " / " + maxHealth;
 	}
 	
 	private void HandleHealth(){

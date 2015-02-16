@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class CharacterData : MonoBehaviour {
 	private Vector2 _position;
-	private int _exp;
+	//private int _exp;
 	private int _health;
 	private int _gold;
 	private int _level;
@@ -14,16 +14,17 @@ public class CharacterData : MonoBehaviour {
 	private int _weapon;
 	
 	#region Getter and setters for Position + updating Position
-		public Vector2 GetPosition(){
-			return _position;
-		}
-		
-		public void SetPosition(Vector2 position){
-			_position = position;
+		public Vector2 position{
+			get {
+				return _position;
+			}
+			set {
+				_position = value;
+			}
 		}
 	#endregion
 
-	#region Getter and setters for exp + updating exp
+	/*#region Getter and setters for exp + updating exp
 		public int GetExp(){
 			return _exp;
 		}
@@ -35,89 +36,71 @@ public class CharacterData : MonoBehaviour {
 		public void UpdateExp(int amount){
 			_exp += amount;
 		}
-	#endregion
+	#endregion*/
 	
 	#region Getter and setters for Health + updating Health
-		public int GetHealth(){
-			return _health;
-		}
-		
-		public void SetHeath(int amount){
-			_health = amount;
-		}
-		
-		public void UpdateHealth(int amount){
-			_health += amount;
+		public int health{
+			get{
+				return _health;
+			}
+			set{
+				_health = value;
+			}
 		}
 	#endregion
 	
 	#region Getter and setters for gold + updating Gold
-		public int GetGold(){
+	public int gold{
+		get{
 			return _gold;
 		}
-		
-		public void SetGold(int amount){
-			_gold = amount;
+		set{
+			_gold = value;
 		}
-		
-		public void UpdateGold(int amount){
-			_gold += amount;
-		}
+	}
 	#endregion
 	
 	#region Getter and setters for Level + updating Level
-	public int GetLevel(){
-		return _level;
-	}
-	
-	public void SetLevel(int amount){
-		_level = amount;
-	}
-	
-	public void UpdateLevel(int amount){
-		_level += amount;
+	public int level{
+		get{
+			return _level;
+		}
+		set{
+			_level = value;
+		}
 	}
 	#endregion
 	
 	#region Getter and setters for Quest + updating Quest
-	public int GetQuest(){
-		return _quest;
-	}
-	
-	public void SetQuest(int amount){
-		_quest = amount;
-	}
-	
-	public void UpdateQuest(int amount){
-		_quest += amount;
+	public int quest{
+		get{
+			return _quest;
+		}
+		set{
+			_quest = value;
+		}
 	}
 	#endregion
 	
 	#region Getter and setters for QuestProgress + updating QuestProgress
-	public int GetQuestProgress(){
-		return _questProgress;
-	}
-	
-	public void SetQuestProgress(int amount){
-		_questProgress = amount;
-	}
-	
-	public void UpdateQuestProgress(int amount){
-		_questProgress += amount;
+	public int questProgress{
+		get{
+			return _questProgress;
+		}
+		set{
+			_questProgress = value;
+		}
 	}
 	#endregion
 
 	#region Getter and setters for weapon + updating weapon
-	public int GetWeapon(){
-		return _weapon;
-	}
-	
-	public void SetWeapon(int amount){
-		_weapon = amount;
-	}
-	
-	public void UpdateWeapon(int amount){
-		_weapon += amount;
+	public int weapon{
+		get{
+			return _weapon;
+		}
+		set{
+			_weapon = value;
+		}
 	}
 	#endregion
 }
