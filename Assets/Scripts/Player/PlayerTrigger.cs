@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerTrigger : MonoBehaviour {
 	InteractButtonText btnText;
-	AnimatorScript swordAnim;
+	SwordAnim swordAnim;
 	TalkScript talkScript;
 	Joystick joystick;
 	bool talk;
@@ -15,7 +15,7 @@ public class PlayerTrigger : MonoBehaviour {
 		this.joystick = joysick.GetComponent<Joystick> ();
 
 		GameObject sword = GameObject.FindGameObjectWithTag (Tags.ATTACK);
-		swordAnim = sword.GetComponent<AnimatorScript> ();
+		swordAnim = sword.GetComponent<SwordAnim> ();
 
 		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
 		talkScript = ui.GetComponent<TalkScript> ();

@@ -14,7 +14,7 @@ public class DummyBehaviour : MonoBehaviour {
 		if (damaging) {
 			spriteRenderer.color = Color.yellow;
 		} else {
-			spriteRenderer.color = Color.red;
+			spriteRenderer.color = Color.white;
 		}
 	}
 

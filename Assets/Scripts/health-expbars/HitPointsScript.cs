@@ -32,7 +32,7 @@ public class HitPointsScript : MonoBehaviour {
 		health = 500;
 		cachedY = healthTransform.position.y;
 		maxXValue = healthTransform.position.x;
-		minXValue = -healthTransform.position.x + healthTransform.rect.width - 30f;
+		minXValue = healthTransform.rect.width;
 
 		currentHealth = maxHealth;
 		onCD = false;
@@ -52,9 +52,9 @@ public class HitPointsScript : MonoBehaviour {
 		healthTransform.position = new Vector3 (currentXValue, cachedY);
 		
 		if (currentHealth > maxHealth/2) {
-			visualHealth.color = new Color32((byte)MapValues(currentHealth,maxHealth/2,maxHealth,255,0), 203, 0, 255);
+			//visualHealth.color = new Color32(255,0,255, 255);
 		}else {
-			visualHealth.color = new Color32(255,(byte)MapValues(currentHealth,0,maxHealth/2,0,255), 0, 255);
+		//	visualHealth.color = new Color32(255,61, 0, 255);
 		}
 	}
 	
