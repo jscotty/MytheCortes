@@ -10,6 +10,7 @@ public class CharacterData : MonoBehaviour {
 	private int _gold;
 	private int _level;
 	private int _quest;
+	private int _questDone;
 	private int _questProgress;
 	private int _weapon;
 	
@@ -82,6 +83,17 @@ public class CharacterData : MonoBehaviour {
 	}
 	#endregion
 	
+	#region Getter and setters for questDone
+	public int questDone{
+		get{
+			return _questDone;
+		}
+		set{
+			_questDone = value;
+		}
+	}
+	#endregion
+
 	#region Getter and setters for QuestProgress + updating QuestProgress
 	public int questProgress{
 		get{

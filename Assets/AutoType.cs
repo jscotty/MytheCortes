@@ -10,6 +10,8 @@ public class AutoType : MonoBehaviour {
 	TutorialStory tutStory;
 	string _npc;
 	TalkScript talk;
+	CharacterData _playerData;
+	int _quest, _questProgress, _questDone;
 
 	private int _i;
 	public int index{
@@ -28,15 +30,35 @@ public class AutoType : MonoBehaviour {
 
 		GameObject uiContr = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
 		talk = uiContr.GetComponent<TalkScript> ();
+
+		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
+		_playerData = player.GetComponent<CharacterData> ();
+
 		//StartType ("TS1");
 	}
 
 	public void StartType(string NPC){
 		_npc = NPC;
 		_i = index;
+
+		_quest = _playerData.quest;
+		_questProgress = _playerData.questProgress;
+		_questDone = _playerData.questDone;
+
+		//print ("_quest (" + _quest + ") _questProgress(" + _questProgress + ") _questdone(" + _questDone + ")");
+
 		switch (NPC) {
 			case Names.TUT_SOLDIER1:
-				Type(tutStory.TT1);
+				if(_quest <= 1 && _questProgress < 100 && _questDone < 1){
+					Type(tutStory.TT1_01);
+					_playerData.quest = 1;
+				} else if(_quest == 1 && _questProgress == 100){
+					Type(tutStory.TT1_02);
+					_playerData.questDone ++;
+					ResetPlayerQuestData();
+				} else if(_questDone > 0){
+					Type(tutStory.TT1_03);
+				}
 				break;
 			default:
 				//nothing
@@ -58,6 +80,11 @@ public class AutoType : MonoBehaviour {
 	public void Skip(){
 		index = 900;
 		StartType (_npc);
+	}
+
+	public void ResetPlayerQuestData(){
+		_playerData.quest = 0;
+		_playerData.questProgress = 0;
 	}
 
 	void Type(string[] arg){

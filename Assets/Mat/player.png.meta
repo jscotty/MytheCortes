@@ -49,29 +49,29 @@ TextureImporter:
     - name: player_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1
-        width: 148
-        height: 228
+        x: 0
+        y: 0
+        width: 138
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_1
       rect:
         serializedVersion: 2
-        x: 185
+        x: 162
         y: 1
-        width: 144
-        height: 229
+        width: 135
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_2
       rect:
         serializedVersion: 2
-        x: 368
+        x: 321
         y: 1
-        width: 117
+        width: 126
         height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
