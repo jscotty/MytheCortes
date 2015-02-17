@@ -2,42 +2,61 @@
 using System.Collections;
 
 public class PlayerTrigger : MonoBehaviour {
-	InteractButtonText btnText;
-	SwordAnim swordAnim;
-	TalkScript talkScript;
-	Joystick joystick;
-	bool talk;
+	InteractButtonText _btnText;
+	SwordAnim _swordAnim;
+	TalkScript _talkScript;
+	Joystick _joystick;
+	CharacterData _playerData;
+	bool _talk;
 	float _count;
+	float _textIndex;
 
 	void Start(){
 		GameObject joysick = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
-		btnText = joysick.GetComponent<InteractButtonText> ();
-		this.joystick = joysick.GetComponent<Joystick> ();
+		_btnText = joysick.GetComponent<InteractButtonText> ();
+		_joystick = joysick.GetComponent<Joystick> ();
 
 		GameObject sword = GameObject.FindGameObjectWithTag (Tags.ATTACK);
-		swordAnim = sword.GetComponent<SwordAnim> ();
+		_swordAnim = sword.GetComponent<SwordAnim> ();
 
 		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
-		talkScript = ui.GetComponent<TalkScript> ();
+		_talkScript = ui.GetComponent<TalkScript> ();
+
+		_playerData = gameObject.GetComponent<CharacterData> ();
 	}
 
 	void OnTriggerStay2D(Collider2D other){
 		if (other.tag == Tags.NPC) {
-			btnText.message = "Talk";
-			swordAnim.talk = true;
-			talk = joystick.GetInteract();
-			if(talk){
+			_btnText.message = "Talk";
+			_swordAnim.talk = true;
+			_talk = _joystick.GetInteract();
+			if(_talk){
 				_count ++;
 				if(_count <= 1f) {
-					talkScript.StartTalk(other.name);
-					swordAnim.attack = false;
+					_talkScript.StartTalk(other.name);
+					_swordAnim.attack = false;
 				}
 			}
 		}
 	}
+
 	void OnTriggerExit2D(Collider2D other){
-		btnText.message = "Attack";
-		swordAnim.talk = false;
+		_btnText.message = "Attack";
+		_swordAnim.talk = false;
 		_count = 0f;
+		_textIndex = 0;
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == Tags.TUTORIAL_DOOR) {
+			if(_playerData.questDone >= 1){
+
+			} else {
+				_textIndex ++;
+				if(_textIndex == 1){
+					_talkScript.StartTalk(this.name);
+				}
+			}
+		}
 	}
 }

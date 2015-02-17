@@ -6,12 +6,14 @@ public class AutoType : MonoBehaviour {
 		
 	public Text txt;
 	string _message;
-	float seconds = 0.03f;
-	TutorialStory tutStory;
+	float seconds = 0.01f;
+	Story tutStory;
 	string _npc;
 	TalkScript talk;
 	CharacterData _playerData;
+	PlayerController _playerController;
 	int _quest, _questProgress, _questDone;
+	Joystick joystick;
 
 	private int _i;
 	public int index{
@@ -26,13 +28,17 @@ public class AutoType : MonoBehaviour {
 	void Start(){
 		_i = 0;
 		index = 0;
-		tutStory = gameObject.GetComponent<TutorialStory> ();
+		tutStory = gameObject.GetComponent<Story> ();
 
 		GameObject uiContr = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
 		talk = uiContr.GetComponent<TalkScript> ();
 
 		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
 		_playerData = player.GetComponent<CharacterData> ();
+		_playerController = player.GetComponent<PlayerController>();
+
+		GameObject joystick = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
+		this.joystick = joystick.GetComponent<Joystick> ();
 
 		//StartType ("TS1");
 	}
@@ -44,6 +50,7 @@ public class AutoType : MonoBehaviour {
 		_quest = _playerData.quest;
 		_questProgress = _playerData.questProgress;
 		_questDone = _playerData.questDone;
+		_playerController.SetMove (false);
 
 		//print ("_quest (" + _quest + ") _questProgress(" + _questProgress + ") _questdone(" + _questDone + ")");
 
@@ -60,6 +67,9 @@ public class AutoType : MonoBehaviour {
 					Type(tutStory.TT1_03);
 				}
 				break;
+			case Names.PLAYER:
+				Type(tutStory.PT_01);
+				break;
 			default:
 				//nothing
 				EndType();
@@ -71,9 +81,12 @@ public class AutoType : MonoBehaviour {
 	public void EndType(){
 		index = 0;
 		talk.StopTalk ();
+		joystick.SetInteract (false);
+		_playerController.SetMove (true);
 	}
 
 	public void Next(){
+		_message = "";
 		index ++;
 		StartType (_npc);
 	}
