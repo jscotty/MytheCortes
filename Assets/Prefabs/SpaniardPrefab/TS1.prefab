@@ -1080,7 +1080,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 196332}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1.33000004, y: 2.17000008}
   m_Center: {x: .230000004, y: -1.22000003}
 --- !u!95 &9535536

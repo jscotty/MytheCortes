@@ -5,18 +5,16 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class SaveLoadDataSerialized : MonoBehaviour {
 
-	//public Resources resources;
-	
 	public void Save () {
 		/*Binary formatter maakt de saved data binair waardoor het moeilijk te hacken
 		 is voor de user*/
 		BinaryFormatter binaryFormatter = new BinaryFormatter ();
 		FileStream file = File.Create (Application.persistentDataPath + Path.SAVE_DATA_PATH); // ".dat" staat voor data, dit mag alle namen bevatten die nog geen extentie hebben in je hardware
 
-		SaveData saveData = new SaveData();
-		//saveData.gold = resources.getGold();
+		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
+		CharacterData playerData = player.GetComponent<CharacterData> ();
 
-		binaryFormatter.Serialize (file, saveData);
+		binaryFormatter.Serialize (file, playerData);
 		file.Close ();
 
 		Debug.Log ("Saved");
@@ -27,7 +25,7 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 			BinaryFormatter binaryFormatter = new BinaryFormatter ();
 			FileStream file = File.Open(Application.persistentDataPath + Path.SAVE_DATA_PATH, FileMode.Open);
 
-			SaveData saveData = (SaveData)binaryFormatter.Deserialize(file);
+			CharacterData playerData = (CharacterData)binaryFormatter.Deserialize(file);
 			//resources.SetGold(saveData.gold);
 			Debug.Log ("Loaded");
 		}

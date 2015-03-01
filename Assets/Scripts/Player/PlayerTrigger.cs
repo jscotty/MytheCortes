@@ -7,9 +7,11 @@ public class PlayerTrigger : MonoBehaviour {
 	TalkScript _talkScript;
 	Joystick _joystick;
 	CharacterData _playerData;
+	SaveLoadDataSerialized _saveLoadData;
 	bool _talk;
 	float _count;
 	float _textIndex;
+	bool _fade;
 
 	void Start(){
 		GameObject joysick = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
@@ -21,6 +23,11 @@ public class PlayerTrigger : MonoBehaviour {
 
 		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
 		_talkScript = ui.GetComponent<TalkScript> ();
+
+		GameObject save = GameObject.FindGameObjectWithTag (Tags.SAVE);
+		_saveLoadData = save.GetComponent<SaveLoadDataSerialized> ();
+
+		_saveLoadData.Load ();
 
 		_playerData = gameObject.GetComponent<CharacterData> ();
 	}
@@ -50,13 +57,20 @@ public class PlayerTrigger : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == Tags.TUTORIAL_DOOR) {
 			if(_playerData.questDone >= 1){
-
+				_saveLoadData.Save();
+				Application.LoadLevel(1);
 			} else {
 				_textIndex ++;
 				if(_textIndex == 1){
 					_talkScript.StartTalk(this.name);
 				}
 			}
+		}
+	}
+
+	void Update(){
+		if (_fade) {
+
 		}
 	}
 }

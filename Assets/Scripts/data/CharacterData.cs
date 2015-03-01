@@ -3,6 +3,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 
+[System.Serializable]
 public class CharacterData : MonoBehaviour {
 	private Vector2 _position;
 	//private int _exp;

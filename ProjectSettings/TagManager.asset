@@ -14,9 +14,16 @@ TagManager:
   - UIController
   - Talk
   - InteractBtn
-  - 
+  - Save
   - Village
   - TutDoor
+  - 
+  - 
+  - 
+  - TownTR
+  - TownTL
+  - TownBL
+  - TownBR
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

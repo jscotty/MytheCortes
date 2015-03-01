@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour {
 			MovePlayer();
 			Rotate ();
 		} else {
-
+			_body.velocity = new Vector2(0f,0f);
 		}
 	}
 
