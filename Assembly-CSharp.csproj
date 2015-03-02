@@ -49,7 +49,6 @@
      <Compile Include="Assets\DoorTrigger.cs" />
      <Compile Include="Assets\FadeMaterials.cs" />
      <Compile Include="Assets\Fader.cs" />
-     <Compile Include="Assets\Scripts\Buttons\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\Buttons\InteractButtonText.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
      <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
