@@ -3,9 +3,10 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 
-[System.Serializable]
+//System.Serializable]
 public class CharacterData : MonoBehaviour {
-	private Vector2 _position;
+	private int _positionY;
+	private int _positionX;
 	//private int _exp;
 	private int _health;
 	private int _gold;
@@ -16,12 +17,21 @@ public class CharacterData : MonoBehaviour {
 	private int _weapon;
 	
 	#region Getter and setters for Position + updating Position
-		public Vector2 position{
+		public int positionY{
 			get {
-				return _position;
+				return _positionY;
 			}
 			set {
-				_position = value;
+				_positionY = value;
+			}
+		}
+
+		public int positionX{
+			get {
+				return _positionX;
+			}
+			set {
+				_positionX = value;
 			}
 		}
 	#endregion

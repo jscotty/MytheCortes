@@ -26,8 +26,7 @@ public class Story : MonoBehaviour {
 
 #region PlayerMessages
 	public readonly string[] PT_01 = {
-		"Soldier: Yo man! please complete my quest",
-		"Cortez: Okayy sexy <3..................................."
+		"I wonder why i can't go away.."
 	};
 
 #endregion

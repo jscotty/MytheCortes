@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{C8E84BF5-36BC-5B6B-9816-39FB5D3DB157}") = "MytheCortes", "Assembly-CSharp-firstpass-vs.csproj", "{25585C18-CF4C-EF86-46FA-F355743A6D36}"
+EndProject
 Project("{C8E84BF5-36BC-5B6B-9816-39FB5D3DB157}") = "MytheCortes", "Assembly-CSharp-vs.csproj", "{9BA092E5-9307-D606-DEED-58169CF116D7}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25585C18-CF4C-EF86-46FA-F355743A6D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25585C18-CF4C-EF86-46FA-F355743A6D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25585C18-CF4C-EF86-46FA-F355743A6D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25585C18-CF4C-EF86-46FA-F355743A6D36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BA092E5-9307-D606-DEED-58169CF116D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9BA092E5-9307-D606-DEED-58169CF116D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BA092E5-9307-D606-DEED-58169CF116D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

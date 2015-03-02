@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour {
 	
 	Joystick _joystick;
 
+	CharacterData _playerData;
+
 	void Start(){
 		_scale.x = 1;
 		_scale.y = 1;
@@ -35,6 +37,7 @@ public class PlayerController : MonoBehaviour {
 		_joystick = joystickController.GetComponent<Joystick> ();
 
 		_spriteRenderer = gameObject.GetComponent<SpriteRenderer> ();
+		_playerData = gameObject.GetComponent<CharacterData> ();
 	}
 
 	void FixedUpdate () {

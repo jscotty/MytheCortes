@@ -16,4 +16,5 @@ public class Tags : MonoBehaviour {
 	public const string INTERACT_BTN 		= "InteractBtn";
 	public const string TUTORIAL_DOOR 		= "TutDoor";
 	public const string SAVE 				= "Save";
+	public const string FEET 				= "Feet";
 }

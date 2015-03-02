@@ -3,11 +3,13 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Fader : MonoBehaviour {
-	Image _image;
 
 	void Start(){
-		_image = gameObject.GetComponent<Image> ();
-		//FadeIn ();
+		gameObject.GetComponent<FadeMaterials> ().FadeOut ();
+	}
+
+	public void FadeIn(){
+		gameObject.GetComponent<FadeMaterials> ().FadeIn ();
 	}
 
 

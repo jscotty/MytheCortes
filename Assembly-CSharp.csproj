@@ -46,35 +46,45 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DoorTrigger.cs" />
+     <Compile Include="Assets\FadeMaterials.cs" />
      <Compile Include="Assets\Fader.cs" />
      <Compile Include="Assets\Scripts\Buttons\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\Buttons\InteractButtonText.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
      <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
-     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Camera\FollowCharacter.cs" />
      <Compile Include="Assets\Scripts\CubeColor.cs" />
      <Compile Include="Assets\Scripts\Enemy\DummyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Enemy\HitDetection.cs" />
+     <Compile Include="Assets\Scripts\Loading\LoadingScreen.cs" />
      <Compile Include="Assets\Scripts\MapCheck.cs" />
      <Compile Include="Assets\Scripts\PProgresion.cs" />
-     <Compile Include="Assets\Scripts\Path.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerTrigger.cs" />
      <Compile Include="Assets\Scripts\Player\SwordAnim.cs" />
      <Compile Include="Assets\Scripts\Quest.cs" />
+     <Compile Include="Assets\Scripts\References\MethodNames.cs" />
+     <Compile Include="Assets\Scripts\References\Path.cs" />
+     <Compile Include="Assets\Scripts\References\Tags.cs" />
      <Compile Include="Assets\Scripts\Story\Names.cs" />
      <Compile Include="Assets\Scripts\Story\Story.cs" />
-     <Compile Include="Assets\Scripts\Tags.cs" />
      <Compile Include="Assets\Scripts\Talk\AutoType.cs" />
      <Compile Include="Assets\Scripts\Talk\TalkScript.cs" />
      <Compile Include="Assets\Scripts\data\CharacterData.cs" />
      <Compile Include="Assets\Scripts\data\SaveLoadDataSerialized.cs" />
      <Compile Include="Assets\Scripts\health-expbars\ExpBarScript.cs" />
      <Compile Include="Assets\Scripts\health-expbars\HitPointsScript.cs" />
+     <Compile Include="Assets\SortingLayer.cs" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{25585C18-CF4C-EF86-46FA-F355743A6D36}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

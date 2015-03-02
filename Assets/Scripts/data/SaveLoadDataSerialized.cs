@@ -4,42 +4,61 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public class SaveLoadDataSerialized : MonoBehaviour {
+	
+	public CharacterData characterData;
+
+	void Start(){
+		if (File.Exists (Application.persistentDataPath + "/SaveData.dat")) {
+			Load();
+		}
+	}
 
 	public void Save () {
 		/*Binary formatter maakt de saved data binair waardoor het moeilijk te hacken
 		 is voor de user*/
 		BinaryFormatter binaryFormatter = new BinaryFormatter ();
-		FileStream file = File.Create (Application.persistentDataPath + Path.SAVE_DATA_PATH); // ".dat" staat voor data, dit mag alle namen bevatten die nog geen extentie hebben in je hardware
+		FileStream file = File.Create (Application.persistentDataPath + "/SaveData.dat"); // ".dat" staat voor data, dit mag alle namen bevatten die nog geen extentie hebben in je hardware
 
-		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
-		CharacterData playerData = player.GetComponent<CharacterData> ();
+		SaveData saveData = new SaveData();
+		saveData.health = characterData.health;
+		saveData.gold = characterData.gold;
+		saveData.level = characterData.level;
+		saveData.quest = characterData.quest;
+		saveData.questProgress = characterData.questProgress;
+		saveData.questDone = characterData.questDone;
 
-		binaryFormatter.Serialize (file, playerData);
+		
+		binaryFormatter.Serialize (file, saveData);
 		file.Close ();
-
-		Debug.Log ("Saved");
+		
+		//Debug.Log ("Saved");
 	}
 	
 	public void Load () {
-		if (File.Exists (Application.persistentDataPath + Path.SAVE_DATA_PATH)) {
+		if (File.Exists (Application.persistentDataPath + "/SaveData.dat")) {
 			BinaryFormatter binaryFormatter = new BinaryFormatter ();
-			FileStream file = File.Open(Application.persistentDataPath + Path.SAVE_DATA_PATH, FileMode.Open);
-
-			CharacterData playerData = (CharacterData)binaryFormatter.Deserialize(file);
-			//resources.SetGold(saveData.gold);
-			Debug.Log ("Loaded");
+			FileStream file = File.Open(Application.persistentDataPath + "/SaveData.dat", FileMode.Open);
+			
+			SaveData saveData = (SaveData)binaryFormatter.Deserialize(file);
+			characterData.health = saveData.health;
+			characterData.gold = saveData.gold;
+			characterData.level = saveData.level;
+			characterData.quest = saveData.quest;
+			characterData.questProgress = saveData.questProgress;
+			characterData.questDone = saveData.questDone;
+			//Debug.Log ("Loaded");
 		}
-
+		
 	}
 }
 [System.Serializable] // zorgt ervoor dat je die kan wegschrijven naar unity
 public class SaveData{
-	
-	public Vector2 position;
+
 	public int exp;
 	public int health;
 	public int gold;
 	public int level;
 	public int quest;
 	public int questProgress;
+	public int questDone;
 }

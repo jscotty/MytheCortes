@@ -6,14 +6,15 @@ public class PlayerTrigger : MonoBehaviour {
 	SwordAnim _swordAnim;
 	TalkScript _talkScript;
 	Joystick _joystick;
-	CharacterData _playerData;
-	SaveLoadDataSerialized _saveLoadData;
 	bool _talk;
 	float _count;
-	float _textIndex;
 	bool _fade;
 
 	void Start(){
+		
+		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
+		_talkScript = ui.GetComponent<TalkScript> ();
+
 		GameObject joysick = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
 		_btnText = joysick.GetComponent<InteractButtonText> ();
 		_joystick = joysick.GetComponent<Joystick> ();
@@ -21,15 +22,6 @@ public class PlayerTrigger : MonoBehaviour {
 		GameObject sword = GameObject.FindGameObjectWithTag (Tags.ATTACK);
 		_swordAnim = sword.GetComponent<SwordAnim> ();
 
-		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
-		_talkScript = ui.GetComponent<TalkScript> ();
-
-		GameObject save = GameObject.FindGameObjectWithTag (Tags.SAVE);
-		_saveLoadData = save.GetComponent<SaveLoadDataSerialized> ();
-
-		_saveLoadData.Load ();
-
-		_playerData = gameObject.GetComponent<CharacterData> ();
 	}
 
 	void OnTriggerStay2D(Collider2D other){
@@ -51,26 +43,6 @@ public class PlayerTrigger : MonoBehaviour {
 		_btnText.message = "Attack";
 		_swordAnim.talk = false;
 		_count = 0f;
-		_textIndex = 0;
 	}
-
-	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == Tags.TUTORIAL_DOOR) {
-			if(_playerData.questDone >= 1){
-				_saveLoadData.Save();
-				Application.LoadLevel(1);
-			} else {
-				_textIndex ++;
-				if(_textIndex == 1){
-					_talkScript.StartTalk(this.name);
-				}
-			}
-		}
-	}
-
-	void Update(){
-		if (_fade) {
-
-		}
-	}
+	
 }
