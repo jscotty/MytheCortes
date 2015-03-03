@@ -46,9 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ChoosenCharacter.cs" />
      <Compile Include="Assets\DoorTrigger.cs" />
      <Compile Include="Assets\FadeMaterials.cs" />
      <Compile Include="Assets\Fader.cs" />
+     <Compile Include="Assets\LoadCharacterData.cs" />
+     <Compile Include="Assets\MainMenuController.cs" />
+     <Compile Include="Assets\SavesCheck.cs" />
      <Compile Include="Assets\Scripts\Buttons\InteractButtonText.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
      <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
@@ -64,6 +68,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerTrigger.cs" />
      <Compile Include="Assets\Scripts\Player\SwordAnim.cs" />
      <Compile Include="Assets\Scripts\Quest.cs" />
+     <Compile Include="Assets\Scripts\References\ButtonNames.cs" />
      <Compile Include="Assets\Scripts\References\MethodNames.cs" />
      <Compile Include="Assets\Scripts\References\Path.cs" />
      <Compile Include="Assets\Scripts\References\Tags.cs" />

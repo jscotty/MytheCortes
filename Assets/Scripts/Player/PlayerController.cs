@@ -33,8 +33,10 @@ public class PlayerController : MonoBehaviour {
 		_move = true;
 		_body = rigidbody2D;
 		_trans = transform;
+
 		GameObject joystickController = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
-		_joystick = joystickController.GetComponent<Joystick> ();
+		if(joystickController != null)
+			_joystick = joystickController.GetComponent<Joystick> ();
 
 		_spriteRenderer = gameObject.GetComponent<SpriteRenderer> ();
 		_playerData = gameObject.GetComponent<CharacterData> ();
@@ -53,8 +55,10 @@ public class PlayerController : MonoBehaviour {
 	/// Moves the player.
 	/// </summary>
 	private void MovePlayer(){
-		x = _joystick.GetXAxis ();
-		y = _joystick.GetYAxis ();
+		if (_joystick != null) {
+			x = _joystick.GetXAxis ();
+			y = _joystick.GetYAxis ();
+		}
 		// moving with Velocity for an stable collision ( without shake bounding )
 		Vector2 moveVelocity = _body.velocity;
 		moveVelocity.x = x;

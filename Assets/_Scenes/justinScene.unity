@@ -5204,7 +5204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 681846182}
-  level: 1
+  level: 3
   questDone: 1
 --- !u!1 &1439474596
 GameObject:

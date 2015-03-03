@@ -13,11 +13,14 @@ public class PlayerTrigger : MonoBehaviour {
 	void Start(){
 		
 		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
-		_talkScript = ui.GetComponent<TalkScript> ();
+		if (ui != null)
+			_talkScript = ui.GetComponent<TalkScript> ();
 
 		GameObject joysick = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
-		_btnText = joysick.GetComponent<InteractButtonText> ();
-		_joystick = joysick.GetComponent<Joystick> ();
+		if (joysick != null) {
+			_btnText = joysick.GetComponent<InteractButtonText> ();
+			_joystick = joysick.GetComponent<Joystick> ();
+		}
 
 		GameObject sword = GameObject.FindGameObjectWithTag (Tags.ATTACK);
 		_swordAnim = sword.GetComponent<SwordAnim> ();

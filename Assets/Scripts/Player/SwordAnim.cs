@@ -15,7 +15,8 @@ public class SwordAnim : MonoBehaviour {
 		swordAnim = GetComponent<Animator> ();
 
 		GameObject joystickController = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
-		_joystick = joystickController.GetComponent<Joystick> ();
+		if(joystickController != null)
+			_joystick = joystickController.GetComponent<Joystick> ();
 
 		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
 		_playerController = player.GetComponent<PlayerController> ();
@@ -23,14 +24,16 @@ public class SwordAnim : MonoBehaviour {
 	}
 
 	void Update(){
-		if (_attack == true && !_talk) {
-			swordAnim.SetBool("Attack", true);
-			_move = false;
-			_playerController.SetAttack (_attack);
-			_playerController.SetMove (_move);
-			//collider2D.isTrigger = true;
-		} else {
-			_attack = _joystick.GetInteract();
+		if(_joystick != null){
+			if (_attack == true && !_talk) {
+				swordAnim.SetBool("Attack", true);
+				_move = false;
+				_playerController.SetAttack (_attack);
+				_playerController.SetMove (_move);
+				//collider2D.isTrigger = true;
+			} else {
+				_attack = _joystick.GetInteract();
+			}
 		}
 	}
 

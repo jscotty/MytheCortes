@@ -4957,8 +4957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 1341778835}
-  level: 0
-  questDone: 1
+  level: 2
+  questDone: 0
 --- !u!61 &1646984801
 BoxCollider2D:
   m_ObjectHideFlags: 0
