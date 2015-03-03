@@ -1,19 +1,21 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\PlayerTrigger.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\data\SaveLoadDataSerialized.cs">
     <Files>
-      <File FileName="Assets\Scripts\Loading\LoadingScreen.cs" Line="7" Column="25" />
+      <File FileName="Assets\Scripts\Loading\LoadingScreen.cs" Line="22" Column="18" />
       <File FileName="Assets\Scripts\data\CharacterData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerTrigger.cs" Line="66" Column="2" />
+      <File FileName="Assets\Scripts\Player\PlayerTrigger.cs" Line="23" Column="49" />
       <File FileName="Assets\Scripts\Enemy\HitDetection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\data\SaveLoadDataSerialized.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\data\SaveLoadDataSerialized.cs" Line="33" Column="3" />
+      <File FileName="Assets\Scripts\Player\PlayerController.cs" Line="56" Column="1" />
       <File FileName="Assets\Fader.cs" Line="1" Column="1" />
-      <File FileName="Assets\FadeMaterials.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\References\Path.cs" Line="1" Column="1" />
+      <File FileName="Assets\FadeMaterials.cs" Line="8" Column="39" />
+      <File FileName="Assets\Scripts\References\Path.cs" Line="5" Column="39" />
       <File FileName="Assets\Scripts\References\MethodNames.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Camera\FollowCharacter.cs" Line="18" Column="2" />
+      <File FileName="Assets\Scripts\Camera\FollowCharacter.cs" Line="1" Column="1" />
       <File FileName="Assets\SortingLayer.cs" Line="13" Column="37" />
+      <File FileName="Assets\DoorTrigger.cs" Line="34" Column="5" />
+      <File FileName="Assets\Scripts\Story\Story.cs" Line="29" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -7,19 +7,43 @@ public class Joystick : MonoBehaviour {
 
 	private bool _interact;
 
-	public void OnDown(string button){
-		if (button == "RIGHT") {
+	enum Direction { North, South, West, East, Idle};
+
+	void Start(){
+		Direction myDirection;
+
+		myDirection = Direction.North;
+
+
+	}
+
+	Direction ReverseDirection(Direction dir){
+		if (dir == Direction.North) {
+			_xAxis = 0f;
+			_yAxis = 1f;
+		} else if(dir == Direction.South){
+			_xAxis = 0f;
+			_yAxis = -1f;
+		} else if(dir == Direction.West){
+			_xAxis = -1f;
+			_yAxis = 0f;
+		} else if(dir == Direction.East){
 			_xAxis = 1f;
 			_yAxis = 0f;
+		}
+
+		return dir;
+	}
+
+	public void OnDown(string button){
+		if (button == "RIGHT") {
+			ReverseDirection(Direction.East);
 		} else if (button == "LEFT") {
-			_xAxis = -1f;
-			_yAxis = 0;
+			ReverseDirection(Direction.West);
 		} else if (button == "UP") {
-			_xAxis = 0;
-			_yAxis = 1f;
+			ReverseDirection(Direction.North);
 		} else if (button == "DOWN") {
-			_xAxis = 0;
-			_yAxis = -1f;
+			ReverseDirection(Direction.South);
 		} else if (button == "INTERACT") {
 			_interact = true;
 		}
