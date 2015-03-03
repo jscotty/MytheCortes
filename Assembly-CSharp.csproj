@@ -46,13 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ChoosenCharacter.cs" />
-     <Compile Include="Assets\DoorTrigger.cs" />
-     <Compile Include="Assets\FadeMaterials.cs" />
-     <Compile Include="Assets\Fader.cs" />
-     <Compile Include="Assets\LoadCharacterData.cs" />
-     <Compile Include="Assets\MainMenuController.cs" />
-     <Compile Include="Assets\SavesCheck.cs" />
      <Compile Include="Assets\Scripts\Buttons\InteractButtonText.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
      <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
@@ -62,11 +55,16 @@
      <Compile Include="Assets\Scripts\Enemy\HitDetection.cs" />
      <Compile Include="Assets\Scripts\Loading\LoadingScreen.cs" />
      <Compile Include="Assets\Scripts\MapCheck.cs" />
+     <Compile Include="Assets\Scripts\Menu\MainMenuController.cs" />
      <Compile Include="Assets\Scripts\PProgresion.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerTrigger.cs" />
      <Compile Include="Assets\Scripts\Player\SwordAnim.cs" />
+     <Compile Include="Assets\Scripts\Props\DoorTrigger.cs" />
+     <Compile Include="Assets\Scripts\Props\FadeMaterials.cs" />
+     <Compile Include="Assets\Scripts\Props\Fader.cs" />
+     <Compile Include="Assets\Scripts\Props\SortingLayer.cs" />
      <Compile Include="Assets\Scripts\Quest.cs" />
      <Compile Include="Assets\Scripts\References\ButtonNames.cs" />
      <Compile Include="Assets\Scripts\References\MethodNames.cs" />
@@ -77,10 +75,12 @@
      <Compile Include="Assets\Scripts\Talk\AutoType.cs" />
      <Compile Include="Assets\Scripts\Talk\TalkScript.cs" />
      <Compile Include="Assets\Scripts\data\CharacterData.cs" />
-     <Compile Include="Assets\Scripts\data\SaveLoadDataSerialized.cs" />
+     <Compile Include="Assets\Scripts\data\ChoosenCharacter.cs" />
+     <Compile Include="Assets\Scripts\data\Save\LoadCharacterData.cs" />
+     <Compile Include="Assets\Scripts\data\Save\SaveLoadDataSerialized.cs" />
+     <Compile Include="Assets\Scripts\data\Save\SavesCheck.cs" />
      <Compile Include="Assets\Scripts\health-expbars\ExpBarScript.cs" />
      <Compile Include="Assets\Scripts\health-expbars\HitPointsScript.cs" />
-     <Compile Include="Assets\SortingLayer.cs" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
