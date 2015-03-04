@@ -23,8 +23,8 @@ public class LoadCharacterData : MonoBehaviour {
 	void Update(){
 		if (loadData.loaded) {
 			LoadingScreen.isLoading = true;
-			if(level <= 3){
-				Application.LoadLevel(4);
+			if(level <= 2){
+				Application.LoadLevel(3);
 			} else {
 				Application.LoadLevel(level);
 			}
