@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 2f3c046caafdfda4ab186925570da725
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Malinche_Back_Crown
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 431
+        width: 138
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: Malinche_Back_Hair
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 302
+        width: 84
+        height: 122
+      alignment: 9
+      pivot: {x: .5, y: .897441149}
+    - name: Malinche_Back_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 244
+        width: 22
+        height: 50
+      alignment: 9
+      pivot: {x: .387931824, y: .872338891}
+    - name: Malinche_Back_Cape_Top
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 248
+        width: 100
+        height: 51
+      alignment: 9
+      pivot: {x: .541091323, y: .77394253}
+    - name: Malinche_Back_Cape_Back
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 164
+        width: 138
+        height: 136
+      alignment: 9
+      pivot: {x: .511910498, y: .910913825}
+    - name: Malinche_Back_Arm
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 200
+        width: 21
+        height: 39
+      alignment: 9
+      pivot: {x: .471070051, y: .850494802}
+    - name: Malinche_Back_Robe
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 193
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Malinche_Back_Hand
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 171
+        width: 22
+        height: 26
+      alignment: 9
+      pivot: {x: .527614236, y: .780395508}
+    - name: Malinche_Back_Pelvis
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 164
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Malinche_Back_Thigh_Left
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 99
+        width: 41
+        height: 57
+      alignment: 9
+      pivot: {x: .670403481, y: .894358039}
+    - name: Malinche_Back_Robe_Knot
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 84
+        width: 29
+        height: 59
+      alignment: 9
+      pivot: {x: .594270885, y: .937623858}
+    - name: Malinche_Back_Thigh_Right
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 99
+        width: 40
+        height: 57
+      alignment: 9
+      pivot: {x: .310147852, y: .894358039}
+    - name: Malinche_Back_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 58
+        width: 19
+        height: 25
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Back_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 59
+        width: 19
+        height: 25
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Back_Foot_Left
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 37
+        width: 18
+        height: 10
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Back_Foot_Right
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 36
+        width: 17
+        height: 11
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Back_Torso
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 320
+        width: 51
+        height: 56
+      alignment: 9
+      pivot: {x: .520708263, y: .0662449449}
+  spritePackingTag: 
+  userData: 

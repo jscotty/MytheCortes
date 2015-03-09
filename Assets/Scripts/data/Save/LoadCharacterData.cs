@@ -9,19 +9,14 @@ public class LoadCharacterData : MonoBehaviour {
 
 	void Start(){
 		loadData = gameObject.GetComponent<SaveLoadDataSerialized> ();
-
-		loadData.LoadChoosenCharacter ();
 		loadData.Load ();
-
-		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
-		playerData = player.GetComponent<CharacterData> ();
-
-		level = playerData.level;
+		loadData.LoadChoosenCharacter ();
 
 	}
 
 	void Update(){
 		if (loadData.loaded) {
+			level = loadData.level;
 			LoadingScreen.isLoading = true;
 			if(level <= 2){
 				Application.LoadLevel(3);

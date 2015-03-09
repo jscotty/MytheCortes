@@ -7,7 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class SavesCheck : MonoBehaviour {
 
 	public Text[] savedFileText;
-	private string[] charnames = new string[]{"CharA", "CharB", "CharC", "Empty"};
+	private string[] _charnames = new string[]{"CharA", "CharB", "CharC", "Empty"};
 
 	private int _character;
 	private string _path;
@@ -32,35 +32,13 @@ public class SavesCheck : MonoBehaviour {
 		_choosenCharacter.StartChoosenCharacter ();
 	}
 
-	public void Delete(int btn){
-		if (btn == 1) {
-			if (File.Exists (Application.persistentDataPath + "/SaveData.dat")){
-				File.Delete (Application.persistentDataPath + "/SaveData.dat"); 
-				savedFileText[0].text = charnames[3];
-				CheckSaves ();
-			}
-		} else if (btn == 2) {
-			if (File.Exists (Application.persistentDataPath + "/SaveData2.dat")){
-				File.Delete (Application.persistentDataPath + "/SaveData2.dat");
-				savedFileText[1].text = charnames[3];
-				CheckSaves ();
-			}
-		} else if (btn == 3) {
-			if (File.Exists (Application.persistentDataPath + "/SaveData3.dat")){
-				File.Delete (Application.persistentDataPath + "/SaveData3.dat");
-				savedFileText[2].text = charnames[3];
-				CheckSaves ();
-			}
-		}
-	}
-
-	void CheckSaves(){
+	public void CheckSaves(){
 		if (File.Exists (Application.persistentDataPath + "/SaveData.dat")) 
-			savedFileText[0].text = charnames[0];
+			savedFileText[0].text = _charnames[0];
 		if (File.Exists (Application.persistentDataPath + "/SaveData2.dat")) 
-			savedFileText[1].text = charnames[1];
+			savedFileText[1].text = _charnames[1];
 		if (File.Exists (Application.persistentDataPath + "/SaveData3.dat")) 
-			savedFileText[2].text = charnames[2];
+			savedFileText[2].text = _charnames[2];
 	}
 
 	#region getters and setters
@@ -72,5 +50,15 @@ public class SavesCheck : MonoBehaviour {
 			_path = value;
 		}
 	}
+	
+	public string[] charnames {
+		get {
+			return _charnames;
+		}
+		set {
+			_charnames = value;
+		}
+	}
+
 	#endregion
 }

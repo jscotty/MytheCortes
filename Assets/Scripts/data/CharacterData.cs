@@ -7,7 +7,6 @@ using System.Collections.Generic;
 public class CharacterData : MonoBehaviour {
 	private int _positionY;
 	private int _positionX;
-	//private int _exp;
 	private int _health;
 	private int _gold;
 	private int _level;
@@ -15,6 +14,8 @@ public class CharacterData : MonoBehaviour {
 	private int _questDone;
 	private int _questProgress;
 	private int _weapon;
+	private int _levelSpot;
+	private int _potions;
 	
 	#region Getter and setters for Position + updating Position
 		public int positionY{
@@ -123,6 +124,28 @@ public class CharacterData : MonoBehaviour {
 		}
 		set{
 			_weapon = value;
+		}
+	}
+	#endregion
+
+	#region getter and setter for Level spot
+	public int levelSpot {
+		get {
+			return _levelSpot;
+		}
+		set {
+			_levelSpot = value;
+		}
+	}
+	#endregion
+	
+	#region getter and setter for potions
+	public int potions {
+		get {
+			return _potions;
+		}
+		set {
+			_potions = value;
 		}
 	}
 	#endregion

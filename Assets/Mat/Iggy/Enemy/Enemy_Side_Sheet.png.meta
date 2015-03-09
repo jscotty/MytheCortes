@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: a8851836dc7735445a3b52a33eb2cf40
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Enemy_Side_Head
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 407
+        width: 66
+        height: 66
+      alignment: 9
+      pivot: {x: .392738581, y: .062015418}
+    - name: Enemy_Side_Face
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 419
+        width: 49
+        height: 41
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: Enemy_Side_Hair
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 403
+        width: 53
+        height: 70
+      alignment: 9
+      pivot: {x: .188334912, y: .858176529}
+    - name: Enemy_Side_Shoulder_Left
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 296
+        width: 39
+        height: 46
+      alignment: 9
+      pivot: {x: .719336092, y: .827031016}
+    - name: Enemy_Side_Cloth
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 335
+        width: 118
+        height: 70
+      alignment: 9
+      pivot: {x: .430007279, y: .853962898}
+    - name: Enemy_Side_Shoulder_Right
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 296
+        width: 37
+        height: 46
+      alignment: 9
+      pivot: {x: .236919507, y: .807793677}
+    - name: Enemy_Side_Elbow_Left
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 252
+        width: 28
+        height: 26
+      alignment: 9
+      pivot: {x: .478930891, y: .829002976}
+    - name: Enemy_Side_Torso
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 236
+        width: 79
+        height: 85
+      alignment: 9
+      pivot: {x: .406655431, y: .0558110848}
+    - name: Enemy_Side_Elbow_Right
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 255
+        width: 32
+        height: 25
+      alignment: 9
+      pivot: {x: .481564522, y: .806767583}
+    - name: Enemy_Side_Arm_Left
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 192
+        width: 38
+        height: 54
+      alignment: 9
+      pivot: {x: .461188465, y: .860517442}
+    - name: Enemy_Side_Robe
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 163
+        width: 63
+        height: 58
+      alignment: 9
+      pivot: {x: .336128116, y: .683083892}
+    - name: Enemy_Side_Arm_Right
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 182
+        width: 40
+        height: 55
+      alignment: 9
+      pivot: {x: .411508948, y: .875415027}
+    - name: Enemy_Side_Hand_Left
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 148
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: .489828706, y: .825483143}
+    - name: Enemy_Side_Skirt_Left
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 95
+        width: 41
+        height: 54
+      alignment: 9
+      pivot: {x: .600721419, y: .855055094}
+    - name: Enemy_Side_Skirt_Right
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 86
+        width: 56
+        height: 63
+      alignment: 9
+      pivot: {x: .389386863, y: .837107599}
+    - name: Enemy_Side_Hand_Right
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 148
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: .520342588, y: .855997026}
+    - name: Enemy_Side_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 24
+        width: 30
+        height: 48
+      alignment: 9
+      pivot: {x: .549161792, y: .917872906}
+    - name: Enemy_Side_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 24
+        width: 30
+        height: 48
+      alignment: 9
+      pivot: {x: .529496253, y: .905582428}
+    - name: Enemy_Side_Hand_Inside
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 151
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 

@@ -6,7 +6,8 @@ public class PlayerTrigger : MonoBehaviour {
 	SwordAnim _swordAnim;
 	TalkScript _talkScript;
 	Joystick _joystick;
-	bool _talk;
+	PickUpScript _pickup;
+	bool _action;
 	float _count;
 	bool _fade;
 
@@ -25,18 +26,30 @@ public class PlayerTrigger : MonoBehaviour {
 		GameObject sword = GameObject.FindGameObjectWithTag (Tags.ATTACK);
 		_swordAnim = sword.GetComponent<SwordAnim> ();
 
+		_pickup = gameObject.GetComponent<PickUpScript> ();
+
 	}
 
 	void OnTriggerStay2D(Collider2D other){
+		_action = _joystick.GetInteract();
 		if (other.tag == Tags.NPC) {
 			_btnText.message = "Talk";
 			_swordAnim.talk = true;
-			_talk = _joystick.GetInteract();
-			if(_talk){
+			if(_action){
 				_count ++;
 				if(_count <= 1f) {
 					_talkScript.StartTalk(other.name);
 					_swordAnim.attack = false;
+				}
+			}
+		} else if (other.tag == Tags.PICKUP) {
+			_btnText.message = "Take";
+			_swordAnim.talk = true;
+			if(_action){
+				_count ++;
+				if(_count <= 1f) {
+					_pickup.PickUp(other.name, 1);
+					other.gameObject.SetActive(false);
 				}
 			}
 		}

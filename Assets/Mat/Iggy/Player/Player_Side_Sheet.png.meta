@@ -1,0 +1,315 @@
+fileFormatVersion: 2
+guid: 911265c7296935a4e9a83e34889a3ef7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Player_Side_Belt
+    21300002: Player_Side_Helmet
+    21300004: Player_Side_Backpack
+    21300006: Player_Side_Shoulder_Left
+    21300008: Player_Side_Face
+    21300010: Player_Side_Hair_Left
+    21300012: Player_Side_Hair_Right
+    21300014: Player_Side_Shoulder_Right
+    21300016: Player_Side_Arm_Left
+    21300018: Player_Side_Head
+    21300020: Player_Side_Arm_Right
+    21300022: Player_Side_Elbow_Left
+    21300024: Player_Side_Torso
+    21300026: Player_Side_Elbow_Right
+    21300028: Player_Side_Hand_Left
+    21300030: Player_Side_Pad
+    21300032: Player_Side_Hand_Right
+    21300034: Player_Side_Leg_Left
+    21300036: Player_Side_Pelvis
+    21300038: Player_Side_Foot_Left
+    21300040: Player_Side_Leg_Right
+    21300042: Player_Side_Foot_Right
+    21300044: Player_Side_Hand_Inside
+    21300046: Player_Side_Hand_Sword
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Player_Side_Belt
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 384
+        width: 73
+        height: 63
+      alignment: 9
+      pivot: {x: .378110588, y: .323453873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Helmet
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 384
+        width: 78
+        height: 63
+      alignment: 9
+      pivot: {x: .602668583, y: .175154909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Backpack
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 363
+        width: 98
+        height: 121
+      alignment: 9
+      pivot: {x: .43190375, y: .698548853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Shoulder_Left
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 320
+        width: 52
+        height: 42
+      alignment: 9
+      pivot: {x: .773782611, y: .468221754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Face
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 320
+        width: 50
+        height: 40
+      alignment: 9
+      pivot: {x: .357633054, y: .778060913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Hair_Left
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 339
+        width: 22
+        height: 31
+      alignment: 9
+      pivot: {x: .621335089, y: .801381767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Hair_Right
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 339
+        width: 29
+        height: 31
+      alignment: 9
+      pivot: {x: .423293531, y: .801381767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Shoulder_Right
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 327
+        width: 53
+        height: 43
+      alignment: 9
+      pivot: {x: .214594424, y: .468960792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Arm_Left
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 232
+        width: 43
+        height: 64
+      alignment: 9
+      pivot: {x: .479306966, y: .805866718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Head
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 279
+        width: 56
+        height: 34
+      alignment: 9
+      pivot: {x: .619168699, y: .172870412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Arm_Right
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 264
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: .394071311, y: .798914909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Elbow_Left
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 170
+        width: 44
+        height: 50
+      alignment: 9
+      pivot: {x: .682003021, y: .927100837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Torso
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 156
+        width: 84
+        height: 108
+      alignment: 9
+      pivot: {x: .335811794, y: .158088684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Elbow_Right
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 180
+        width: 42
+        height: 52
+      alignment: 9
+      pivot: {x: .669484437, y: .899218023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Hand_Left
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 115
+        width: 29
+        height: 24
+      alignment: 9
+      pivot: {x: .315904826, y: .815134704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Pad
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 108
+        width: 33
+        height: 32
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Hand_Right
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 125
+        width: 30
+        height: 24
+      alignment: 9
+      pivot: {x: .663128674, y: .778060913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 71
+        width: 47
+        height: 53
+      alignment: 9
+      pivot: {x: .59465903, y: .902925432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Pelvis
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 103
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Foot_Left
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 21
+        width: 26
+        height: 29
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 36
+        width: 46
+        height: 53
+      alignment: 9
+      pivot: {x: .5, y: .869348466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Foot_Right
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 21
+        width: 26
+        height: 29
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Hand_Inside
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 112
+        width: 30
+        height: 30
+      alignment: 9
+      pivot: {x: .745141268, y: .442552447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Side_Hand_Sword
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 156
+        width: 43
+        height: 144
+      alignment: 9
+      pivot: {x: .717931092, y: .128822118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

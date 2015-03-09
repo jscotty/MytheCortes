@@ -14,7 +14,9 @@ public class Tags : MonoBehaviour {
 	public const string UI_CONTROLLER 		= "UIController";
 	public const string TALK				= "Talk";
 	public const string INTERACT_BTN 		= "InteractBtn";
-	public const string TUTORIAL_DOOR 		= "TutDoor";
+	public const string DOOR		 		= "Door";
 	public const string SAVE 				= "Save";
 	public const string FEET 				= "Feet";
+	public const string MAP_SPOTS			= "MapSpot";
+	public const string PICKUP				= "Pickup";
 }

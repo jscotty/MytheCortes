@@ -1,0 +1,370 @@
+fileFormatVersion: 2
+guid: 50d538b3e9b3c284299fb2f9b65bf08c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpaniardFront_Belt
+    21300002: SpaniardFront_Helmet
+    21300004: SpaniardFront_Arm_Upper_Left
+    21300006: SpaniardFront_Shoulder_Left
+    21300008: SpaniardFront_Head
+    21300010: SpaniardFront_Shoulder_Right
+    21300012: SpaniardFront_Arm_Upper_Right
+    21300014: SpaniardFront_Face
+    21300016: SpaniardFront_Arm_Bottom_Left
+    21300018: SpaniardFront_Torso
+    21300020: SpaniardFront_Arm_Bottom_Right
+    21300022: SpaniardFront_Hand_Left
+    21300024: SpaniardFront_Hand_Right
+    21300026: SpaniardFront_Leg_Left
+    21300028: SpaniardFront_Pelvis
+    21300030: SpaniardFront_Leg_Right
+    21300032: SpaniardFront_Backpack
+    21300034: SpaniardFront_Foot_Left
+    21300036: SpaniardFront_Foot_Right
+    21300038: SpaniardFront_Toes_Left
+    21300040: SpaniardFront_Toes_Right
+    21300042: SpaniardFront_Leg_Bend_Left
+    21300044: SpaniardFront_Leg_Bend_Right
+    21300046: SpaniardFront_Arm_Front_Left
+    21300048: SpaniardFront_Arm_Front_Right
+    21300050: SpaniardFront_Hand_Top_Right
+    21300052: SpaniardFront_Hand_Front_Right
+    21300054: SpaniardFront_Hand_Front_Left
+    21300056: SpaniardFront_Hand_Top_Left
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: SpaniardFront_Belt
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 376
+        width: 84
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Helmet
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 379
+        width: 69
+        height: 64
+      alignment: 9
+      pivot: {x: .513036728, y: .169700623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Arm_Upper_Left
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 280
+        width: 48
+        height: 72
+      alignment: 9
+      pivot: {x: .752995193, y: .899794281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Shoulder_Left
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 304
+        width: 50
+        height: 56
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Head
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 332
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Shoulder_Right
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 304
+        width: 50
+        height: 56
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Arm_Upper_Right
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 278
+        width: 45
+        height: 69
+      alignment: 9
+      pivot: {x: .260123014, y: .91065824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Face
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 291
+        width: 54
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Arm_Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 212
+        width: 48
+        height: 55
+      alignment: 9
+      pivot: {x: .462519318, y: .884347796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Torso
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 161
+        width: 88
+        height: 115
+      alignment: 9
+      pivot: {x: .490660936, y: .128390774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Arm_Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 208
+        width: 46
+        height: 56
+      alignment: 9
+      pivot: {x: .568442941, y: .877484441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Hand_Left
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 172
+        width: 32
+        height: 29
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Hand_Right
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 172
+        width: 31
+        height: 29
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 95
+        width: 46
+        height: 66
+      alignment: 9
+      pivot: {x: .763994992, y: .813474953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Pelvis
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 128
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 92
+        width: 48
+        height: 65
+      alignment: 9
+      pivot: {x: .275115341, y: .839056373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Backpack
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 28
+        width: 97
+        height: 133
+      alignment: 9
+      pivot: {x: .504636765, y: .740102112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Foot_Left
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 56
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Foot_Right
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 56
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Toes_Left
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 28
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Toes_Right
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 28
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Leg_Bend_Left
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Leg_Bend_Right
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 96
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Arm_Front_Left
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 216
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Arm_Front_Right
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 216
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Hand_Top_Right
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Hand_Front_Right
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 169
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Hand_Front_Left
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 171
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardFront_Hand_Top_Left
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 170
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 589cbcd0631be94418e1f939a9003f79
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Malinche_Side_Crown
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 432
+        width: 131
+        height: 64
+      alignment: 9
+      pivot: {x: .365086913, y: .12029314}
+    - name: Malinche_Side_Hair_Top
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 340
+        width: 74
+        height: 84
+      alignment: 9
+      pivot: {x: .291021198, y: .594680071}
+    - name: Malinche_Side_Hair_Back
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 331
+        width: 73
+        height: 61
+      alignment: 9
+      pivot: {x: .463684499, y: .818704545}
+    - name: Malinche_Side_Face
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 298
+        width: 20
+        height: 26
+      alignment: 9
+      pivot: {x: .301171124, y: .788895845}
+    - name: Malinche_Side_Head
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 292
+        width: 43
+        height: 40
+      alignment: 9
+      pivot: {x: .386970699, y: .665690601}
+    - name: Malinche_Side_Cape_Side
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 132
+        width: 48
+        height: 133
+      alignment: 9
+      pivot: {x: .603344619, y: .947568297}
+    - name: Malinche_Side_Neck
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 264
+        width: 22
+        height: 20
+      alignment: 9
+      pivot: {x: .424840063, y: .232293695}
+    - name: Malinche_Side_Cape_Top
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 208
+        width: 101
+        height: 51
+      alignment: 9
+      pivot: {x: .455563247, y: .773269951}
+    - name: Malinche_Side_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 209
+        width: 23
+        height: 51
+      alignment: 9
+      pivot: {x: .571891427, y: .842745602}
+    - name: Malinche_Side_Cape_Back
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 199
+        width: 89
+        height: 55
+      alignment: 9
+      pivot: {x: .441609234, y: .877946317}
+    - name: Malinche_Side_Torso
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 140
+        width: 58
+        height: 59
+      alignment: 9
+      pivot: {x: .341164678, y: .0395774208}
+    - name: Malinche_Side_Arm
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 160
+        width: 21
+        height: 39
+      alignment: 9
+      pivot: {x: .5, y: .827068985}
+    - name: Malinche_Side_Robe
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 100
+        width: 64
+        height: 33
+      alignment: 9
+      pivot: {x: .341291904, y: .421260715}
+    - name: Malinche_Side_Hand
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 132
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: .657477081, y: .814955413}
+    - name: Malinche_Side_Thigh_Left
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 60
+        width: 41
+        height: 57
+      alignment: 9
+      pivot: {x: .695886731, y: .897838652}
+    - name: Malinche_Side_Robe_Knot
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 51
+        width: 32
+        height: 47
+      alignment: 9
+      pivot: {x: .559053898, y: .9322263}
+    - name: Malinche_Side_Thigh_Right
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 60
+        width: 42
+        height: 57
+      alignment: 9
+      pivot: {x: .314400822, y: .885406256}
+    - name: Malinche_Side_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 14
+        width: 23
+        height: 30
+      alignment: 9
+      pivot: {x: .612972736, y: .885820508}
+    - name: Malinche_Side_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 14
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 

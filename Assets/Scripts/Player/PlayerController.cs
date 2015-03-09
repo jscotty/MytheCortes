@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour {
 	Joystick _joystick;
 
 	CharacterData _playerData;
+	
+	[SerializeField]
+	GameObject[] _mapSpots;
 
 	void Start(){
 		_scale.x = 1;
@@ -33,13 +36,18 @@ public class PlayerController : MonoBehaviour {
 		_move = true;
 		_body = rigidbody2D;
 		_trans = transform;
+		
+		_playerData = gameObject.GetComponent<CharacterData> ();
+
+		int mapIndex = _playerData.levelSpot;
+		gameObject.transform.position = _mapSpots [mapIndex].transform.position;
 
 		GameObject joystickController = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
 		if(joystickController != null)
 			_joystick = joystickController.GetComponent<Joystick> ();
 
 		_spriteRenderer = gameObject.GetComponent<SpriteRenderer> ();
-		_playerData = gameObject.GetComponent<CharacterData> ();
+
 	}
 
 	void FixedUpdate () {

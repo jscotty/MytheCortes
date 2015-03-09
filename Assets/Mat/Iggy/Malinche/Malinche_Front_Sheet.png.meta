@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: ab3bb80183b22bd4eafe1ab8ec27bc00
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Malinche_Front_Crown
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 436
+        width: 137
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: Malinche_Front_Cape_Side
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 291
+        width: 45
+        height: 133
+      alignment: 9
+      pivot: {x: .622776985, y: .912641943}
+    - name: Malinche_Front_Hair_Top
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 400
+        width: 62
+        height: 23
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Front_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 372
+        width: 22
+        height: 52
+      alignment: 9
+      pivot: {x: .499998599, y: .811665475}
+    - name: Malinche_Front_Hair_Back
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 356
+        width: 82
+        height: 72
+      alignment: 9
+      pivot: {x: .5, y: .836297333}
+    - name: Malinche_Front_Hair_Left
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 334
+        width: 24
+        height: 54
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Front_Hair_Right
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 334
+        width: 23
+        height: 53
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 324
+        width: 22
+        height: 36
+      alignment: 9
+      pivot: {x: .5, y: .847869039}
+    - name: Malinche_Front_Face
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 302
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Malinche_Front_Head
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 252
+        width: 49
+        height: 40
+      alignment: 9
+      pivot: {x: .49248302, y: .85912323}
+    - name: Malinche_Front_Hand
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 284
+        width: 22
+        height: 26
+      alignment: 9
+      pivot: {x: .55022639, y: .783332229}
+    - name: Malinche_Front_Neck
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 223
+        width: 25
+        height: 17
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Front_Thigh_Right
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 164
+        width: 41
+        height: 60
+      alignment: 9
+      pivot: {x: .347276628, y: .868331373}
+    - name: Malinche_Front_Cape_Back
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 159
+        width: 77
+        height: 55
+      alignment: 9
+      pivot: {x: .5, y: .875028551}
+    - name: Malinche_Front_Thigh_Left
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 160
+        width: 40
+        height: 60
+      alignment: 9
+      pivot: {x: .702582181, y: .86219281}
+    - name: Malinche_Front_Cape_Top
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 160
+        width: 101
+        height: 52
+      alignment: 9
+      pivot: {x: .474471897, y: .790415525}
+    - name: Malinche_Front_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 120
+        width: 17
+        height: 28
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Front_Torso
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 92
+        width: 50
+        height: 56
+      alignment: 9
+      pivot: {x: .5, y: .0922047719}
+    - name: Malinche_Front_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 120
+        width: 17
+        height: 25
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Front_Foot_Left
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 92
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Malinche_Front_Foot_Right
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 92
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Malinche_Front_Robe_Knot
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 10
+        width: 29
+        height: 46
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Malinche_Front_Robe
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 60
+        width: 65
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 

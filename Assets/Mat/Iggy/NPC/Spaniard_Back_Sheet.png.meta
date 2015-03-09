@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 2b101ae378e09a245ba00c8b2d11afab
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpaniardBack_Helmet
+    21300002: SpaniardBack_Shoulder_Left
+    21300004: SpaniardBack_Hair
+    21300006: SpaniardBack_Shoulder_Right
+    21300008: SpaniardBack_Arm_Left
+    21300010: SpaniardBack_Backpack
+    21300012: SpaniardBack_Arm_Right
+    21300014: SpaniardBack_Hand_Left
+    21300016: SpaniardBack_Pelvis
+    21300018: SpaniardBack_Hand_Right
+    21300020: SpaniardBack_Leg_Left
+    21300022: SpaniardBack_Leg_Right
+    21300024: SpaniardBack_Toes_Left
+    21300026: SpaniardBack_Foot_Left
+    21300028: SpaniardBack_Foot_Right
+    21300030: SpaniardBack_Toes_Right
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: SpaniardBack_Helmet
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 372
+        width: 70
+        height: 65
+      alignment: 9
+      pivot: {x: .504704475, y: .180832148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Shoulder_Left
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 276
+        width: 50
+        height: 57
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Hair
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 323
+        width: 52
+        height: 43
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Shoulder_Right
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 276
+        width: 52
+        height: 57
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Arm_Left
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 188
+        width: 46
+        height: 76
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Backpack
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 184
+        width: 100
+        height: 133
+      alignment: 9
+      pivot: {x: .5, y: .949727476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Arm_Right
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 188
+        width: 45
+        height: 75
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Hand_Left
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 144
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: .437316895, y: .810432434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Pelvis
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 152
+        width: 51
+        height: 20
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Hand_Right
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 144
+        width: 31
+        height: 28
+      alignment: 9
+      pivot: {x: .62941128, y: .834311903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 87
+        width: 46
+        height: 65
+      alignment: 9
+      pivot: {x: .601747274, y: .83945477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 87
+        width: 48
+        height: 63
+      alignment: 9
+      pivot: {x: .416422516, y: .855537772}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Toes_Left
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 50
+        width: 22
+        height: 11
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Foot_Left
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 52
+        width: 24
+        height: 25
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Foot_Right
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 52
+        width: 22
+        height: 25
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpaniardBack_Toes_Right
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 50
+        width: 22
+        height: 11
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
