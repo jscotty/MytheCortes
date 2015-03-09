@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 
 //System.Serializable]
-public class CharacterData : MonoBehaviour {
+public class CharacterData {
 	private int _positionY;
 	private int _positionX;
 	private int _health;
