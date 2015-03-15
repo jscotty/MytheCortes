@@ -9,7 +9,6 @@ public class InventoryScript : MonoBehaviour {
 
 
 	void Start(){
-		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
 
 		itemText [0].text = "Potions: (" + PickupData.potions + ")";
 	}

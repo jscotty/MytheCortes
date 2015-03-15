@@ -4,10 +4,13 @@ using System.Collections;
 public class SortingLayer : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other){
-		if (other.tag == Tags.FEET) {
+		if (other.tag == Tags.ENEMY_FEET) {
+			gameObject.GetComponent<Renderer>().sortingOrder = 7;
+		}
+		else if (other.tag == Tags.FEET) {
 			gameObject.GetComponent<Renderer>().sortingOrder = 10;
 		}
-		else if (other.tag == Tags.ENEMY_FEET) {
+		else if (other.tag == Tags.FEET && other.tag == Tags.ENEMY_FEET) {
 			gameObject.GetComponent<Renderer>().sortingOrder = 10;
 		}
 	}

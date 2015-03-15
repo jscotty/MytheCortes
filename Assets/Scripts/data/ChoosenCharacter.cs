@@ -3,13 +3,13 @@ using System.Collections;
 
 public class ChoosenCharacter : MonoBehaviour {
 
-	SavesCheck saveCheck;
+	//SavesCheck saveCheck;
 	public SaveLoadDataSerialized saveData;
 	private int _character;
 	private string _path;
 
 	public void StartChoosenCharacter () {
-		saveCheck = gameObject.GetComponent<SavesCheck> ();
+		//saveCheck = gameObject.GetComponent<SavesCheck> ();
 		//_path = saveCheck.path;
 
 		//saveData.SaveChoosenCharacter ();

@@ -25,7 +25,6 @@ public class HitPoints : MonoBehaviour {
 	public int maxHealth;
 	
 	public Image visualHealth;
-	private bool onCD;
 	
 	
 	void Start(){
@@ -35,7 +34,6 @@ public class HitPoints : MonoBehaviour {
 		minXValue = healthTransform.rect.width;
 
 		currentHealth = maxHealth;
-		onCD = false;
 		
 	}
 	

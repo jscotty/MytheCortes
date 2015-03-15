@@ -9,14 +9,6 @@ public class Joystick : MonoBehaviour {
 
 	enum Direction { North, South, West, East, Idle};
 
-	void Start(){
-		Direction myDirection;
-
-		myDirection = Direction.North;
-
-
-	}
-
 	void MoveDirection(Direction dir){
 		if (dir == Direction.North) {
 			_xAxis = 0f;

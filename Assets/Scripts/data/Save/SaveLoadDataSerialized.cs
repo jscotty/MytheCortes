@@ -23,14 +23,13 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 		characterData.quest = QuestData.quest;
 		characterData.questProgress = QuestData.questProgress;
 		characterData.questDone = QuestData.questDone;
-		characterData.level = QuestData.level;
+		characterData.level = Application.loadedLevel;
 		characterData.potions = PickupData.potions;
 		characterData.levelSpot = QuestData.levelSpot;
 		
 		binaryFormatter.Serialize (file, characterData);
 		file.Close ();
-		
-		//Debug.Log ("Saved");
+
 		Load ();
 	}
 

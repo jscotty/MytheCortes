@@ -20,10 +20,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject[] characterFiew;
 	public GameObject[] malincheFiew;
 
-	SpriteRenderer _spriteRenderer;
-
 	Rigidbody2D _body;
-	Transform _trans;
 	
 	Joystick _joystick;
 
@@ -36,13 +33,10 @@ public class PlayerController : MonoBehaviour {
 		CharacterUp ();
 		_move = true;
 		_body = gameObject.GetComponent<Rigidbody2D>();
-		_trans = transform;
 
 		GameObject joystickController = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
 		if(joystickController != null)
 			_joystick = joystickController.GetComponent<Joystick> ();
-
-		_spriteRenderer = gameObject.GetComponent<SpriteRenderer> ();
 
 		PosPlayer ();
 	}

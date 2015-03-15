@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PauseScript : MonoBehaviour {
-	public static bool paused = false;
+	private bool _paused = false;
 
 	/// <summary>
 	/// 0 = PlayerUI
@@ -11,19 +11,34 @@ public class PauseScript : MonoBehaviour {
 	public GameObject[] _ui;
 
 	void Start(){
+		Time.timeScale = 1.0f;
 		_ui[0].SetActive(true);
 		_ui[1].SetActive(false);
 	}
 
-	public void OnClick(){
-		if (paused) {
-			paused = false;
+	void Update(){
+		if (Time.timeScale == 0f) {
+			SetPaused();
+		}
+	}
+
+	public void Paused(){
+		if (_paused) {
+			_paused = false;
 			_ui[0].SetActive(true);
 			_ui[1].SetActive(false);
+			Time.timeScale = 1.0f;
 		} else {
-			paused = true;
+			_paused = true;
 			_ui[0].SetActive(false);
 			_ui[1].SetActive(true);
+			Time.timeScale = 0.0f;
 		}
+	}
+	public void SetPaused(){
+			_paused = true;
+			_ui[0].SetActive(false);
+			_ui[1].SetActive(true);
+			Time.timeScale = 0.0f;
 	}
 }

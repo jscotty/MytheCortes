@@ -13,20 +13,13 @@ public class DoorTrigger : MonoBehaviour {
 	private int _mapLocation;
 
 	private TalkScript _talkScript;
-	private CharacterData _playerData;
 	private float _textIndex;
 	private float _fade;
 	private bool _fadeBool;
 
-
-
 	void Start(){
 		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
 		_talkScript = ui.GetComponent<TalkScript> ();
-
-		_playerData = new CharacterData ();
-
-
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
@@ -34,8 +27,8 @@ public class DoorTrigger : MonoBehaviour {
 			if(QuestData.questDone >= _questDone){
 				QuestData.level = _level;
 				QuestData.levelSpot = _mapLocation;
-				_saveLoadData.Save();
 				LoadLevel();
+				_saveLoadData.Save();
 				//_fadeBool = true;
 			} else {
 				_textIndex ++;

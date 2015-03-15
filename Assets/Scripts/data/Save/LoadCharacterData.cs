@@ -16,7 +16,6 @@ public class LoadCharacterData : MonoBehaviour {
 	void Update(){
 		if (loadData.loaded) {
 			level = QuestData.level;
-			print("level: " + level);
 			LoadingScreen.isLoading = true;
 			if(level <= 2){
 				Application.LoadLevel(3);
