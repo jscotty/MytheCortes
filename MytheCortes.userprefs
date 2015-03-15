@@ -1,35 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy\DummyBehaviour.cs">
     <Files>
-      <File FileName="Assets\Scripts\data\PickupData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Talk\AutoType.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Props\PickUpScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy\DummyBehaviour.cs" Line="21" Column="4" />
-      <File FileName="Assets\Scripts\Buttons\PauseScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Menu\PauseHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Menu\PauseButtonScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy\HitDetection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\data\Save\SaveLoadDataSerialized.cs" Line="48" Column="50" />
-      <File FileName="Assets\Scripts\Props\DoorTrigger.cs" Line="36" Column="40" />
-      <File FileName="Assets\Scripts\data\QuestData.cs" Line="6" Column="69" />
-      <File FileName="Assets\Scripts\Menu\InventoryScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\data\CharacterData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\data\Save\DeleteProtection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\SwordAnim.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Camera\FollowCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerController.cs" Line="53" Column="37" />
-      <File FileName="Assets\Scripts\Props\SortingLayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\References\Tags.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy\EnemyHitDetection.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Enemy\EnemyHitDetection.cs" Line="9" Column="34" />
       <File FileName="Assets\Scripts\Player\PlayerTrigger.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\data\EnemyData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy\EnemyController.cs" Line="15" Column="62" />
+      <File FileName="Assets\Scripts\Enemy\EnemyController.cs" Line="30" Column="37" />
       <File FileName="Assets\Scripts\Enemy\EnemyAnimation.cs" Line="24" Column="33" />
-      <File FileName="Assets\Scripts\References\AnimNames.cs" Line="9" Column="36" />
-      <File FileName="Assets\Scripts\Player\PlayerAnimations.cs" Line="51" Column="33" />
-      <File FileName="Assets\Scripts\NPC\RandomWalking.cs" Line="37" Column="5" />
+      <File FileName="Assets\Scripts\References\AnimNames.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\PlayerAnimations.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NPC\RandomWalking.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\data\ChoosenCharacter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Quests\QuestState.cs" Line="15" Column="35" />
+      <File FileName="Assets\Scripts\Enemy\HitDetection.cs" Line="29" Column="19" />
+      <File FileName="Assets\Scripts\Enemy\DummyBehaviour.cs" Line="38" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

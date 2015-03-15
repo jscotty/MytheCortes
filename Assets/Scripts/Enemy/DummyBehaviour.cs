@@ -7,7 +7,7 @@ public class DummyBehaviour : MonoBehaviour {
 	public QuestState questState;
 	public AudioClip audioClip;
 
-	private bool damaging;
+	private bool _damaging;
 	Animator _anim;
 	private float _count;
 	private AudioSource _audio;
@@ -19,7 +19,7 @@ public class DummyBehaviour : MonoBehaviour {
 	}
 
 	void Update(){
-		if (damaging) {
+		if (_damaging) {
 			_anim.SetBool("Hit", true);
 			questState.EndQuest(1);
 			_count ++;
@@ -33,11 +33,13 @@ public class DummyBehaviour : MonoBehaviour {
 	}
 
 	#region getters and setters
-	public bool GetDamaging(){
-		return damaging;
-	}
-	public void SetDamaging(bool value){
-		damaging = value;
+	public bool damaging{
+		get {
+			return _damaging;
+		}
+		set {
+			_damaging = value;
+		}
 	}
 	#endregion
 }

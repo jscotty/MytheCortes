@@ -23,28 +23,18 @@ public class HitDetection : MonoBehaviour {
 		_playerController = _player.GetComponent<PlayerController> ();
 	}
 
-	void Update(){
-		_attack = _playerController.attack;
-		if (_hit) {
-			_dummy.SetDamaging(true);
-		} else {
-			_dummy.SetDamaging(false);
-
-		}
-
-	}
 
 	void OnTriggerStay2D(Collider2D other){
 		if(other.tag == Tags.SWORD){
 			//print("hit");
 			_attackItem = other.gameObject;
-			_hit = true;
+			_dummy.damaging = true;
 		}
 		//print ("hit: " + _hit);
 	}
 	
 	void OnTriggerExit2D(Collider2D other){
-		_hit = false;
+		_dummy.damaging = false;
 		//print ("hit: " + _hit);
 	}
 }
