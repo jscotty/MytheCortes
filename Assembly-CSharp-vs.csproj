@@ -51,12 +51,12 @@
      <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
      <Compile Include="Assets\Scripts\Camera\FollowCharacter.cs" />
      <Compile Include="Assets\Scripts\CubeColor.cs" />
-     <Compile Include="Assets\Scripts\DropItemScript.cs" />
      <Compile Include="Assets\Scripts\Enemy\DummyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAnimation.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyHitDetection.cs" />
      <Compile Include="Assets\Scripts\Enemy\HitDetection.cs" />
+     <Compile Include="Assets\Scripts\Items\DropItemScript.cs" />
      <Compile Include="Assets\Scripts\Loading\LoadingScreen.cs" />
      <Compile Include="Assets\Scripts\MapCheck.cs" />
      <Compile Include="Assets\Scripts\Menu\InventoryScript.cs" />
