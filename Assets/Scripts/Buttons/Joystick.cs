@@ -17,7 +17,7 @@ public class Joystick : MonoBehaviour {
 
 	}
 
-	Direction ReverseDirection(Direction dir){
+	void MoveDirection(Direction dir){
 		if (dir == Direction.North) {
 			_xAxis = 0f;
 			_yAxis = 1f;
@@ -31,19 +31,17 @@ public class Joystick : MonoBehaviour {
 			_xAxis = 1f;
 			_yAxis = 0f;
 		}
-
-		return dir;
 	}
 
 	public void OnDown(string button){
 		if (button == "RIGHT") {
-			ReverseDirection(Direction.East);
+			MoveDirection(Direction.East);
 		} else if (button == "LEFT") {
-			ReverseDirection(Direction.West);
+			MoveDirection(Direction.West);
 		} else if (button == "UP") {
-			ReverseDirection(Direction.North);
+			MoveDirection(Direction.North);
 		} else if (button == "DOWN") {
-			ReverseDirection(Direction.South);
+			MoveDirection(Direction.South);
 		} else if (button == "INTERACT") {
 			_interact = true;
 		}
