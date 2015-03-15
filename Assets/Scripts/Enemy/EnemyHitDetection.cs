@@ -3,15 +3,12 @@ using System.Collections;
 
 public class EnemyHitDetection : MonoBehaviour {
 
-	public AudioClip audioClip;
 	public BoxCollider2D _feetCollider;
 	public EnemyData _enemyData;
 
 	private BoxCollider2D _collider;
-	private AudioSource _audio;
 
 	void Start(){
-		_audio = gameObject.GetComponent<AudioSource> ();
 		_collider = gameObject.GetComponent<BoxCollider2D> ();
 	}
 

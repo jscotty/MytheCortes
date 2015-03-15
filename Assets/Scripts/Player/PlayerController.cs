@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour {
 	
 	Joystick _joystick;
 
-	
 	[SerializeField]
 	GameObject[] _mapSpots;
 	

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class HitPointsScript : MonoBehaviour {
+public class HitPoints : MonoBehaviour {
 	
 	public RectTransform healthTransform;
 
