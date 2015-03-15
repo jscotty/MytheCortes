@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: c4e63d32f94a3ce469d51c22025b32ef
+TextureImporter:
+  fileIDToRecycleName: {}
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: head zijkant
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 132
+        width: 34
+        height: 33
+      alignment: 9
+      pivot: {x: .775881588, y: .409338742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee side_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 136
+        width: 25
+        height: 25
+      alignment: 9
+      pivot: {x: .446737379, y: .340211779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee side_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 137
+        width: 26
+        height: 23
+      alignment: 9
+      pivot: {x: .704856873, y: .372632891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee side_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 92
+        width: 23
+        height: 13
+      alignment: 9
+      pivot: {x: .801050246, y: .581943214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee side_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 84
+        width: 38
+        height: 28
+      alignment: 9
+      pivot: {x: .215566531, y: .29927063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee side_5
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 60
+        width: 37
+        height: 45
+      alignment: 9
+      pivot: {x: .458680838, y: .750564039}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee side_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 46
+        width: 35
+        height: 31
+      alignment: 9
+      pivot: {x: .290006578, y: .179232314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

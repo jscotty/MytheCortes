@@ -7,6 +7,7 @@ public class Tags : MonoBehaviour {
 	public const string JOYSTICK 			= "Joystick";
 	public const string JOYSTICK_CONTROLLER = "JoystickController";
 	public const string ENEMY 				= "Enemy";
+	public const string ENEMY_FEET			= "EnemyFeet";
 	public const string ATTACK 				= "Attack";
 	public const string NONATTACK 			= "NonAttack";
 	public const string UI 					= "UI";
@@ -19,4 +20,6 @@ public class Tags : MonoBehaviour {
 	public const string FEET 				= "Feet";
 	public const string MAP_SPOTS			= "MapSpot";
 	public const string PICKUP				= "Pickup";
+	public const string SWORD				= "Sword";
+	public const string QUEST_STATE			= "QuestState";
 }

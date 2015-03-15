@@ -2,9 +2,7 @@
 using System.Collections;
 
 public class SwordAnim : MonoBehaviour {
-
-	Animator swordAnim;
-	private bool _attack, _move, _talk;
+	private bool _attack, _talk;
 
 	Joystick _joystick;
 	PlayerController _playerController;
@@ -12,7 +10,6 @@ public class SwordAnim : MonoBehaviour {
 
 	void Start(){
 		_talk = false;
-		swordAnim = GetComponent<Animator> ();
 
 		GameObject joystickController = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
 		if(joystickController != null)
@@ -26,31 +23,30 @@ public class SwordAnim : MonoBehaviour {
 	void Update(){
 		if(_joystick != null){
 			if (_attack == true && !_talk) {
-				swordAnim.SetBool("Attack", true);
-				_move = false;
-				_playerController.SetAttack (_attack);
-				_playerController.SetMove (_move);
+				_playerController.attack = _attack;
+				_playerController.move = false;
 				//collider2D.isTrigger = true;
 			} else {
-				_attack = _joystick.GetInteract();
+				_attack = _joystick.interact;
 			}
 		}
 	}
 
 	public void StopAttack(){
-		swordAnim.SetBool("Attack", false);	
 		_attack = false;
-		_move = true;
 
-		_joystick.SetInteract (_attack);
-		_playerController.SetAttack (_attack);
-		_playerController.SetMove (_move);
+		_joystick.interact = _attack;
+		_playerController.attack = _attack;
+		_playerController.move = true;
 	}
 
 	#region getters and setters
 	public bool talk{
 		set{
 			_talk = value;
+		}
+		get{
+			return _talk;
 		}
 	}
 	public bool attack{

@@ -3,17 +3,21 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class AutoType : MonoBehaviour {
-		
+
+	SaveLoadDataSerialized save;
 	public Text txt;
 	string _message;
 	float seconds = 0.01f;
-	Story tutStory;
+	Story _story;
 	string _npc;
 	TalkScript talk;
-	CharacterData _playerData;
 	PlayerController _playerController;
-	int _quest, _questProgress, _questDone;
+	QuestData questData;
+
 	Joystick joystick;
+	private int _qId;
+	private int _level;
+	//int _quest, _questProgress, _questDone;
 
 	private int _i;
 	public int index{
@@ -28,17 +32,21 @@ public class AutoType : MonoBehaviour {
 	void Start(){
 		_i = 0;
 		index = 0;
-		tutStory = gameObject.GetComponent<Story> ();
+		_story = gameObject.GetComponent<Story> ();
+
+		GameObject saveData = GameObject.FindGameObjectWithTag (Tags.SAVE);
+		save = saveData.GetComponent<SaveLoadDataSerialized> ();
 
 		GameObject uiContr = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
 		talk = uiContr.GetComponent<TalkScript> ();
 
 		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
-		_playerData = player.GetComponent<CharacterData> ();
 		_playerController = player.GetComponent<PlayerController>();
 
 		GameObject joystick = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
 		this.joystick = joystick.GetComponent<Joystick> ();
+
+		questData = gameObject.GetComponent<QuestData> ();
 
 		//StartType ("TS1");
 	}
@@ -46,11 +54,11 @@ public class AutoType : MonoBehaviour {
 	public void StartType(string NPC){
 		_npc = NPC;
 		_i = index;
+		/*_quest = questData.quest;
+		_questDone = questData.questDone;
+		_questProgress = questData.questProgress;*/
 
-		_quest = _playerData.quest;
-		_questProgress = _playerData.questProgress;
-		_questDone = _playerData.questDone;
-		_playerController.SetMove (false);
+		_playerController.move = false;
 
 		//print ("_quest (" + _quest + ") _questProgress(" + _questProgress + ") _questdone(" + _questDone + ")");
 
@@ -59,7 +67,22 @@ public class AutoType : MonoBehaviour {
 				Talk(1);
 				break;
 			case Names.PLAYER:
-				Type(tutStory.PT_01);
+				Type(_story.PT_01);
+				break;
+			case Names.SPANIARD:
+				Type(_story.BT_01);
+				break;
+			case Names.ENEMY_BEACH:
+				Type(_story.BT_02);
+				break;
+			case Names.SKULLS:
+				Type(_story.BT_03);
+				break;
+			case Names.SKULLS2:
+				Type(_story.BT_03);
+				break;
+			case Names.SPIKE_DEATH:
+				Talk(90);
 				break;
 			default:
 				//nothing
@@ -70,23 +93,36 @@ public class AutoType : MonoBehaviour {
 	}
 
 	void Talk(int q){
-		if(_quest <= q && _questProgress < 100 && _questDone < 1){
-			Type(tutStory.TT1_01);
-			_playerData.quest = q;
-		} else if(_quest == q && _questProgress == 100){
-			Type(tutStory.TT1_02);
-			_playerData.questDone ++;
+		//save.Load ();
+		if(QuestData.quest <= q && QuestData.questProgress < 100 && QuestData.questDone < 1){
+			Type(_story.TT1_01);
+			QuestData.quest = q;
+		} else if(QuestData.quest == q && QuestData.questProgress == 100){
+			Type(_story.TT1_02);
+			QuestData.questDone ++;
 			ResetPlayerQuestData();
-		} else if(_questDone >= q){
-			Type(tutStory.TT1_03);
+		} else if(QuestData.questDone >= q){
+			Type(_story.TT1_03);
 		}
+
+		if (q == 90) {
+			Type(_story.BT_SPIKES);
+			_level = 4;
+		}
+		_qId = q;
 	}
 
 	public void EndType(){
 		index = 0;
 		talk.StopTalk ();
-		joystick.SetInteract (false);
-		_playerController.SetMove (true);
+		joystick.interact = false;
+		_playerController.move = true;
+		//print ("Quests Done:" + QuestData._questDone);
+		save.Save ();
+		if (_qId >= 90) {
+			LoadingScreen.isLoading = true;
+			Application.LoadLevel(_level);	
+		}
 	}
 
 	public void Next(){
@@ -96,13 +132,13 @@ public class AutoType : MonoBehaviour {
 	}
 	public void Skip(){
 		index = 900;
-		_playerController.SetMove (false);
+		_playerController.move = false;
 		StartType (_npc);
 	}
 
 	public void ResetPlayerQuestData(){
-		_playerData.quest = 0;
-		_playerData.questProgress = 0;
+		QuestData.quest = 0;
+		QuestData.questProgress = 0;
 	}
 
 	void Type(string[] arg){

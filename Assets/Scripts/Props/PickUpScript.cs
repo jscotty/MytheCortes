@@ -6,12 +6,12 @@ public class PickUpScript : MonoBehaviour {
 	private CharacterData playerData;
 
 	void Start(){
-		playerData = gameObject.GetComponent<CharacterData> ();
+		playerData = new CharacterData ();
 	}
 
 	public void PickUp(string obj, int amount){
 		if (obj == Items.POTION) {
-			playerData.potions += amount;
+			PickupData.potions += amount;
 			print("pickup potion");
 		}
 	}

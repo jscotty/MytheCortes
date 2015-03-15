@@ -24,8 +24,8 @@ public class HitDetection : MonoBehaviour {
 	}
 
 	void Update(){
-		_attack = _playerController.GetAttack ();
-		if (_hit && _attack) {
+		_attack = _playerController.attack;
+		if (_hit) {
 			_dummy.SetDamaging(true);
 		} else {
 			_dummy.SetDamaging(false);
@@ -35,7 +35,7 @@ public class HitDetection : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other){
-		if(other.tag == Tags.ATTACK){
+		if(other.tag == Tags.SWORD){
 			//print("hit");
 			_attackItem = other.gameObject;
 			_hit = true;

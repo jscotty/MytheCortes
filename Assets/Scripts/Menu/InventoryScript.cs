@@ -7,16 +7,14 @@ public class InventoryScript : MonoBehaviour {
 	[SerializeField]
 	private Text[] itemText;
 
-	private CharacterData _playerData;
 
 	void Start(){
 		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
-		_playerData = player.GetComponent<CharacterData> ();
 
-		itemText [0].text = "Potions: (" + _playerData.potions + ")";
+		itemText [0].text = "Potions: (" + PickupData.potions + ")";
 	}
 
 	public void StartInventory(){
-		itemText [0].text = "Potions: (" + _playerData.potions + ")";
+		itemText [0].text = "Potions: (" + PickupData.potions + ")";
 	}
 }

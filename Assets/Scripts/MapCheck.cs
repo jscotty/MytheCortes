@@ -45,7 +45,7 @@ public class MapCheck : MonoBehaviour {
         int VillageAmount = 5;
         for (int i = 0; i < VillageAmount; i++ )
         {
-            MapPoints[i].renderer.material.color = Color.black;
+            MapPoints[i].GetComponent<Renderer>().material.color = Color.black;
         }
         selectedVillage = 0;
 
@@ -185,7 +185,7 @@ public class MapCheck : MonoBehaviour {
                 
                 break;
         }
-        MapPoints[selectedVillage].renderer.material.color = Color.yellow;
+        MapPoints[selectedVillage].GetComponent<Renderer>().material.color = Color.yellow;
 
     }
 

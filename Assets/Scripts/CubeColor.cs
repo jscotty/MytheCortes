@@ -11,11 +11,11 @@ public class CubeColor : MonoBehaviour
     {
         if (Mission1)
         {
-            gameObject.renderer.material.color = Color.green;
+            gameObject.GetComponent<Renderer>().material.color = Color.green;
         }
         else
         {
-            gameObject.renderer.material.color = Color.red;
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
     }    
 }

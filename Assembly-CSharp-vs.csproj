@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_2;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,29 +39,37 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DropItemScript.cs" />
-     <Compile Include="Assets\MainMenuHandler.cs" />
      <Compile Include="Assets\Scripts\Buttons\InteractButtonText.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
      <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
      <Compile Include="Assets\Scripts\Camera\FollowCharacter.cs" />
      <Compile Include="Assets\Scripts\CubeColor.cs" />
+     <Compile Include="Assets\Scripts\DropItemScript.cs" />
      <Compile Include="Assets\Scripts\Enemy\DummyBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyAnimation.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyHitDetection.cs" />
      <Compile Include="Assets\Scripts\Enemy\HitDetection.cs" />
      <Compile Include="Assets\Scripts\Loading\LoadingScreen.cs" />
      <Compile Include="Assets\Scripts\MapCheck.cs" />
      <Compile Include="Assets\Scripts\Menu\InventoryScript.cs" />
      <Compile Include="Assets\Scripts\Menu\MainMenuController.cs" />
+     <Compile Include="Assets\Scripts\Menu\MainMenuHandler.cs" />
+     <Compile Include="Assets\Scripts\Menu\OptionsHandler.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseButtonScript.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseHandler.cs" />
+     <Compile Include="Assets\Scripts\NPC\ManlincheFollowing.cs" />
+     <Compile Include="Assets\Scripts\NPC\RandomWalking.cs" />
      <Compile Include="Assets\Scripts\PProgresion.cs" />
+     <Compile Include="Assets\Scripts\Player\InteractHandler.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerTrigger.cs" />
@@ -72,6 +80,8 @@
      <Compile Include="Assets\Scripts\Props\PickUpScript.cs" />
      <Compile Include="Assets\Scripts\Props\SortingLayer.cs" />
      <Compile Include="Assets\Scripts\Quest.cs" />
+     <Compile Include="Assets\Scripts\Quests\QuestState.cs" />
+     <Compile Include="Assets\Scripts\References\AnimNames.cs" />
      <Compile Include="Assets\Scripts\References\ButtonNames.cs" />
      <Compile Include="Assets\Scripts\References\Items.cs" />
      <Compile Include="Assets\Scripts\References\MethodNames.cs" />
@@ -83,6 +93,9 @@
      <Compile Include="Assets\Scripts\Talk\TalkScript.cs" />
      <Compile Include="Assets\Scripts\data\CharacterData.cs" />
      <Compile Include="Assets\Scripts\data\ChoosenCharacter.cs" />
+     <Compile Include="Assets\Scripts\data\EnemyData.cs" />
+     <Compile Include="Assets\Scripts\data\PickupData.cs" />
+     <Compile Include="Assets\Scripts\data\QuestData.cs" />
      <Compile Include="Assets\Scripts\data\Save\DeleteProtection.cs" />
      <Compile Include="Assets\Scripts\data\Save\DeleteSave.cs" />
      <Compile Include="Assets\Scripts\data\Save\LoadCharacterData.cs" />
@@ -90,10 +103,9 @@
      <Compile Include="Assets\Scripts\data\Save\SavesCheck.cs" />
      <Compile Include="Assets\Scripts\health-expbars\ExpBarScript.cs" />
      <Compile Include="Assets\Scripts\health-expbars\HitPointsScript.cs" />
-     <Compile Include="Assets\ScrollText.cs" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

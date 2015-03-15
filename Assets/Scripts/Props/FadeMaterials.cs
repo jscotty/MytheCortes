@@ -18,7 +18,7 @@ public class FadeMaterials : MonoBehaviour {
 	}
 
 	public void setAlpha(float newAlpha){
-		foreach (Material mObj in renderer.materials) {
+		foreach (Material mObj in GetComponent<Renderer>().materials) {
 			mObj.color = new Color(mObj.color.r, mObj.color.g, mObj.color.b, newAlpha);	
 		}
 	}

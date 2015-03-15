@@ -56,20 +56,31 @@ public class Joystick : MonoBehaviour {
 	}
 
 	#region getters and setters
-	public float GetXAxis(){
-		return _xAxis;
+	public float yAxis {
+		get {
+			return _yAxis;
+		}
+		set {
+			_yAxis = value;
+		}
 	}
 	
-	public float GetYAxis(){
-		return _yAxis;
+	public float xAxis {
+		get {
+			return _xAxis;
+		}
+		set {
+			_xAxis = value;
+		}
 	}
 	
-	public bool GetInteract(){
-		return _interact;
-	}
-	
-	public void SetInteract(bool value){
-		_interact = value;
+	public bool interact {
+		get {
+			return _interact;
+		}
+		set {
+			_interact = value;
+		}
 	}
 	#endregion
 }

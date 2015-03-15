@@ -3,6 +3,7 @@ using System.Collections;
 
 public class DoorTrigger : MonoBehaviour {
 	public Fader fader;
+	public SaveLoadDataSerialized _saveLoadData;
 
 	[SerializeField]
 	private int _level;
@@ -11,7 +12,6 @@ public class DoorTrigger : MonoBehaviour {
 	[SerializeField]
 	private int _mapLocation;
 
-	private SaveLoadDataSerialized _saveLoadData;
 	private TalkScript _talkScript;
 	private CharacterData _playerData;
 	private float _textIndex;
@@ -23,25 +23,20 @@ public class DoorTrigger : MonoBehaviour {
 	void Start(){
 		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
 		_talkScript = ui.GetComponent<TalkScript> ();
-		
-		GameObject save = GameObject.FindGameObjectWithTag (Tags.SAVE);
-		_saveLoadData = save.GetComponent<SaveLoadDataSerialized> ();
 
-		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
-		_playerData = player.GetComponent<CharacterData> ();
+		_playerData = new CharacterData ();
 
 
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == Tags.PLAYER) {
-
-			if(_playerData.questDone >= _questDone){
-				print("level: " + _level);
-				_playerData.level = _level;
+			if(QuestData.questDone >= _questDone){
+				QuestData.level = _level;
+				QuestData.levelSpot = _mapLocation;
 				_saveLoadData.Save();
-				//_fadeBool = true;
 				LoadLevel();
+				//_fadeBool = true;
 			} else {
 				_textIndex ++;
 				if(_textIndex == 1){

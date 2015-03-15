@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 40cc6d57f582f1a44b4d0906d9ede36c
+TextureImporter:
+  fileIDToRecycleName: {}
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Bee Front_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 159
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: .500000238, y: .742625535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee Front_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 146
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee Front_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 152
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee Front_3
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 152
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee Front_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 91
+        width: 34
+        height: 33
+      alignment: 9
+      pivot: {x: .754316807, y: .185571387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee Front_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 91
+        width: 34
+        height: 33
+      alignment: 9
+      pivot: {x: .23296693, y: .159369037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee Front_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 80
+        width: 37
+        height: 45
+      alignment: 9
+      pivot: {x: .533924818, y: .74483645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

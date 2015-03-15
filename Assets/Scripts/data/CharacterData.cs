@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System;
-using System.Collections.Generic;
 
-//System.Serializable]
-public class CharacterData {
+[System.Serializable] 
+public class CharacterData{
 	private int _positionY;
 	private int _positionX;
 	private int _health;

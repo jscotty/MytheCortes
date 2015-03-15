@@ -14,7 +14,6 @@ public class TalkScript : MonoBehaviour {
 	public void StartTalk(string name){
 		UI [0].SetActive (false);
 		UI [1].SetActive (true);
-
 		_autoType.StartType (name);
 
 	}

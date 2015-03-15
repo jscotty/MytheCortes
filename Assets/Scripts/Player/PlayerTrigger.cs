@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class PlayerTrigger : MonoBehaviour {
+	public InteractHandler _interactHandler;
+
 	InteractButtonText _btnText;
-	SwordAnim _swordAnim;
 	TalkScript _talkScript;
 	Joystick _joystick;
 	PickUpScript _pickup;
@@ -23,28 +24,35 @@ public class PlayerTrigger : MonoBehaviour {
 			_joystick = joysick.GetComponent<Joystick> ();
 		}
 
-		GameObject sword = GameObject.FindGameObjectWithTag (Tags.ATTACK);
-		_swordAnim = sword.GetComponent<SwordAnim> ();
 
 		_pickup = gameObject.GetComponent<PickUpScript> ();
 
 	}
 
 	void OnTriggerStay2D(Collider2D other){
-		_action = _joystick.GetInteract();
+		_action = _joystick.interact;
 		if (other.tag == Tags.NPC) {
 			_btnText.message = "Talk";
-			_swordAnim.talk = true;
+			_interactHandler.talk = true;
 			if(_action){
 				_count ++;
 				if(_count <= 1f) {
 					_talkScript.StartTalk(other.name);
-					_swordAnim.attack = false;
+					_interactHandler.attack = false;
+					_interactHandler.talk = true;
+				}
+			}
+			if(other.name == Names.SPIKE_DEATH){
+				_count ++;
+				if(_count <= 1f) {
+					_talkScript.StartTalk(other.name);
+					_interactHandler.attack = false;
+					_interactHandler.talk = true;
 				}
 			}
 		} else if (other.tag == Tags.PICKUP) {
 			_btnText.message = "Take";
-			_swordAnim.talk = true;
+			_interactHandler.talk = true;
 			if(_action){
 				_count ++;
 				if(_count <= 1f) {
@@ -52,12 +60,13 @@ public class PlayerTrigger : MonoBehaviour {
 					other.gameObject.SetActive(false);
 				}
 			}
-		}
+		}else{
+		} 
 	}
 
 	void OnTriggerExit2D(Collider2D other){
 		_btnText.message = "Attack";
-		_swordAnim.talk = false;
+		_interactHandler.talk = false;
 		_count = 0f;
 	}
 	

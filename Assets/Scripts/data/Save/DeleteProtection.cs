@@ -10,11 +10,6 @@ public class DeleteProtection : MonoBehaviour {
 		_deleteSave = gameObject.GetComponent<DeleteSave> ();
 	}
 
-	void Update(){
-		
-		print (Time.timeScale + " Check2");
-	}
-
 	public void Confirm(){
 		int value = _deleteSave.saveFile;
 		_deleteSave.Delete (value);

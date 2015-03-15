@@ -24,6 +24,30 @@ public class Story : MonoBehaviour {
 	};
 #endregion
 
+	
+#region BeachStorys
+	public readonly string[] BT_01 = {
+		"Soldier: Hey man, it is realy nice here!",
+		"Cortez: Yeah , sexy"
+	};
+	
+	public readonly string[] BT_02 = {
+		"Aztek: brgllr ra gho reean do baboila",
+		"Cortez: oke... ???"
+	};
+
+	public readonly string[] BT_03 = {
+		"Cortez: Ew... I dont want to die like this..."
+	};
+	
+	public readonly string[] BT_SPIKES = {
+		"*Creapy sounds*",
+		"Cortez: HEEY!?",
+		"*Falling spikes*",
+		"Cortez: NOOOOOOOOOOOOOOOOOOOOOHHHH!!!!"
+	};
+#endregion
+
 #region PlayerMessages
 	public readonly string[] PT_01 = {
 		"I wonder why i can't go away.."

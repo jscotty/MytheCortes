@@ -8,32 +8,41 @@ public class PlayerState : MonoBehaviour {
 	private bool _interact;
 
 	#region getter and setter for attack
-	public bool GetAttack(){
-		return _attack;
+
+	public bool attack {
+		get {
+			return _attack;
+		}
+		set {
+			_attack = value;
+		}
 	}
 
-	public void SetAttack(bool value){
-		_attack = value;
-	}
 	#endregion
 
 	#region getter and setter for move
-	public bool GetMove(){
-		return _move;
-	}
 	
-	public void SetMove(bool value){
-		_move = value;
+	public bool move {
+		get {
+			return _move;
+		}
+		set {
+			_move = value;
+		}
 	}
+
 	#endregion
 	
 	#region getter and setter for interaction
-	public bool GetInteract(){
-		return _interact;
-	}
 	
-	public void SetInteract(bool value){
-		_interact = value;
+	public bool interact {
+		get {
+			return _interact;
+		}
+		set {
+			_interact = value;
+		}
 	}
+
 	#endregion
 }

@@ -4,16 +4,15 @@ using System.Collections;
 public class ChoosenCharacter : MonoBehaviour {
 
 	SavesCheck saveCheck;
-	SaveLoadDataSerialized saveData;
+	public SaveLoadDataSerialized saveData;
 	private int _character;
 	private string _path;
 
 	public void StartChoosenCharacter () {
 		saveCheck = gameObject.GetComponent<SavesCheck> ();
-		_path = saveCheck.path;
+		//_path = saveCheck.path;
 
-		saveData = gameObject.GetComponent<SaveLoadDataSerialized> ();
-		saveData.SaveChoosenCharacter ();
+		//saveData.SaveChoosenCharacter ();
 
 		LoadingScreen.isLoading = true;
 		Application.LoadLevel (2);

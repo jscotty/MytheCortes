@@ -8,11 +8,11 @@ public class FollowCharacter : MonoBehaviour {
 	
 	void Start()
 	{
-		offset = transform.position - player.position; // calculate different bewtween camera and player
+		offset = transform.position - player.position; 
 	}
 	
 	void Update()
 	{
-		transform.position = player.position + offset; // Camera keeps following the player
+		transform.position = player.position + offset; 
 	}
 }

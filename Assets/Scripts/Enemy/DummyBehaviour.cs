@@ -2,26 +2,33 @@
 using System.Collections;
 
 public class DummyBehaviour : MonoBehaviour {
+	
+	//public QuestData questData;
+	public QuestState questState;
+	public AudioClip audioClip;
 
 	private bool damaging;
-	SpriteRenderer spriteRenderer;
-	CharacterData _playerData;
-
+	Animator _anim;
+	private float _count;
+	private AudioSource _audio;
+	
 	void Start(){
-		spriteRenderer = gameObject.GetComponent<SpriteRenderer> ();
+		_anim = gameObject.GetComponent<Animator> ();
+		_audio = gameObject.GetComponent<AudioSource> ();
 
-		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
-		_playerData = player.GetComponent<CharacterData> ();
 	}
 
 	void Update(){
 		if (damaging) {
-			spriteRenderer.color = Color.yellow;
-			if(_playerData.quest == 1 && _playerData.questProgress < 100){
-				_playerData.questProgress = 100;
+			_anim.SetBool("Hit", true);
+			questState.EndQuest(1);
+			_count ++;
+			if(_count == 1f){
+				_audio.PlayOneShot(audioClip, 1f);
 			}
 		} else {
-			spriteRenderer.color = Color.white;
+			_anim.SetBool("Hit", false);
+			_count = 0f;
 		}
 	}
 

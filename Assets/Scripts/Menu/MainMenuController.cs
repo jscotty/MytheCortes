@@ -12,7 +12,7 @@ public class MainMenuController : MonoBehaviour {
 
 		if (btn == ButtonNames.START) {
 			LoadingScreen.isLoading = true;
-			Application.LoadLevel(1);
+			Application.LoadLevel(2);
 		} else if (btn == ButtonNames.HOW_TO_PLAY) {
 			Credits();
 		} else if (btn == ButtonNames.OPTIONS) {

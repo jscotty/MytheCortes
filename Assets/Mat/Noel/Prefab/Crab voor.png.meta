@@ -1,0 +1,237 @@
+fileFormatVersion: 2
+guid: cda964967f1da2647b9a3a492bfd2f4c
+TextureImporter:
+  fileIDToRecycleName: {}
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Crab voor_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 443
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: .726388395, y: .680453122}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 428
+        width: 28
+        height: 32
+      alignment: 9
+      pivot: {x: .756932914, y: .231948853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 426
+        width: 25
+        height: 35
+      alignment: 9
+      pivot: {x: .577474952, y: .207490757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 444
+        width: 22
+        height: 24
+      alignment: 9
+      pivot: {x: .790241599, y: .702707946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_4
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 444
+        width: 23
+        height: 24
+      alignment: 9
+      pivot: {x: .724742055, y: .715377808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_5
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 447
+        width: 21
+        height: 23
+      alignment: 9
+      pivot: {x: .282812208, y: .764401615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_6
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 447
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: .292684376, y: .764401615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 396
+        width: 37
+        height: 48
+      alignment: 9
+      pivot: {x: .776431501, y: .765327454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_8
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 392
+        width: 21
+        height: 29
+      alignment: 9
+      pivot: {x: .65927124, y: .793577015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_9
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 399
+        width: 21
+        height: 28
+      alignment: 9
+      pivot: {x: .717186332, y: .825780571}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_10
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 401
+        width: 22
+        height: 28
+      alignment: 9
+      pivot: {x: .361790061, y: .793203056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 406
+        width: 20
+        height: 27
+      alignment: 9
+      pivot: {x: .363171399, y: .815324545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 344
+        width: 17
+        height: 27
+      alignment: 9
+      pivot: {x: .736982882, y: .845050931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 344
+        width: 21
+        height: 25
+      alignment: 9
+      pivot: {x: .763784528, y: .852512181}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 311
+        width: 76
+        height: 94
+      alignment: 9
+      pivot: {x: .363642842, y: .315116405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_15
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 315
+        width: 64
+        height: 43
+      alignment: 9
+      pivot: {x: .67905283, y: .563800871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_16
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 320
+        width: 36
+        height: 48
+      alignment: 9
+      pivot: {x: .756731689, y: .522222519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab voor_17
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 339
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
