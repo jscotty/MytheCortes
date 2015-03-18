@@ -3,14 +3,23 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class OptionsHandler : MonoBehaviour {
+
+	public static bool SoundOn;
+
 	public Text soundText;
 
+	void Start(){
+		Sound ();
+	}
+
 	public void Sound(){
-		if (AudioListener.pause) {
-			AudioListener.pause = false;
+		if (SoundOn) {
+			SoundOn = false;
+			AudioListener.volume = 1.0f;
 			soundText.text = "Sound OFF";
-		} else if(!AudioListener.pause) {
-			AudioListener.pause = true;
+		} else if(!SoundOn) {
+			SoundOn = true;
+			AudioListener.volume = 0.0f;
 			soundText.text = "Sound ON";
 		}
 	}

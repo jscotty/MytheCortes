@@ -14,6 +14,9 @@ public class CharacterData{
 	private int _weapon;
 	private int _levelSpot;
 	private int _potions;
+	private int _npcKills;
+	private int[] _questItems = new int[]{0,0,0,0};
+	private bool _soundOn;
 	
 	#region Getter and setters for Position + updating Position
 		public int positionY{
@@ -144,6 +147,39 @@ public class CharacterData{
 		}
 		set {
 			_potions = value;
+		}
+	}
+	#endregion
+	
+	#region getter and setter for npcKills
+	public int npcKills {
+		get {
+			return _npcKills;
+		}
+		set {
+			_npcKills = value;
+		}
+	}
+	#endregion
+	
+	#region getter and setter for questItems
+	public int[] questItems {
+		get {
+			return _questItems;
+		}
+		set {
+			_questItems = value;
+		}
+	}
+	#endregion
+	
+	#region getter and setter for sound
+	public bool soundOn {
+		get {
+			return _soundOn;
+		}
+		set {
+			_soundOn = value;
 		}
 	}
 	#endregion

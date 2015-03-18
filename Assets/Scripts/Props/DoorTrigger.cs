@@ -3,7 +3,8 @@ using System.Collections;
 
 public class DoorTrigger : MonoBehaviour {
 	public Fader fader;
-	public SaveLoadDataSerialized _saveLoadData;
+	public GameObject confirmRejectObject;
+	public ConfirmReject confirmReject;
 
 	[SerializeField]
 	private int _level;
@@ -11,6 +12,8 @@ public class DoorTrigger : MonoBehaviour {
 	private int _questDone;
 	[SerializeField]
 	private int _mapLocation;
+	[SerializeField]
+	private bool _danger;
 
 	private TalkScript _talkScript;
 	private float _textIndex;
@@ -19,35 +22,42 @@ public class DoorTrigger : MonoBehaviour {
 
 	void Start(){
 		GameObject ui = GameObject.FindGameObjectWithTag (Tags.UI_CONTROLLER);
+		confirmReject = ui.GetComponent<ConfirmReject> ();
 		_talkScript = ui.GetComponent<TalkScript> ();
 	}
 
+
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == Tags.PLAYER) {
-			if(QuestData.questDone >= _questDone){
-				QuestData.level = _level;
-				QuestData.levelSpot = _mapLocation;
-				LoadLevel();
-				_saveLoadData.Save();
-				//_fadeBool = true;
-			} else {
-				_textIndex ++;
-				if(_textIndex == 1){
-					_talkScript.StartTalk(other.name);
+			if(_danger){
+				confirmRejectObject.SetActive(true);
+				ConfrimData();
+			}else{
+				if(QuestData.questDone >= _questDone){
+					ConfrimData();
+					confirmReject.LoadLevel();
+					//_saveLoadData.Save();
+					//_fadeBool = true;
+				} else {
+					_textIndex ++;
+					if(_textIndex == 1){
+						_talkScript.StartTalk(other.name);
+					}
 				}
+
 			}
 		}
+	}
+
+	void ConfrimData(){
+		confirmReject.level = _level;
+		confirmReject.mapLocation = _mapLocation;
 	}
 
 	void OnTriggerExit2D(Collider2D other){
 		_textIndex = 0;
 	}
 
-	void LoadLevel(){
-		//_fadeBool = false;
-		LoadingScreen.isLoading = true;
-		Application.LoadLevel(_level);
-	}
 
 	#region getter and setter
 	public int mapLocation{

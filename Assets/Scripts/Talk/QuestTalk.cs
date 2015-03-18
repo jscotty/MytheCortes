@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class QuestTalk : MonoBehaviour {
 
@@ -39,35 +40,22 @@ public class QuestTalk : MonoBehaviour {
 		
 		_playerController.move = false;
 		
-		//print ("_quest (" + _quest + ") _questProgress(" + _questProgress + ") _questdone(" + _questDone + ")");
 		
-		switch (NPC) {
-		case Names.TUT_SOLDIER1:
-			Talk(1);
-			break;
-		case Names.PLAYER:
-			_autoType.Type(_story.PT_01);
-			break;
-		case Names.SPANIARD:
-			_autoType.Type(_story.BT_01);
-			break;
-		case Names.ENEMY_BEACH:
-			_autoType.Type(_story.BT_02);
-			break;
-		case Names.SKULLS:
-			_autoType.Type(_story.BT_03);
-			break;
-		case Names.SKULLS2:
-			_autoType.Type(_story.BT_03);
-			break;
-		case Names.SPIKE_DEATH:
-			Talk(90);
-			break;
-		default:
-			//nothing
+		Dictionary<string, NpcTalkDictionary> npcTalk = new Dictionary<string, NpcTalkDictionary> ();
+		
+		NpcTalkDictionary player = new NpcTalkDictionary (Names.PLAYER, 0, 0, _story.PT_01,null,null,null,null,_story.PT_01);
+		NpcTalkDictionary tutSoldier = new NpcTalkDictionary (Names.TUT_SOLDIER1, 0, 0, _story.TT1_01,null,null,null,_story.TT1_02,_story.TT1_03);
+		NpcTalkDictionary spaniard = new NpcTalkDictionary (Names.SPANIARD, 0, 0, _story.BT_01,null,null,null,null, _story.BT_01);
+		NpcTalkDictionary spaniard2 = new NpcTalkDictionary (Names.SPANIARD2, 0, 0, _story.BT_02,null,null,null,null, _story.BT_02);
+		
+		npcTalk.Add (Names.SPANIARD, spaniard);
+		npcTalk.Add (Names.SPANIARD2, spaniard2);
+		
+		NpcTalkDictionary temp = null;
+		if (npcTalk.TryGetValue (_npc, out temp)) {
+			_autoType.Type(temp.SendString());
+		} else {
 			EndType();
-			break;
-			
 		}
 	}
 	
@@ -89,11 +77,11 @@ public class QuestTalk : MonoBehaviour {
 		joystick.interact = false;
 		_playerController.move = true;
 		//print ("Quests Done:" + QuestData._questDone);
-		save.Save ();
 		if (_qId >= 90) {
 			LoadingScreen.isLoading = true;
 			Application.LoadLevel(_level);	
 		}
+		save.Save ();
 	}
 	
 	
@@ -101,7 +89,8 @@ public class QuestTalk : MonoBehaviour {
 		QuestData.quest = 0;
 		QuestData.questProgress = 0;
 	}
-	void Talk(int q){
+
+	void Quest(int q){
 		//save.Load ();
 		if(QuestData.quest <= q && QuestData.questProgress < 100 && QuestData.questDone < 1){
 			_autoType.Type(_story.TT1_01);

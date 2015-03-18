@@ -32,12 +32,12 @@ public class Story : MonoBehaviour {
 	};
 	
 	public readonly string[] BT_02 = {
-		"Aztek: brgllr ra gho reean do baboila",
-		"Cortez: oke... ???"
+		"Soldier: You have to watch out.. it could be dangerous out here",
+		"Cortez: okeman i'll watch out!"
 	};
 
 	public readonly string[] BT_03 = {
-		"Cortez: Ew... I dont want to die like this..."
+		"Cortez: Ew... I don't want to die like this..."
 	};
 	
 	public readonly string[] BT_SPIKES = {
@@ -45,6 +45,12 @@ public class Story : MonoBehaviour {
 		"Cortez: HEEY!?",
 		"*Falling spikes*",
 		"Cortez: NOOOOOOOOOOOOOOOOOOOOOHHHH!!!!"
+	};
+	public readonly string[] BT_DOOR_01 = {
+		"--** HANGRAOOYYY!! **--",
+		"Cortez: I don't understand him..",
+		"Malinche: He says that he is hungry, grap some food and give it to him",
+		"Cortez: Oh okay thank you"
 	};
 #endregion
 

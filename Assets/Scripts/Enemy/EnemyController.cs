@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour {
 	private EnemyData _enemyData;
 	private RandomWalking _enemyMovement;
 	private float _count;
+	private float _killCount;
 
 	void Start(){
 		_audio = gameObject.GetComponent<AudioSource> ();
@@ -22,6 +23,9 @@ public class EnemyController : MonoBehaviour {
 		if (_enemyData.health <= 0) {
 			_enemyData.died = true;	
 			_enemyMovement.move = false;
+			_killCount ++;
+			if(_killCount == 1f)
+				UserStats.npcKills ++;
 		}
 		if (_enemyData.hit) {
 			_count ++;
@@ -29,6 +33,9 @@ public class EnemyController : MonoBehaviour {
 				_enemyData.health -= _damage;
 				_audio.PlayOneShot(audioClip, 1f);
 			}
+		} else {
+			_count = 0;
 		}
+
 	}
 }

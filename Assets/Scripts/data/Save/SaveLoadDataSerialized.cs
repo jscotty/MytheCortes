@@ -4,9 +4,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public class SaveLoadDataSerialized : MonoBehaviour {
-	public PlayerController playerController;
 
-	private ChoosenCharacter _choosenCharacter;
 	private bool _loaded;
 	private int _level;
 
@@ -26,6 +24,9 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 		characterData.level = Application.loadedLevel;
 		characterData.potions = PickupData.potions;
 		characterData.levelSpot = QuestData.levelSpot;
+		characterData.soundOn = OptionsHandler.SoundOn;
+		characterData.npcKills = UserStats.npcKills;
+		characterData.questItems = QuestData.questItems;
 		
 		binaryFormatter.Serialize (file, characterData);
 		file.Close ();
@@ -46,6 +47,9 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 			QuestData.level = characterData.level;
 			QuestData.levelSpot = characterData.levelSpot;
 			PickupData.potions = characterData.potions;
+			OptionsHandler.SoundOn = characterData.soundOn;
+			UserStats.npcKills = characterData.npcKills;
+			QuestData.questItems = characterData.questItems;
 
 			_level = characterData.level;
 
