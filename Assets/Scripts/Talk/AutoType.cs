@@ -26,7 +26,6 @@ public class AutoType : MonoBehaviour {
 
 	public void Type(string[] arg){
 		txt.text = "";
-
 		if (_i >= arg.Length) {
 			_questTalk.EndType();	
 		} else {

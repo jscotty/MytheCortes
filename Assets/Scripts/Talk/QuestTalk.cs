@@ -34,26 +34,31 @@ public class QuestTalk : MonoBehaviour {
 
 	public void StartType(string NPC){
 		_npc = NPC;
+
+		int questProgress = QuestData.questProgress;
 		/*_quest = questData.quest;
 		_questDone = questData.questDone;
 		_questProgress = questData.questProgress;*/
 		
 		_playerController.move = false;
-		
-		
+
 		Dictionary<string, NpcTalkDictionary> npcTalk = new Dictionary<string, NpcTalkDictionary> ();
 		
-		NpcTalkDictionary player = new NpcTalkDictionary (Names.PLAYER, 0, 0, _story.PT_01,null,null,null,null,_story.PT_01);
-		NpcTalkDictionary tutSoldier = new NpcTalkDictionary (Names.TUT_SOLDIER1, 0, 0, _story.TT1_01,null,null,null,_story.TT1_02,_story.TT1_03);
-		NpcTalkDictionary spaniard = new NpcTalkDictionary (Names.SPANIARD, 0, 0, _story.BT_01,null,null,null,null, _story.BT_01);
-		NpcTalkDictionary spaniard2 = new NpcTalkDictionary (Names.SPANIARD2, 0, 0, _story.BT_02,null,null,null,null, _story.BT_02);
+		NpcTalkDictionary player = new NpcTalkDictionary (Names.PLAYER, 1, questProgress, _story.PT_01,null,null,null,null,_story.PT_01);
+		NpcTalkDictionary tutSoldier = new NpcTalkDictionary (Names.TUT_SOLDIER1, 1, questProgress, _story.TT1_01,null,null,null,_story.TT1_02,_story.TT1_03);
+		NpcTalkDictionary spaniard = new NpcTalkDictionary (Names.SPANIARD, 1, questProgress, _story.BT_01,null,null,null,null, _story.BT_01);
+		NpcTalkDictionary spaniard2 = new NpcTalkDictionary (Names.SPANIARD2, 1, questProgress, _story.BT_02,null,null,null,null, _story.BT_02);
 		
+		npcTalk.Add (Names.PLAYER, player);
+		npcTalk.Add (Names.TUT_SOLDIER1, tutSoldier);
 		npcTalk.Add (Names.SPANIARD, spaniard);
 		npcTalk.Add (Names.SPANIARD2, spaniard2);
 		
 		NpcTalkDictionary temp = null;
 		if (npcTalk.TryGetValue (_npc, out temp)) {
 			_autoType.Type(temp.SendString());
+			_level = temp.level;
+			_qId = temp.qId;
 		} else {
 			EndType();
 		}
@@ -83,30 +88,8 @@ public class QuestTalk : MonoBehaviour {
 		}
 		save.Save ();
 	}
-	
-	
-	public void ResetPlayerQuestData(){
-		QuestData.quest = 0;
-		QuestData.questProgress = 0;
-	}
 
 	void Quest(int q){
 		//save.Load ();
-		if(QuestData.quest <= q && QuestData.questProgress < 100 && QuestData.questDone < 1){
-			_autoType.Type(_story.TT1_01);
-			QuestData.quest = q;
-		} else if(QuestData.quest == q && QuestData.questProgress == 100){
-			_autoType.Type(_story.TT1_02);
-			QuestData.questDone ++;
-			ResetPlayerQuestData();
-		} else if(QuestData.questDone >= q){
-			_autoType.Type(_story.TT1_03);
-		}
-		
-		if (q == 90) {
-			_autoType.Type(_story.BT_SPIKES);
-			_level = 4;
-		}
-		_qId = q;
 	}
 }

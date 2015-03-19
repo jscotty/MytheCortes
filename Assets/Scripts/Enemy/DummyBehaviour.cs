@@ -24,6 +24,9 @@ public class DummyBehaviour : MonoBehaviour {
 			questState.EndQuest(1);
 			_count ++;
 			if(_count == 1f){
+				if(QuestData.quest == 1){
+					QuestData.questProgress = 100;
+				}
 				_audio.PlayOneShot(audioClip, 1f);
 			}
 		} else {
