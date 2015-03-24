@@ -21,10 +21,9 @@ public class UserStats : MonoBehaviour {
 		int level = QuestData.level;
 
 		statsText.text = 
-			"Quests done: " + questDone + "\n" +
 			"Doing quest: " + quest + "\n" +
 			"Your Quest Progression: " + questProgress + "%" + "\n" +
-			"Your in maplevel: " + level + "\n" +
+			"Quests done: " + questDone + "\n" +
 			"npc kills: " + npcKills + "\n"  ;
 	}
 }

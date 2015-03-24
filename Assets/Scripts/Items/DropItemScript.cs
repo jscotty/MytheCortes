@@ -19,6 +19,14 @@ public class DropItemScript : MonoBehaviour {
 				_playerData.potions --;
 				_inventory.StartInventory();
 			}
+		} else if (item == Items.QUEST_ITEMS_1) {
+			QuestData.questItems[0] = 0;
+		} else if (item == Items.QUEST_ITEMS_2) {
+			QuestData.questItems[1] = 0;
+		} else if (item == Items.QUEST_ITEMS_3) {
+			QuestData.questItems[2] = 0;
+		} else if (item == Items.QUEST_ITEMS_4) {
+			QuestData.questItems[3] = 0;
 		}
 	}
 }

@@ -5,7 +5,7 @@ public class FadeMaterials : MonoBehaviour {
 
 	public void FadeOut(){
 		iTween.ValueTo(gameObject, iTween.Hash(
-			"from", 1.0f, "to", 0.0f, "time", 1f, "easetype",
+			"from", 1.0f, "to", 0.0f, "time", 2f, "easetype",
 			"linear", "onupdate", "setAlpha"));
 		             
 	}

@@ -46,12 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ActivityCheck.cs" />
      <Compile Include="Assets\ConfirmReject.cs" />
+     <Compile Include="Assets\InventoryImages.cs" />
+     <Compile Include="Assets\MoveToPlayer.cs" />
      <Compile Include="Assets\Scripts\Buttons\InteractButtonText.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
      <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
      <Compile Include="Assets\Scripts\Camera\FollowCharacter.cs" />
-     <Compile Include="Assets\Scripts\CubeColor.cs" />
      <Compile Include="Assets\Scripts\Enemy\DummyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAnimation.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
@@ -60,7 +62,6 @@
      <Compile Include="Assets\Scripts\Items\DropItemScript.cs" />
      <Compile Include="Assets\Scripts\Items\PickUpScript.cs" />
      <Compile Include="Assets\Scripts\Loading\LoadingScreen.cs" />
-     <Compile Include="Assets\Scripts\MapCheck.cs" />
      <Compile Include="Assets\Scripts\Menu\InventoryScript.cs" />
      <Compile Include="Assets\Scripts\Menu\MainMenuController.cs" />
      <Compile Include="Assets\Scripts\Menu\MainMenuHandler.cs" />
@@ -69,7 +70,6 @@
      <Compile Include="Assets\Scripts\Menu\PauseHandler.cs" />
      <Compile Include="Assets\Scripts\NPC\ManlincheFollowing.cs" />
      <Compile Include="Assets\Scripts\NPC\RandomWalking.cs" />
-     <Compile Include="Assets\Scripts\PProgresion.cs" />
      <Compile Include="Assets\Scripts\Player\InteractHandler.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -80,7 +80,6 @@
      <Compile Include="Assets\Scripts\Props\FadeMaterials.cs" />
      <Compile Include="Assets\Scripts\Props\Fader.cs" />
      <Compile Include="Assets\Scripts\Props\SortingLayer.cs" />
-     <Compile Include="Assets\Scripts\Quest.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestState.cs" />
      <Compile Include="Assets\Scripts\References\AnimNames.cs" />
      <Compile Include="Assets\Scripts\References\ButtonNames.cs" />
@@ -105,6 +104,7 @@
      <Compile Include="Assets\Scripts\data\Save\SaveLoadDataSerialized.cs" />
      <Compile Include="Assets\Scripts\data\Save\SavesCheck.cs" />
      <Compile Include="Assets\Scripts\health-expbars\HitPoints.cs" />
+     <Compile Include="Assets\TempleEntrance.cs" />
      <Compile Include="Assets\UserStats.cs" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">

@@ -15,7 +15,6 @@ public class TalkScript : MonoBehaviour {
 		UI [0].SetActive (false);
 		UI [1].SetActive (true);
 		_questTalk.StartType (name);
-
 	}
 	
 	public void StopTalk(){

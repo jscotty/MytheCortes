@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 
 public class NpcTalkDictionary {
-	
+
 	private string _name;
 	private int _progress;
 	private int _quest;
@@ -33,8 +33,14 @@ public class NpcTalkDictionary {
 		int q = QuestData.quest;
 		int qDone = QuestData.questDone;
 		int questProgress = QuestData.questProgress;
-		Debug.Log (_quest + " progress: " + questProgress + " QuestDone: " + QuestData.questDone);
+		//Debug.Log (_quest + " progress: " + questProgress + " QuestDone: " + QuestData.questDone);
+		
 
+		if (_quest == 90) {
+			_level = 4;
+			_questId = _quest;
+			return _startText;
+		}
 		if(q < _quest){
 			QuestData.quest = _quest;
 			return _startText;
@@ -45,18 +51,13 @@ public class NpcTalkDictionary {
 		} else if(q == _quest && _progress <= 75 && qDone < _quest){
 			return _text75;
 		} else if(q == _quest && _progress == 100 && qDone < _quest){
-			QuestData.questDone ++;
+			QuestData.questDone = _quest;
 			ResetPlayerQuestData();
 			return _text100;
 		} else if(qDone >= q){
 			return _endText;
 		}
-		
-		if (q == 90) {
-			_level = 4;
-			return _startText;
-		}
-		_questId = q;
+		QuestData.quest = _quest;
 		return _startText;
 	}
 	
@@ -68,7 +69,7 @@ public class NpcTalkDictionary {
 	#region Getters and Setters
 	public int qId{
 		get{
-			return _level;
+			return _questId;
 		}
 	}
 	public int level{

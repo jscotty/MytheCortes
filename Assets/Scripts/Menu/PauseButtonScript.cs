@@ -6,7 +6,6 @@ public class PauseButtonScript : MonoBehaviour {
 	SaveLoadDataSerialized _saveLoadData;
 
 	public GameObject[] bannerButtons;
-	public GameObject[] itemButtons;
 	public GameObject[] panels;
 	public Text text;
 	private UserStats stats;

@@ -53,9 +53,12 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 
 			_level = characterData.level;
 
-
+			
+			_loaded = true;
+		} else {
+			_level = 3;
+			_loaded = true;
 		}
-		_loaded = true;
 		
 	}
 	#region getters and setters

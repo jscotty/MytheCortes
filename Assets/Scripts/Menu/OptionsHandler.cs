@@ -19,7 +19,7 @@ public class OptionsHandler : MonoBehaviour {
 			soundText.text = "Sound OFF";
 		} else if(!SoundOn) {
 			SoundOn = true;
-			AudioListener.volume = 0.0f;
+			AudioListener.volume = 1.0f;
 			soundText.text = "Sound ON";
 		}
 	}

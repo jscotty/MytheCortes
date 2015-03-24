@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class QuestTalk : MonoBehaviour {
+	public TempleEntrance temple;
 
 	private AutoType _autoType;
 	private Story _story;
@@ -30,35 +31,55 @@ public class QuestTalk : MonoBehaviour {
 		
 		GameObject player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
 		_playerController = player.GetComponent<PlayerController>();
+		//QuestData.questDone = 1;
 	}
 
 	public void StartType(string NPC){
 		_npc = NPC;
 
 		int questProgress = QuestData.questProgress;
+		int quest = QuestData.quest;
 		/*_quest = questData.quest;
 		_questDone = questData.questDone;
 		_questProgress = questData.questProgress;*/
 		
-		_playerController.move = false;
+		_playerController.move = false; 
+
+		if(_npc == Names.TEMPLE_DOOR){
+			temple.CheckRequirements();
+		}
 
 		Dictionary<string, NpcTalkDictionary> npcTalk = new Dictionary<string, NpcTalkDictionary> ();
 		
-		NpcTalkDictionary player = new NpcTalkDictionary (Names.PLAYER, 1, questProgress, _story.PT_01,null,null,null,null,_story.PT_01);
-		NpcTalkDictionary tutSoldier = new NpcTalkDictionary (Names.TUT_SOLDIER1, 1, questProgress, _story.TT1_01,null,null,null,_story.TT1_02,_story.TT1_03);
-		NpcTalkDictionary spaniard = new NpcTalkDictionary (Names.SPANIARD, 1, questProgress, _story.BT_01,null,null,null,null, _story.BT_01);
-		NpcTalkDictionary spaniard2 = new NpcTalkDictionary (Names.SPANIARD2, 1, questProgress, _story.BT_02,null,null,null,null, _story.BT_02);
-		
+		NpcTalkDictionary player = new NpcTalkDictionary (Names.PLAYER, quest, questProgress, _story.PT_01, _story.PT_01, _story.PT_01, _story.PT_01, _story.PT_01,_story.PT_01);
+		NpcTalkDictionary tutSoldier = new NpcTalkDictionary (Names.TUT_SOLDIER1, 1, questProgress, _story.TT1_01,_story.TT1_01,_story.TT1_01,_story.TT1_01,_story.TT1_02,_story.TT1_03);
+		NpcTalkDictionary spaniard = new NpcTalkDictionary (Names.SPANIARD, quest, questProgress, _story.BT_01,_story.BT_01,_story.BT_01,_story.BT_01,_story.BT_01, _story.BT_01);
+		NpcTalkDictionary spaniard2 = new NpcTalkDictionary (Names.SPANIARD2, quest, questProgress, _story.BT_02,null,null,null,null, _story.BT_02);
+		NpcTalkDictionary spikes = new NpcTalkDictionary (Names.SPIKE_DEATH, 90, questProgress, _story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES, _story.BT_SPIKES);
+		NpcTalkDictionary malincheStart = new NpcTalkDictionary (Names.MALINCHE_START, 2, questProgress, _story.MT_01,null,null,null, _story.MT_01, _story.MT_01);
+		NpcTalkDictionary templeDoor = new NpcTalkDictionary (Names.TEMPLE_DOOR, quest, questProgress, _story.BT_DOOR_01, _story.BT_DOOR_01, _story.BT_DOOR_01, _story.BT_DOOR_01, _story.BT_DOOR_01, _story.BT_DOOR_01);
+		NpcTalkDictionary skull1 = new NpcTalkDictionary (Names.SKULLS, quest, questProgress, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS);
+		NpcTalkDictionary skull2 = new NpcTalkDictionary (Names.SKULLS2, quest, questProgress, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS);
+
 		npcTalk.Add (Names.PLAYER, player);
 		npcTalk.Add (Names.TUT_SOLDIER1, tutSoldier);
 		npcTalk.Add (Names.SPANIARD, spaniard);
 		npcTalk.Add (Names.SPANIARD2, spaniard2);
+		npcTalk.Add (Names.SPIKE_DEATH, spikes);
+		npcTalk.Add (Names.MALINCHE_START, malincheStart);
+		npcTalk.Add (Names.TEMPLE_DOOR, templeDoor);
+		npcTalk.Add (Names.SKULLS, skull1);
+		npcTalk.Add (Names.SKULLS2, skull2);
 		
 		NpcTalkDictionary temp = null;
 		if (npcTalk.TryGetValue (_npc, out temp)) {
 			_autoType.Type(temp.SendString());
 			_level = temp.level;
 			_qId = temp.qId;
+
+			if(_npc == Names.MALINCHE_START){
+				QuestData.questProgress = 100;
+			}
 		} else {
 			EndType();
 		}
@@ -77,19 +98,15 @@ public class QuestTalk : MonoBehaviour {
 	
 	
 	public void EndType(){
+		if (_qId == 90) {
+			LoadingScreen.isLoading = true;
+			Application.LoadLevel(_level);	
+		}
 		_autoType.index = 0;
 		talk.StopTalk ();
 		joystick.interact = false;
 		_playerController.move = true;
 		//print ("Quests Done:" + QuestData._questDone);
-		if (_qId >= 90) {
-			LoadingScreen.isLoading = true;
-			Application.LoadLevel(_level);	
-		}
 		save.Save ();
-	}
-
-	void Quest(int q){
-		//save.Load ();
 	}
 }

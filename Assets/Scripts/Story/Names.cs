@@ -12,4 +12,7 @@ public class Names : MonoBehaviour {
 	public const string PLAYER = "Player";
 	public const string SPIKE_DEATH = "SpikeDeath";
 	public const string TEMPLE_DOOR = "TempleDoor";
+	public const string MALINCHE_START = "MalincheStart";
+
+
 }
