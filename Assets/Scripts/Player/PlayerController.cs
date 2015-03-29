@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 	/// </summary>
 	public GameObject[] characterFiew;
 	public GameObject[] malincheFiew;
+	public GameObject[] swords;
 
 	Rigidbody2D _body;
 	
@@ -79,6 +80,11 @@ public class PlayerController : MonoBehaviour {
 		moveVelocity.x = x;
 		moveVelocity.y = y;
 		_body.velocity = moveVelocity * speed;
+
+		for (int i = 0; i < swords.Length; i++) {
+			swords[i].SetActive(false);
+		}
+
 	}
 
 	/// <summary>
@@ -107,44 +113,24 @@ public class PlayerController : MonoBehaviour {
 		characterFiew [1].SetActive (false);
 		characterFiew [2].SetActive (false);
 		characterFiew [3].SetActive (false);
-			
-			malincheFiew [0].SetActive (true);
-			malincheFiew [1].SetActive (false);
-			malincheFiew [2].SetActive (false);
-			malincheFiew [3].SetActive (false);
 	}
 	void CharacterSide(){
 		characterFiew [0].SetActive (false);
 		characterFiew [1].SetActive (false);
 		characterFiew [2].SetActive (true);
 		characterFiew [3].SetActive (false);
-
-			malincheFiew [0].SetActive (false);
-			malincheFiew [1].SetActive (false);
-			malincheFiew [2].SetActive (true);
-			malincheFiew [3].SetActive (false);
 	}
 	void CharacterSide2(){
 		characterFiew [0].SetActive (false);
 		characterFiew [1].SetActive (false);
 		characterFiew [2].SetActive (false);
 		characterFiew [3].SetActive (true);
-		
-			malincheFiew [0].SetActive (false);
-			malincheFiew [1].SetActive (false);
-			malincheFiew [2].SetActive (false);
-			malincheFiew [3].SetActive (true);
 	}
 	void CharacterDown(){
 		characterFiew [0].SetActive (false);
 		characterFiew [1].SetActive (true);
 		characterFiew [2].SetActive (false);
 		characterFiew [3].SetActive (false);
-			
-			malincheFiew [0].SetActive (false);
-			malincheFiew [1].SetActive (true);
-			malincheFiew [2].SetActive (false);
-			malincheFiew [3].SetActive (false);
 	}
 
 	#region getters and setters

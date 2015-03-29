@@ -7,6 +7,8 @@ public class Items : MonoBehaviour {
 	public const string CARROT = "Carrot";
 	public const string CORN = "Corn";
 
+	public const string SHELL = "Snail";
+
 	
 	public const string QUEST_ITEMS_1 = "QItem1";
 	public const string QUEST_ITEMS_2 = "QItem2";

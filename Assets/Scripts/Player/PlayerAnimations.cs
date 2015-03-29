@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerAnimations : MonoBehaviour {
 	public InteractHandler interactHandler;
+	public PlayerController playerController;
 	Animator _anim;
 	Joystick _joystick;
 
@@ -34,21 +35,31 @@ public class PlayerAnimations : MonoBehaviour {
 			}else {
 				_anim.SetBool(AnimNames.WALK, false);	
 			}
-			if (_attack && !_talk) {
-				_anim.SetBool(AnimNames.ATTACK, true);
-				_anim.SetBool(AnimNames.WALK, false);
-				_count ++;
-				if(_count == 1f)
-					_audio.PlayOneShot(audioClip, 1f);
-			} else {
-				_count = 0f;
-				_anim.SetBool(AnimNames.ATTACK, false);
-			}
 		}
 	}
 
 	public void StopAttack(){
 		_anim.SetBool(AnimNames.ATTACK, false);
-		interactHandler.StopAttack ();
+		playerController.attack = false;
+		playerController.move = true;
+		_joystick.interact = false;
+		_count = 0;
+	}
+
+	public void StartAttack(){
+		if (gameObject.activeSelf) {
+			
+			if (!_talk) {
+				_anim.SetBool(AnimNames.ATTACK, true);
+				//playerController.attack = true;
+				playerController.move = false;
+				//_joystick.interact = false;
+				_count ++;
+				if(_count == 1f)
+					_audio.PlayOneShot(audioClip, 1f);
+			}
+		} else {
+
+		}
 	}
 }

@@ -23,6 +23,5 @@ public class LoadCharacterData : MonoBehaviour {
 				Application.LoadLevel(level);
 			}
 		}
-		Application.LoadLevel(3);
 	}
 }

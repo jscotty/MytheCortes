@@ -8,14 +8,12 @@ public class RandomWalking : MonoBehaviour {
 	private float _time;
 	private int _dirX, _dirY;
 	private Rigidbody2D _body;
-	private Vector2 _scale;
 	private bool _move = true;
 
 	void Start(){
 		_body = gameObject.GetComponent<Rigidbody2D>();
 		_time = 2f;
 
-		_scale.y = 1;
 	}
 
 	void FixedUpdate(){
@@ -26,14 +24,8 @@ public class RandomWalking : MonoBehaviour {
 				float ranNum = Random.Range(0, 10);
 				RandomMovement(ranNum);
 				_time = 0f;
-				
-				if (_dirX < 0) {
-					_scale.x = 1;
-				} else {
-					_scale.x = -1;
-				}
+
 			}
-			transform.localScale = _scale;
 		} else {
 			_dirX = 0;
 			_dirY = 0;

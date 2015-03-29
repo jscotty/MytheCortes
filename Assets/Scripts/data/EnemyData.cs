@@ -4,7 +4,9 @@ using System.Collections;
 public class EnemyData : MonoBehaviour {
 
 	[SerializeField]
-	private float _health, _damage;
+	private float _health;
+	[SerializeField]
+	private int _damage;
 	
 	private bool _died, _attack, _hit;
 	
@@ -17,7 +19,7 @@ public class EnemyData : MonoBehaviour {
 			_health = value;
 		}
 	}
-	public float damage {
+	public int damage {
 		get {
 			return _damage;
 		}

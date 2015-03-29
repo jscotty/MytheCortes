@@ -32,6 +32,7 @@ public class PlayerTrigger : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D other){
 		_action = _joystick.interact;
 		if (other.tag == Tags.NPC) {
+			Problem(other.name, false);
 			_btnText.message = "Talk";
 			_interactHandler.talk = true;
 			if(_action){
@@ -51,6 +52,7 @@ public class PlayerTrigger : MonoBehaviour {
 				}
 			}
 		} else if (other.tag == Tags.PICKUP) {
+			Problem(other.name, true);
 			_btnText.message = "Take";
 			_interactHandler.talk = true;
 			if(_action){
@@ -68,6 +70,16 @@ public class PlayerTrigger : MonoBehaviour {
 		_btnText.message = "Attack";
 		_interactHandler.talk = false;
 		_count = 0f;
+
+		ProblemText.text = "------";
+	}
+
+	void Problem(string name , bool pickup){
+		if (pickup) {
+			ProblemText.text = "Take: " + name;
+		} else {
+			ProblemText.text = "Talk to: " + name;
+		}
 	}
 	
 }

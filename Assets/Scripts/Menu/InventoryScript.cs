@@ -16,4 +16,20 @@ public class InventoryScript : MonoBehaviour {
 	public void StartInventory(){
 		itemText [0].text = "Potions: (" + PickupData.potions + ")";
 	}
+
+	public void TakePotion(){
+		if (PickupData.potions >= 1) {
+			if(PlayerData.health >= 500){
+				
+			} else {
+				PickupData.potions -= 1;
+				PlayerData.health = 500;
+				
+				StartInventory();
+			}
+		} else {
+			PickupData.potions = 0;
+			StartInventory();
+		}
+	}
 }

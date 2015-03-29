@@ -4,12 +4,15 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public class SaveLoadDataSerialized : MonoBehaviour {
-
+	public static int loadCheck;
 	private bool _loaded;
 	private int _level;
 
 	void Start(){
-		Load();
+		loadCheck ++;
+		if (loadCheck == 1) {
+			Load();	
+		}
 	}
 
 	public void Save () {
@@ -27,6 +30,7 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 		characterData.soundOn = OptionsHandler.SoundOn;
 		characterData.npcKills = UserStats.npcKills;
 		characterData.questItems = QuestData.questItems;
+		characterData.health = PlayerData.health;
 		
 		binaryFormatter.Serialize (file, characterData);
 		file.Close ();
@@ -35,6 +39,7 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 	}
 
 	public void Load () {
+		_loaded = true;
 		if (File.Exists (Application.persistentDataPath + "/SaveData.dat")) {
 			BinaryFormatter binaryFormatter = new BinaryFormatter ();
 			FileStream file = File.Open(Application.persistentDataPath + "/SaveData.dat", FileMode.Open);
@@ -50,11 +55,15 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 			OptionsHandler.SoundOn = characterData.soundOn;
 			UserStats.npcKills = characterData.npcKills;
 			QuestData.questItems = characterData.questItems;
+			PlayerData.health = characterData.health;
+
+			if(PlayerData.health <= 0){
+				PlayerData.health = 500;
+			}
 
 			_level = characterData.level;
 
-			
-			_loaded = true;
+
 		} else {
 			_level = 3;
 			_loaded = true;

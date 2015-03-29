@@ -7,6 +7,7 @@ public class AutoType : MonoBehaviour {
 	public Text txt;
 
 	private string _message;
+	private string[] _catchedMessage;
 	private float seconds = 0.01f;
 
 	private QuestTalk _questTalk;

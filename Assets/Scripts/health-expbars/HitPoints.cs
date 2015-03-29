@@ -40,7 +40,7 @@ public class HitPoints : MonoBehaviour {
 	void Update(){
 		HandleHealth ();
 
-		currentHealth = health;
+		currentHealth = PlayerData.health;
 
 		healtText.text = currentHealth + " / " + maxHealth;
 	}

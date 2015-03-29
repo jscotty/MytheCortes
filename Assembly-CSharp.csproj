@@ -46,29 +46,37 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ActivityCheck.cs" />
-     <Compile Include="Assets\ConfirmReject.cs" />
-     <Compile Include="Assets\InventoryImages.cs" />
-     <Compile Include="Assets\MoveToPlayer.cs" />
+     <Compile Include="Assets\DoorItemCheck.cs" />
+     <Compile Include="Assets\PlayerAnimationMethods.cs" />
+     <Compile Include="Assets\ProblemText.cs" />
      <Compile Include="Assets\Scripts\Buttons\InteractButtonText.cs" />
      <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
      <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
      <Compile Include="Assets\Scripts\Camera\FollowCharacter.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BeeAnimation.cs" />
      <Compile Include="Assets\Scripts\Enemy\DummyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAnimation.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyHitDetection.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemySideSwitch.cs" />
      <Compile Include="Assets\Scripts\Enemy\HitDetection.cs" />
      <Compile Include="Assets\Scripts\Items\DropItemScript.cs" />
      <Compile Include="Assets\Scripts\Items\PickUpScript.cs" />
      <Compile Include="Assets\Scripts\Loading\LoadingScreen.cs" />
+     <Compile Include="Assets\Scripts\Malinche\MalincheAnimation.cs" />
+     <Compile Include="Assets\Scripts\Malinche\MalincheController.cs" />
+     <Compile Include="Assets\Scripts\Menu\ConfirmReject.cs" />
+     <Compile Include="Assets\Scripts\Menu\InventoryImages.cs" />
      <Compile Include="Assets\Scripts\Menu\InventoryScript.cs" />
      <Compile Include="Assets\Scripts\Menu\MainMenuController.cs" />
      <Compile Include="Assets\Scripts\Menu\MainMenuHandler.cs" />
      <Compile Include="Assets\Scripts\Menu\OptionsHandler.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseButtonScript.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseHandler.cs" />
+     <Compile Include="Assets\Scripts\Menu\UserStats.cs" />
      <Compile Include="Assets\Scripts\NPC\ManlincheFollowing.cs" />
+     <Compile Include="Assets\Scripts\NPC\MoveToPlayer.cs" />
      <Compile Include="Assets\Scripts\NPC\RandomWalking.cs" />
      <Compile Include="Assets\Scripts\Player\InteractHandler.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
@@ -76,10 +84,13 @@
      <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerTrigger.cs" />
      <Compile Include="Assets\Scripts\Player\SwordAnim.cs" />
+     <Compile Include="Assets\Scripts\Props\ActivityCheck.cs" />
      <Compile Include="Assets\Scripts\Props\DoorTrigger.cs" />
      <Compile Include="Assets\Scripts\Props\FadeMaterials.cs" />
      <Compile Include="Assets\Scripts\Props\Fader.cs" />
      <Compile Include="Assets\Scripts\Props\SortingLayer.cs" />
+     <Compile Include="Assets\Scripts\Props\TempleEntrance.cs" />
+     <Compile Include="Assets\Scripts\Props\TrapDoor.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestState.cs" />
      <Compile Include="Assets\Scripts\References\AnimNames.cs" />
      <Compile Include="Assets\Scripts\References\ButtonNames.cs" />
@@ -97,6 +108,7 @@
      <Compile Include="Assets\Scripts\data\ChoosenCharacter.cs" />
      <Compile Include="Assets\Scripts\data\EnemyData.cs" />
      <Compile Include="Assets\Scripts\data\PickupData.cs" />
+     <Compile Include="Assets\Scripts\data\PlayerData.cs" />
      <Compile Include="Assets\Scripts\data\QuestData.cs" />
      <Compile Include="Assets\Scripts\data\Save\DeleteProtection.cs" />
      <Compile Include="Assets\Scripts\data\Save\DeleteSave.cs" />
@@ -104,8 +116,7 @@
      <Compile Include="Assets\Scripts\data\Save\SaveLoadDataSerialized.cs" />
      <Compile Include="Assets\Scripts\data\Save\SavesCheck.cs" />
      <Compile Include="Assets\Scripts\health-expbars\HitPoints.cs" />
-     <Compile Include="Assets\TempleEntrance.cs" />
-     <Compile Include="Assets\UserStats.cs" />
+     <Compile Include="Assets\SnailController.cs" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

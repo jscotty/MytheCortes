@@ -7,4 +7,5 @@ public class AnimNames : MonoBehaviour {
 	public const string WALK = "Walk";
 	public const string ATTACK = "Attack";
 	public const string DEATH = "Death";
+	public const string OPEN = "Open";
 }

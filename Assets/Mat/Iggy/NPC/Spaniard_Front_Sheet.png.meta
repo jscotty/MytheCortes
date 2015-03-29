@@ -23,14 +23,6 @@ TextureImporter:
     21300036: SpaniardFront_Foot_Right
     21300038: SpaniardFront_Toes_Left
     21300040: SpaniardFront_Toes_Right
-    21300042: SpaniardFront_Leg_Bend_Left
-    21300044: SpaniardFront_Leg_Bend_Right
-    21300046: SpaniardFront_Arm_Front_Left
-    21300048: SpaniardFront_Arm_Front_Right
-    21300050: SpaniardFront_Hand_Top_Right
-    21300052: SpaniardFront_Hand_Front_Right
-    21300054: SpaniardFront_Hand_Front_Left
-    21300056: SpaniardFront_Hand_Top_Left
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,6 +41,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -59,6 +54,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -286,85 +282,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpaniardFront_Leg_Bend_Left
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 96
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpaniardFront_Leg_Bend_Right
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 96
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpaniardFront_Arm_Front_Left
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 216
-        width: 38
-        height: 43
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpaniardFront_Arm_Front_Right
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 216
-        width: 36
-        height: 40
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpaniardFront_Hand_Top_Right
-      rect:
-        serializedVersion: 2
-        x: 404
-        y: 168
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpaniardFront_Hand_Front_Right
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 169
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpaniardFront_Hand_Front_Left
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 171
-        width: 29
-        height: 30
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpaniardFront_Hand_Top_Left
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 170
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

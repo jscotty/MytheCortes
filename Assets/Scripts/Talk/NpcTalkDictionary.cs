@@ -4,7 +4,6 @@ using System;
 
 public class NpcTalkDictionary {
 
-	private string _name;
 	private int _progress;
 	private int _quest;
 	private int _level;
@@ -17,7 +16,6 @@ public class NpcTalkDictionary {
 	private string[] _endText;
 
 	public NpcTalkDictionary(string name, int quest, int progress, string[] text, string[] text2, string[] text3, string[] text4, string[] text5, string[] text6){
-		this._name = name;
 		this._progress = progress;
 		this._quest = quest;
 		this._startText = text;
@@ -32,7 +30,6 @@ public class NpcTalkDictionary {
 	public string[] SendString(){
 		int q = QuestData.quest;
 		int qDone = QuestData.questDone;
-		int questProgress = QuestData.questProgress;
 		//Debug.Log (_quest + " progress: " + questProgress + " QuestDone: " + QuestData.questDone);
 		
 
@@ -41,8 +38,9 @@ public class NpcTalkDictionary {
 			_questId = _quest;
 			return _startText;
 		}
-		if(q < _quest){
-			QuestData.quest = _quest;
+		if(qDone >= _quest){
+			return _endText;
+		} else if(q < _quest){
 			return _startText;
 		} else if(q == _quest && _progress <= 25 && qDone < _quest){
 			return _text25;
@@ -51,20 +49,11 @@ public class NpcTalkDictionary {
 		} else if(q == _quest && _progress <= 75 && qDone < _quest){
 			return _text75;
 		} else if(q == _quest && _progress == 100 && qDone < _quest){
-			QuestData.questDone = _quest;
-			ResetPlayerQuestData();
 			return _text100;
-		} else if(qDone >= q){
-			return _endText;
 		}
-		QuestData.quest = _quest;
 		return _startText;
 	}
-	
-	public void ResetPlayerQuestData(){
-		QuestData.quest = 0;
-		QuestData.questProgress = 0;
-	}
+
 
 	#region Getters and Setters
 	public int qId{
@@ -75,6 +64,16 @@ public class NpcTalkDictionary {
 	public int level{
 		get{
 			return _level;
+		}
+	}
+	public int quest{
+		get{
+			return _quest;
+		}
+	}
+	public int questProgress{
+		get{
+			return _progress;
 		}
 	}
 	#endregion

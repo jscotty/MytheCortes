@@ -21,26 +21,14 @@ public class InteractHandler : MonoBehaviour {
 	}
 	
 	void Update(){
-		if(_joystick != null){
-			if (_attack == true && !_talk) {
-				_move = false;
-				_talk = false;
-				_playerController.attack = _attack;
-				_playerController.move = _move;
-				//collider2D.isTrigger = true;
-			} else {
-				_attack = _joystick.interact;
-			}
-		}
+
 	}
 	
 	public void StopAttack(){
-		_attack = false;
-		_move = true;
 		
-		_joystick.interact = _attack;
-		_playerController.attack = _attack;
-		_playerController.move = _move;
+		_joystick.interact = false;
+		_playerController.attack = false;
+		_playerController.move = true;
 	}
 	
 	#region getters and setters

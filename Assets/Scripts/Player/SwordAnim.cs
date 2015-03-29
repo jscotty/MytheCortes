@@ -24,7 +24,7 @@ public class SwordAnim : MonoBehaviour {
 		if(_joystick != null){
 			if (_attack == true && !_talk) {
 				_playerController.attack = _attack;
-				_playerController.move = false;
+				//_playerController.move = false;
 				//collider2D.isTrigger = true;
 			} else {
 				_attack = _joystick.interact;
@@ -34,6 +34,7 @@ public class SwordAnim : MonoBehaviour {
 
 	public void StopAttack(){
 		_attack = false;
+		print ("jah");
 
 		_joystick.interact = _attack;
 		_playerController.attack = _attack;
