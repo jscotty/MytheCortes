@@ -59,7 +59,7 @@ public class QuestTalk : MonoBehaviour {
 		NpcTalkDictionary tutSoldier = new NpcTalkDictionary (Names.TUT_SOLDIER1, 1, questProgress, _story.TT1_01,_story.TT1_01,_story.TT1_01,_story.TT1_01,_story.TT1_02,_story.TT1_03);
 		NpcTalkDictionary spaniard = new NpcTalkDictionary (Names.SPANIARD, quest, questProgress, _story.BT_01,_story.BT_01,_story.BT_01,_story.BT_01,_story.BT_01, _story.BT_01);
 		NpcTalkDictionary spaniard2 = new NpcTalkDictionary (Names.SPANIARD2, quest, questProgress, _story.BT_02, _story.BT_02, _story.BT_02, _story.BT_02, _story.BT_02, _story.BT_02);
-		NpcTalkDictionary spikes = new NpcTalkDictionary (Names.SPIKE_DEATH, 90, questProgress, _story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES, _story.BT_SPIKES);
+		NpcTalkDictionary spikes = new NpcTalkDictionary (Names.SPIKE_DEATH, quest, questProgress, _story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES,_story.BT_SPIKES, _story.BT_SPIKES);
 		NpcTalkDictionary malincheStart = new NpcTalkDictionary (Names.MALINCHE_START, 2, questProgress, _story.MT_01,_story.MT_01,_story.MT_01,_story.MT_01, _story.MT_01, _story.MT_01);
 		NpcTalkDictionary templeDoor = new NpcTalkDictionary (Names.TEMPLE_DOOR, quest, questProgress, _story.BT_DOOR_01, _story.BT_DOOR_01, _story.BT_DOOR_01, _story.BT_DOOR_01, _story.BT_DOOR_03, _story.BT_DOOR_03);
 		NpcTalkDictionary skull1 = new NpcTalkDictionary (Names.SKULLS, quest, questProgress, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS, _story.BT_SKULLS);
@@ -67,6 +67,12 @@ public class QuestTalk : MonoBehaviour {
 		NpcTalkDictionary aztek01 = new NpcTalkDictionary (Names.AZTEK_01, 4, questProgress, _story.TT_AZTEK_01, _story.TT_AZTEK_01, _story.TT_AZTEK_01, _story.TT_AZTEK_01, _story.TT_AZTEK_01, _story.TT_AZTEK_01);
 		NpcTalkDictionary bees = new NpcTalkDictionary (Names.BEES, quest, questProgress, _story.BT_DOOR_02, _story.BT_DOOR_02, _story.BT_DOOR_02, _story.BT_DOOR_02, _story.BT_DOOR_02, _story.BT_DOOR_02);
 		NpcTalkDictionary snailDoor = new NpcTalkDictionary (Names.SNAIL_DOOR, quest, questProgress, _story.TT_SNAIL_DOOR, _story.TT_SNAIL_DOOR, _story.TT_SNAIL_DOOR, _story.TT_SNAIL_DOOR, _story.TT_SNAIL_DOOR, _story.TT_SNAIL_DOOR);
+		NpcTalkDictionary snails = new NpcTalkDictionary (Names.SNAIL, quest, questProgress, _story.TT_SNAILS, _story.TT_SNAILS, _story.TT_SNAILS, _story.TT_SNAILS, _story.TT_SNAILS, _story.TT_SNAILS);
+		NpcTalkDictionary vase = new NpcTalkDictionary (Names.VASE, quest, questProgress, _story.TT_VASE, _story.TT_VASE, _story.TT_VASE, _story.TT_VASE, _story.TT_VASE, _story.TT_VASE);
+		NpcTalkDictionary trap = new NpcTalkDictionary (Names.TRAP, quest, questProgress, _story.TT_TRAP, _story.TT_TRAP, _story.TT_TRAP, _story.TT_TRAP, _story.TT_TRAP, _story.TT_TRAP);
+		NpcTalkDictionary thankfulAztek = new NpcTalkDictionary (Names.THANKFUL_AZTEK, quest, questProgress, _story.TT_THANKS, _story.TT_THANKS, _story.TT_THANKS, _story.TT_THANKS, _story.TT_THANKS, _story.TT_THANKS);
+		NpcTalkDictionary end = new NpcTalkDictionary (Names.END, 6, questProgress, _story.TT_END, _story.TT_END, _story.TT_END, _story.TT_END, _story.TT_END, _story.TT_END);
+		NpcTalkDictionary colorDoor = new NpcTalkDictionary (Names.COLOR_DOOR, quest, questProgress, _story.BT_COLOR_DOOR, _story.BT_COLOR_DOOR, _story.BT_COLOR_DOOR, _story.BT_COLOR_DOOR, _story.BT_COLOR_DOOR, _story.BT_COLOR_DOOR);
 
 		npcTalk.Add (Names.PLAYER, player);
 		npcTalk.Add (Names.TUT_SOLDIER1, tutSoldier);
@@ -79,6 +85,12 @@ public class QuestTalk : MonoBehaviour {
 		npcTalk.Add (Names.SKULLS2, skull2);
 		npcTalk.Add (Names.AZTEK_01, aztek01);
 		npcTalk.Add (Names.SNAIL_DOOR, snailDoor);
+		npcTalk.Add (Names.SNAIL, snails);
+		npcTalk.Add (Names.VASE, vase);
+		npcTalk.Add (Names.TRAP, trap);
+		npcTalk.Add (Names.THANKFUL_AZTEK, thankfulAztek);
+		npcTalk.Add (Names.END, end);
+		npcTalk.Add (Names.COLOR_DOOR, colorDoor);
 		
 		NpcTalkDictionary temp = null;
 		if (npcTalk.TryGetValue (_npc, out temp)) {
@@ -107,9 +119,9 @@ public class QuestTalk : MonoBehaviour {
 	}
 	
 	public void EndType(){
-		if (_qId == 90) {
+		if (_npc == Names.SPIKE_DEATH) {
 			LoadingScreen.isLoading = true;
-			Application.LoadLevel(_level);	
+			Application.LoadLevel(4);	
 		}
 		if (_quest >= QuestData.questDone) {
 			QuestData.quest = _quest;
@@ -122,6 +134,9 @@ public class QuestTalk : MonoBehaviour {
 		if (_npc == Names.MALINCHE_START) {
 			ResetPlayerQuestData();	
 			QuestData.quest = 3;	
+		}else if (_npc == Names.END) {
+			LoadingScreen.isLoading = true;
+			Application.LoadLevel(4);
 		}
 
 		_autoType.index = 0;

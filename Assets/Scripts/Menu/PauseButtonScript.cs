@@ -23,9 +23,9 @@ public class PauseButtonScript : MonoBehaviour {
 	}
 
 	public void BackToMainMenu(){
-		_saveLoadData.Save ();
 		LoadingScreen.isLoading = true;
 		Application.LoadLevel (0);
+		_saveLoadData.Save ();
 	}
 
 	public void OpenInventory(){

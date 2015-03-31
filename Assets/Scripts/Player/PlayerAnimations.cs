@@ -4,6 +4,9 @@ using System.Collections;
 public class PlayerAnimations : MonoBehaviour {
 	public InteractHandler interactHandler;
 	public PlayerController playerController;
+	public AudioClip audioClip;
+	public GameObject deathScreen;
+
 	Animator _anim;
 	Joystick _joystick;
 
@@ -11,14 +14,12 @@ public class PlayerAnimations : MonoBehaviour {
 	bool _attack, _talk;
 
 	AudioSource _audio;
-	public AudioClip audioClip;
 
 	void Start(){
 		_anim = gameObject.GetComponent<Animator> ();
 		_audio = gameObject.GetComponent<AudioSource> ();
 
 		GameObject joystick = GameObject.FindGameObjectWithTag (Tags.JOYSTICK_CONTROLLER);
-		if (joystick != null) 
 			_joystick = joystick.GetComponent<Joystick> ();
 		
 	}
@@ -36,6 +37,11 @@ public class PlayerAnimations : MonoBehaviour {
 				_anim.SetBool(AnimNames.WALK, false);	
 			}
 		}
+
+		if (PlayerData.health <= 0) {
+			PlayerData.health = 0;
+			_anim.SetBool(AnimNames.DEATH, true);	
+		}
 	}
 
 	public void StopAttack(){
@@ -48,18 +54,22 @@ public class PlayerAnimations : MonoBehaviour {
 
 	public void StartAttack(){
 		if (gameObject.activeSelf) {
-			
+			_joystick.interact = true;
 			if (!_talk) {
 				_anim.SetBool(AnimNames.ATTACK, true);
-				//playerController.attack = true;
+				playerController.attack = true;
 				playerController.move = false;
-				//_joystick.interact = false;
+				//_joystick.interact = true;
 				_count ++;
 				if(_count == 1f)
 					_audio.PlayOneShot(audioClip, 1f);
 			}
 		} else {
-
 		}
+	}
+
+	public void Death(){
+		deathScreen.SetActive (true);
+		Application.LoadLevel (4);
 	}
 }

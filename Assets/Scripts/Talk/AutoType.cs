@@ -6,6 +6,7 @@ public class AutoType : MonoBehaviour {
 
 	public Text txt;
 
+	private string letters;
 	private string _message;
 	private string[] _catchedMessage;
 	private float seconds = 0.01f;
@@ -27,18 +28,25 @@ public class AutoType : MonoBehaviour {
 
 	public void Type(string[] arg){
 		txt.text = "";
+		_message = "";
 		if (_i >= arg.Length) {
 			_questTalk.EndType();	
 		} else {
 			_message = arg [_i];
-			StartCoroutine (TypeText ());
+			StopCoroutine ("TypeText");
+			StartCoroutine ("TypeText");
 		}
 	}
 
-	IEnumerator TypeText(){
-		foreach (char letter in _message.ToCharArray()) {
-			txt.text += letter;		
-
+	IEnumerator TypeText(){/*
+		foreach (string letter in _message.ToCharArray()) {
+			this.letters = letter;
+			txt.text += letters;		
+			*/
+		letters = _message;
+		for (int i = 0; i < letters.Length; i++) {
+				txt.text += letters[i];
+				
 			yield return new WaitForSeconds(seconds);
 		}
 	}

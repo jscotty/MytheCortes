@@ -46,12 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DoorItemCheck.cs" />
-     <Compile Include="Assets\PlayerAnimationMethods.cs" />
-     <Compile Include="Assets\ProblemText.cs" />
-     <Compile Include="Assets\Scripts\Buttons\InteractButtonText.cs" />
-     <Compile Include="Assets\Scripts\Buttons\Joystick.cs" />
-     <Compile Include="Assets\Scripts\Buttons\PauseScript.cs" />
      <Compile Include="Assets\Scripts\Camera\FollowCharacter.cs" />
      <Compile Include="Assets\Scripts\Enemy\BeeAnimation.cs" />
      <Compile Include="Assets\Scripts\Enemy\DummyBehaviour.cs" />
@@ -61,6 +55,7 @@
      <Compile Include="Assets\Scripts\Enemy\EnemyHitDetection.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemySideSwitch.cs" />
      <Compile Include="Assets\Scripts\Enemy\HitDetection.cs" />
+     <Compile Include="Assets\Scripts\Enemy\SnailController.cs" />
      <Compile Include="Assets\Scripts\Items\DropItemScript.cs" />
      <Compile Include="Assets\Scripts\Items\PickUpScript.cs" />
      <Compile Include="Assets\Scripts\Loading\LoadingScreen.cs" />
@@ -79,18 +74,22 @@
      <Compile Include="Assets\Scripts\NPC\MoveToPlayer.cs" />
      <Compile Include="Assets\Scripts\NPC\RandomWalking.cs" />
      <Compile Include="Assets\Scripts\Player\InteractHandler.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerAnimationMethods.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerTrigger.cs" />
      <Compile Include="Assets\Scripts\Player\SwordAnim.cs" />
      <Compile Include="Assets\Scripts\Props\ActivityCheck.cs" />
+     <Compile Include="Assets\Scripts\Props\DoorItemCheck.cs" />
      <Compile Include="Assets\Scripts\Props\DoorTrigger.cs" />
      <Compile Include="Assets\Scripts\Props\FadeMaterials.cs" />
      <Compile Include="Assets\Scripts\Props\Fader.cs" />
+     <Compile Include="Assets\Scripts\Props\PuzzleDoor.cs" />
      <Compile Include="Assets\Scripts\Props\SortingLayer.cs" />
      <Compile Include="Assets\Scripts\Props\TempleEntrance.cs" />
      <Compile Include="Assets\Scripts\Props\TrapDoor.cs" />
+     <Compile Include="Assets\Scripts\Quests\EndQuests.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestState.cs" />
      <Compile Include="Assets\Scripts\References\AnimNames.cs" />
      <Compile Include="Assets\Scripts\References\ButtonNames.cs" />
@@ -104,6 +103,10 @@
      <Compile Include="Assets\Scripts\Talk\NpcTalkDictionary.cs" />
      <Compile Include="Assets\Scripts\Talk\QuestTalk.cs" />
      <Compile Include="Assets\Scripts\Talk\TalkScript.cs" />
+     <Compile Include="Assets\Scripts\UI\Buttons\InteractButtonText.cs" />
+     <Compile Include="Assets\Scripts\UI\Buttons\Joystick.cs" />
+     <Compile Include="Assets\Scripts\UI\Buttons\PauseScript.cs" />
+     <Compile Include="Assets\Scripts\UI\ProblemText.cs" />
      <Compile Include="Assets\Scripts\data\CharacterData.cs" />
      <Compile Include="Assets\Scripts\data\ChoosenCharacter.cs" />
      <Compile Include="Assets\Scripts\data\EnemyData.cs" />
@@ -116,7 +119,6 @@
      <Compile Include="Assets\Scripts\data\Save\SaveLoadDataSerialized.cs" />
      <Compile Include="Assets\Scripts\data\Save\SavesCheck.cs" />
      <Compile Include="Assets\Scripts\health-expbars\HitPoints.cs" />
-     <Compile Include="Assets\SnailController.cs" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

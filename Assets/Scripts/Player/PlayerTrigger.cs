@@ -29,6 +29,10 @@ public class PlayerTrigger : MonoBehaviour {
 
 	}
 
+	void Update(){
+		_action = _joystick.interact;
+	}
+
 	void OnTriggerStay2D(Collider2D other){
 		_action = _joystick.interact;
 		if (other.tag == Tags.NPC) {
@@ -58,7 +62,7 @@ public class PlayerTrigger : MonoBehaviour {
 			if(_action){
 				_count ++;
 				if(_count <= 1f) {
-					_pickup.PickUp(other.name, 1);
+					_pickup.PickUp(other.name);
 					other.gameObject.SetActive(false);
 				}
 			}

@@ -8,6 +8,8 @@ public class Items : MonoBehaviour {
 	public const string CORN = "Corn";
 
 	public const string SHELL = "Snail";
+	public const string CASKET = "Casket";
+	public const string ROPE = "Rope";
 
 	
 	public const string QUEST_ITEMS_1 = "QItem1";

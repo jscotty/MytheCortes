@@ -9,6 +9,7 @@ public class SaveLoadDataSerialized : MonoBehaviour {
 	private int _level;
 
 	void Start(){
+		_level = 3;
 		loadCheck ++;
 		if (loadCheck == 1) {
 			Load();	

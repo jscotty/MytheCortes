@@ -31,12 +31,12 @@ public class Story : MonoBehaviour {
 	
 #region BeachStorys
 	public readonly string[] BT_01 = {
-		"Soldier:\nHey man, it is realy nice here!",
+		"Juan:\nHey man, it is realy nice here!",
 		"Cortez:\nYeah"
 	};
 	
 	public readonly string[] BT_02 = {
-		"Soldier:\nYou have to watch out.. it could be dangerous out here",
+		"Filippe:\nYou have to watch out.. it could be dangerous out here",
 		"Cortez:\nokeman i'll watch out!"
 	};
 
@@ -66,6 +66,14 @@ public class Story : MonoBehaviour {
 	public readonly string[] BT_DOOR_03 = {
 		"-Door is opening-"
 	};
+
+	public readonly string[] BT_COLOR_DOOR = {
+		"Cortez:\nLooks like troubl's up ahead.",
+		"La Malinche:\nDepends on what you call trouble.",
+		"La Malinche:\nSeems like you just have to pick a door.",
+		"Cortez:\nBut wich one should i choose?"
+	};
+
 #endregion
 
 #region TempleText
@@ -76,14 +84,34 @@ public class Story : MonoBehaviour {
 		"La Malinche:\nHe says we have to watch out for traps and agrassive azteks",
 		"La Malinche:\nHe says also we have to go to the left"
 	};
-	public readonly string[] TT_SNAIL_DOOR = {
-		"Cortez:\nWhat does this symbol means?",
-		"La Malinche:\nHuhm....",
-		"La Malinche:\nAH you need an object to open the door!",
-		"Cortez:\nWhat object?",
-		"La Malinche:\n I dont know... We can better check the room next to us"
-	};
+	public int[] heads_TT_AZTEK = {2,0,2,2};
 
+	public readonly string[] TT_SNAIL_DOOR = {
+		"Cortez:\nIt's locked!"
+	};
+	public readonly string[] TT_SNAILS = {
+		"La Malinche:\nEww, gross!",
+		"Cortez:\nCome on, they're just snailes"
+	};
+	public readonly string[] TT_VASE = {
+		"La Malinche:\n*it looks big enough for something to fit in.*",
+	};
+	public readonly string[] TT_TRAP = {
+		"*Doors shut*",
+		"Cortez:\nOh shit.."
+	};
+	public readonly string[] TT_THANKS = {
+		"Aztek:\n*Saying words you dont understand*",
+		"La Malinche:\nHe thanks you for opening the door",
+		"La Malinche:\nAnd he sayd that we are close to the gold."
+	};
+	public readonly string[] TT_END = {
+		"Cortez:\nWe did it!",
+		"La Malinche:\nYA! wow it is so beautifull!",
+		"Cortez:\nYou are more beautifull...",
+		"La Malinche:\nKiss me!",
+		"*Kissing*"
+	};
 #endregion
 
 #region Malinche text

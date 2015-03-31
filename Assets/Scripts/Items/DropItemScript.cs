@@ -21,6 +21,9 @@ public class DropItemScript : MonoBehaviour {
 			}
 		} else if (item == Items.QUEST_ITEMS_1) {
 			QuestData.questItems[0] = 0;
+			if(QuestData.quest == 5){
+				QuestData.questProgress = 0;
+			}
 		} else if (item == Items.QUEST_ITEMS_2) {
 			QuestData.questItems[1] = 0;
 		} else if (item == Items.QUEST_ITEMS_3) {

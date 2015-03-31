@@ -8,7 +8,7 @@ public class InventoryImages : MonoBehaviour {
 	public Image[] images;
 	public GameObject[] imageObjects;
 
-	enum QuestItems{Nothing, Carrot, Corn, Shell};
+	enum QuestItems{Nothing, Carrot, Corn, Shell, Casket, Rope};
 
 	void Start(){
 		UpdateInvImages ();
@@ -30,14 +30,37 @@ public class InventoryImages : MonoBehaviour {
 			default:
 						
 				break;
-		}switch (questItems[1]) {
+		}
+		switch (questItems[1]) {
 			case 0:
-			UpdateImages (QuestItems.Nothing);
+			UpdateImages2 (QuestItems.Nothing);
 			break;
 			case 1:
 			UpdateImages2 (QuestItems.Shell);
 			break;
 			default:
+			
+			break;
+		}
+		switch (questItems[2]) {
+		case 0:
+			UpdateImages3 (QuestItems.Nothing);
+			break;
+		case 1:
+			UpdateImages3 (QuestItems.Casket);
+			break;
+		default:
+			
+			break;
+		}
+		switch (questItems[3]) {
+		case 0:
+			UpdateImages4 (QuestItems.Nothing);
+			break;
+		case 1:
+			UpdateImages4 (QuestItems.Rope);
+			break;
+		default:
 			
 			break;
 		}
@@ -60,6 +83,22 @@ public class InventoryImages : MonoBehaviour {
 		} else if (item == QuestItems.Shell) {
 			imageObjects [1].SetActive (true);
 			images [1].sprite = sprites [2];
+		}
+	}
+	void UpdateImages3 (QuestItems item){
+		if (item == QuestItems.Nothing) {
+			imageObjects [2].SetActive (false);
+		} else if (item == QuestItems.Casket) {
+			imageObjects [2].SetActive (true);
+			images [2].sprite = sprites [3];
+		}
+	}
+	void UpdateImages4 (QuestItems item){
+		if (item == QuestItems.Nothing) {
+			imageObjects [3].SetActive (false);
+		} else if (item == QuestItems.Rope) {
+			imageObjects [3].SetActive (true);
+			images [3].sprite = sprites [4];
 		}
 	}
 

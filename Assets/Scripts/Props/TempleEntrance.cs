@@ -30,7 +30,7 @@ public class TempleEntrance : MonoBehaviour {
 
 		switch (item) {
 		case Item.Nothing:
-			if (questDone >= 3) {
+			if (questDone >= 4) {
 				_anim.SetBool(AnimNames.OPEN, true);
 				_audio.PlayOneShot(audioClip,1f);
 				talk.StopTalk();
@@ -39,7 +39,7 @@ public class TempleEntrance : MonoBehaviour {
 			}
 			break;
 		case Item.Carrot:
-			if (questDone >= 3) {
+			if (questDone >= 4) {
 				_anim.SetBool(AnimNames.OPEN, true);
 				_audio.PlayOneShot(audioClip,1f);
 			} else {
