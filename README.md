@@ -19,3 +19,5 @@ Please take a look at this code:<br><br>
 [Healthbar calculations](https://github.com/jscotty/MytheCortes/blob/master/Assets/Scripts/health-expbars/HitPoints.cs)<br><br>
 
 [string/ints references](https://github.com/jscotty/MytheCortes/tree/master/Assets/Scripts/References)<br><br>
+
+[quest](https://github.com/jscotty/MytheCortes/tree/master/Assets/Scripts/Quests)
